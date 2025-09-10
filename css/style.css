@@ -1,0 +1,195 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Shared Content */
+body {
+    color: #b7e1cd;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* Topnav Settings */
+.topnav {
+    background-color: #6C757D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.topnavTitle {
+    font-size: 2.0rem;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    margin-right: 1.0rem;
+}
+
+.topnavLinks {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    font-size: 1.5rem;
+}
+
+.topnavMenuButton {
+    float: left;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.topnavMenuContent {
+    display: none;
+    z-index: 22;
+    position: fixed;
+    width: 11.5vw;
+    height: 100vw;
+    float: left;
+    background-color: #6C757D;
+    padding: 0 1rem;
+    margin: 0;
+    left: 0;
+    list-style-type: none;
+}
+
+.topnavMenuContent li {
+    margin: 1rem 0;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(-45deg);
+}
+
+.change .topnavMenuContent {
+    display: block;
+}
+
+
+/* Body Settings */
+.localBody{
+    /* Offset margin to account for topnav */
+    margin-top: 3rem;
+}
+
+.sidenav {
+    width: 13vw;
+    border-right: 0.2rem solid #6C757D;
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    overflow-wrap: normal;
+    text-align: center;
+    display: block;
+}
+
+.sidenavHead {
+    margin: 1rem 0;
+}
+
+.sidenavLinks li {
+    margin: 0.5rem 0;
+}
+
+.localContent {
+    /* Offset margin to account for sidenav */
+    margin-left: 14vw;
+    width: 86vw;
+    display: block;
+}
+
+.localHead {
+    text-align: center;
+    margin: 3.5rem 1rem 1rem;
+}
+.localHeadBody {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectionHead {
+    margin: 1.5rem;
+}
+
+.sectionBody {
+    margin: 0 2rem;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    cursor: default;
+    color: #E1CDB7;
+}
+
+a:visited {
+    color: #E1CDB7;
+}
+
+a:hover, a:focus {
+    color: #B7CBE1;
+}
+
+a:active {
+    color: #E1B7CB;
+}
+
+
+/* Home */
+/* Styles for the entire home menu body container */
+.homebody {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+/* Style for "The Dreamscape" title on home menu */
+.hometitle{
+    font-size: 4rem;
+    padding: 4rem 4rem;
+}
+
+/* Style for the three links on home menu */
+.homelink {
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
+/* Style for my current n.b. below home links */
+.homenote {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem 2rem;
+}
+
+
+/* Game */
+
+
+/* Primer */
+
+
+/* Setting */
+
