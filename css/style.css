@@ -92,6 +92,9 @@ body {
 .localBody{
     /* Offset margin to account for topnav */
     margin-top: 3rem;
+    position: relative;
+    z-index: -1;
+    overflow: auto;
 }
 
 .sidenav {
@@ -116,7 +119,7 @@ body {
 .localContent {
     /* Offset margin to account for sidenav */
     margin-left: 14vw;
-    width: 86vw;
+    width: 85vw;
     display: block;
 }
 
