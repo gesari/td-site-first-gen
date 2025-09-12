@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type="text/javascript" src="/js/menu.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +14,53 @@
     All of the information will be stored here, with other references pointing to either the game or the setting section.
 -->
 
-<body>
-    <h1>Dreamscape Key Points</h1>
+<!-- TopNav Bar Elements -->
+<div class="topnav">
+    <!-- Dropdown Menu for Intrasection Navigation -->
+    <span class="topnavMenuButton" onclick="menuTransform(this)">
+        <!-- Bar 1-3 | Hamburger Menu button icons-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <!-- Dropdown Links | Display when Menu active -->
+        <ul class="topnavMenuContent">
+            <li><a href="key-points.html">Key Points</a></li>
+            <li><a href="fitting-in.html">Fitting In</a></li>
+        </ul>
+    </span>
 
-    <div class="linktree">
-        <!-- Update all linktrees for sub-sites: put them in bar with h1 title: Title - Link 1 | Link 2 | Link 3 - Dropdown menu
-        Change Background color of title/link bar, separate one for each section of site 
-        -->
+    <!-- Links to Other Site Sections -->
+    <span class="topnavLinks">
         <a href="/td-game/gameland.html">Game</a> | <a href="../index.html">Home</a> | <a href="/td-setting/dreamland.html">Setting</a>
+    </span>
+
+    <!-- Section Title -->
+    <span class="topnavTitle">Dreamscape Primer Landing Page</span>
+</div>
+
+
+<body class="localBody">
+    <!-- Table of Contents Area-->
+    <div class="sidenav">
+        <!-- Intradocument Directory -->
+         <h3 class="sidenavHead">Table of Contents</h3>
+         <!-- Links to topics within localContent -->
+         <ul class="sidenavLinks">
+            <li><a href="#key_points">Key Points</a></li>
+            <li><a href="#fitting_in">Fitting In</a></li>
+         </ul>
     </div>
-    <!-- Style body in two columns: Table of Contents | Actual Content
-    TABLE OF CONTENTS SHOULD SCROLL INDEPENDENTLY OF CONTENT
-    Reference for table of contents as fixed sidebar: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
-    -->
-    <p>Placeholder for the list of key points, etc.</p>
+
+    <div class="localContent">
+        <!-- Page Content -->
+        <h2 class="localHead">Start Dreaming</h2>
+        <p class="localHeadBody">This is the landing for the Dreamscape Setting. List of each link plus a small descriptor blurb.</p> 
+
+        <h4 class="sectionHead" id="key_points"><a href="key-points.html">Key Points</a></h4>
+        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+
+        <h4 class="sectionHead" id="fitting_in"><a href="fitting-in.html">Fitting In</a></h4>
+        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+    </div>       
 </body>
 </html>
