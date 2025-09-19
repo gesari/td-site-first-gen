@@ -139,10 +139,71 @@ body {
 
 .sectionHead {
     margin: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.sectionSubHead {
+    margin: 3rem 2rem 0;
+    font-style: oblique;
 }
 
 .sectionBody {
-    margin: 0 2rem;
+    margin: 0 2rem 1rem;
+}
+
+.exampleTitle {
+    margin: 2rem 11rem 0;
+    color: #CDB7E1;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.exampleTitleCenter {
+    margin: 2rem 11rem 0;
+    color: #CDB7E1;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.exampleText {
+    margin: 0 11rem 1rem;
+    color: #CDB7E1;
+    font-size: 0.85rem;
+}
+
+.exampleTextCenter {
+    margin: 0 11rem 1rem;
+    color: #CDB7E1;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* Settings for three column display in character creation */
+.triCol {
+    display: flex;
+}
+
+.triCol > * {
+    flex-basis: 100%;
+}
+
+.triColBox {
+    color: #CDB7E1;
+    font-size: 0.85rem;
+    margin: 2rem 8rem;
+}
+
+.triColTitle {
+    font-weight: bold;
+}
+
+.triColText {
+    margin-bottom: 1rem;
+}
+
+.triColText2 {
+    margin: 0;
 }
 
 
