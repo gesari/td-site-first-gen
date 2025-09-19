@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 4rem;
+}
 
 /* Shared Content */
 body {
@@ -57,7 +60,7 @@ body {
     z-index: 22;
     position: fixed;
     width: 11.5vw;
-    height: 100vw;
+    height: 100vh;
     float: left;
     background-color: #6C757D;
     padding: 0 1rem;
@@ -95,6 +98,7 @@ body {
     position: relative;
     z-index: -1;
     overflow: auto;
+    margin-bottom: 4rem;
 }
 
 .sidenav {
@@ -116,6 +120,7 @@ body {
     margin: 0.5rem 0;
 }
 
+
 .localContent {
     /* Offset margin to account for sidenav */
     margin-left: 14vw;
@@ -129,7 +134,7 @@ body {
 }
 .localHeadBody {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .sectionHead {
