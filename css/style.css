@@ -179,6 +179,39 @@ body {
     text-align: center;
 }
 
+/* Settings for duo column display in primer 
+    Similar settings to triCol but leaving separate in case of eventual divergence
+*/
+
+.duoCol {
+    display: flex;
+}
+
+.duoCol > * {
+    flex-basis: 100%
+}
+
+.duoColBox {
+    font-size: 1rem;
+    margin: 2rem 8rem;
+}
+
+.duoColHead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+}
+
+.duoColTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.duoColText {
+    margin-bottom: 1rem;
+}
+
 /* Settings for three column display in character creation */
 .triCol {
     display: flex;
