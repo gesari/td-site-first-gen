@@ -101,6 +101,7 @@ body {
     margin-bottom: 4rem;
 }
 
+/* sidenav */
 .sidenav {
     width: 13vw;
     border-right: 0.2rem solid #6C757D;
@@ -110,17 +111,18 @@ body {
     overflow-wrap: normal;
     text-align: center;
     display: block;
+    overflow-y: auto;
 }
 
 .sidenavHead {
-    margin: 1rem 0;
+    margin: 1rem 0.5rem;
 }
 
 .sidenavLinks li {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
 }
 
-
+/* body content */
 .localContent {
     /* Offset margin to account for sidenav */
     margin-left: 14vw;
@@ -287,11 +289,4 @@ a:active {
 }
 
 
-/* Game */
-
-
-/* Primer */
-
-
-/* Setting */
 

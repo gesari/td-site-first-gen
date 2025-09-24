@@ -45,7 +45,428 @@
     <span class="topnavTitle">Thymoran Dreams Codex</span>
 </div>
 
-<body>
-    
+<!-- Flow: 
+    Architecture Catalog
+        Adaptation School Architectures
+            Animism Subschool | Confusion | Psionic Link | Call Spirit | Symbiotic Bond | Thoughtsteal | Thoughtblur | Communion | Invest Spirit (9)
+            Harmonics Subschool | Cure | Feign Death | Renew | Regenerate | Restore | Resurgence | Siphon | Group Cure | Harvest | Lifeburn | Vital Surge (12)
+            Occlusion Subschool | Ward | Fortify | Barrier | Stasis | Bonded Ward | Nullification Field | Phalanx (8)
+        Projection School Architectures
+            Conduction Subschool | Buoy | Expulsion | Jolt | Arc Wave | Flight | Flux Beam | Arc Vortex | Chain Reaction | Fluxion (10)
+            Enchantment Subschool | Enhance | Glyph | Accelerate | Construct | Disrupt | Invest | Torpor | Dispel | Arcanomaton | Imbue (11)
+            Perception Subschool | Blur | Illusory Guise | Sensory Deprivation | Spotlight | Stable Illusion | Subtle Illusion | Illusion Field | Stage Lighting (9)
+        Unification School Architectures 
+            Augury Subschool | Acumen | Astral Projection | Identify | Dreamshape | Foretelling | Seeing | Assisted Projection | Haunt | Oracle (10)
+            Translocation Subschool | Jaunt | Phase | Speed | Banish | Portal | Spatial Overlap | Warp | Azonian Entanglement | Sanctuary | Thread the Eye (11)
+            Transmutation Subschool | Alter | Meld | Phase Shift | Polymorph | Transmute | Disintegrate | Sculpt | Synthesis (9)
+-->
+
+<body class="localBody">
+    <!-- Table of Contents Area-->
+    <div class="sidenav">
+        <!-- Intradocument Directory -->
+         <h3 class="sidenavHead">Table of Contents</h3>
+         <!-- Links to topics within localContent -->
+         <ul class="sidenavLinks">
+            <li><a href="#spell_architecture_catalog">Spell Architecture Catalog</a></li>
+            <!-- Adaptation School -->
+            <li><a href="#adaptation_school">Adaptation School Architectures</a></li>
+            <!-- Animism Subschool -->
+            <li><a href="#animism_subschool">Animism Subschool</a></li>
+            <li><a href="#confusion">Confusion</a></li>
+            <li><a href="#psionic_link">Psionic Link</a></li>
+            <li><a href="#call_spirit">Call Spirit</a></li>
+            <li><a href="#symbiotic_bond">Symbiotic Bond</a></li>
+            <li><a href="#thoughtsteal">Thoughtsteal</a></li>
+            <li><a href="#thoughtblur">Thoughtblur</a></li>
+            <li><a href="#communion">Communion</a></li>
+            <li><a href="#invest_spirit">Invest Spirit</a></li>
+            <!-- Harmonics Subschool -->
+            <li><a href="#harmonics_subschool">Harmonics Subschool</a></li>
+            <li><a href="#cure">Cure</a></li>
+            <li><a href="#feign_death">Feign Death</a></li>
+            <li><a href="#renew">Renew</a></li>
+            <li><a href="#regenerate">Regenerate</a></li>
+            <li><a href="#restore">Restore</a></li>
+            <li><a href="#resurgence">Resurgence</a></li>
+            <li><a href="#siphon">Siphon</a></li>
+            <li><a href="#group_cure">Group Cure</a></li>
+            <li><a href="#harvest">Harvest</a></li>
+            <li><a href="#lifeburn">Lifeburn</a></li>
+            <li><a href="#vital_surge">Vital Surge</a></li>
+            <!-- Occlusion Subschool -->
+            <li><a href="#occlusion_subschool">Occlusion Subschool</a></li>
+            <li><a href="#ward">Ward</a></li>
+            <li><a href="#fortify">Fortify</a></li>
+            <li><a href="#barrier">Barrier</a></li>
+            <li><a href="#stasis">Stasis</a></li>
+            <li><a href="#bonded_ward">Bonded Ward</a></li>
+            <li><a href="#nullification_field">Nullification Field</a></li>
+            <li><a href="#phalanx">Phalanx</a></li>
+            <!-- Projection School -->
+            <li><a href="#projection_school">Projection School Architectures</a></li>
+            <!-- Conduction Subschool -->
+            <li><a href="#conduction_subschool">Conduction Subschool</a></li>
+            <li><a href="#buoy">Buoy</a></li>
+            <li><a href="#expulsion">Expulsion</a></li>
+            <li><a href="#jolt">Jolt</a></li>
+            <li><a href="#arc_wave">Arc Wave</a></li>
+            <li><a href="#flight">Flight</a></li>
+            <li><a href="#flux_beam">Flux Beam</a></li>
+            <li><a href="#arc_vortex">Arc Vortex</a></li>
+            <li><a href="#chain_reaction">Chain Reaction</a></li>
+            <li><a href="#fluxion">Fluxion</a></li>
+            <!-- Enchantment Subschool -->
+            <li><a href="#enchantment_subschool">Enchantment Subschool</a></li>
+            <li><a href="#enhance">Enhance</a></li>
+            <li><a href="#glyph">Glyph</a></li>
+            <li><a href="#accelerate">Accelerate</a></li>
+            <li><a href="#construct">Construct</a></li>
+            <li><a href="#disrupt">Disrupt</a></li>
+            <li><a href="#invest">Invest</a></li>
+            <li><a href="#torpor">Torpor</a></li>
+            <li><a href="#dispel">Dispel</a></li>
+            <li><a href="#arcanomaton">Arcanomaton</a></li>
+            <li><a href="#imbue">Imbue</a></li>
+            <!-- Perception Subschool -->
+            <li><a href="#perception_subschool">Perception Subschool</a></li>
+            <li><a href="#blur">Blur</a></li>
+            <li><a href="#illusory_guise">Illusory Guise</a></li>
+            <li><a href="#sensory_deprivation">Sensory Deprivation</a></li>
+            <li><a href="#spotlight">Spotlight</a></li>
+            <li><a href="#stable_illusion">Stable Illusion</a></li>
+            <li><a href="#subtle_illusion">Subtle Illusion</a></li>
+            <li><a href="#illusion_field">Illusion Field</a></li>
+            <li><a href="#stage_lighting">Stage Lighting</a></li>
+            <!-- Unification School -->
+            <li><a href="#unification_school">Unification School Architectures</a></li>
+            <!-- Augury Subschool -->
+            <li><a href="#augury_subschool">Augury Subschool</a></li>
+            <li><a href="#acumen">Acumen</a></li>
+            <li><a href="#astral_projection">Astral Projection</a></li>
+            <li><a href="#identify">Identify</a></li>
+            <li><a href="#dreamshape">Dreamshape</a></li>
+            <li><a href="#foretelling">Foretelling</a></li>
+            <li><a href="#seeing">Seeing</a></li>
+            <li><a href="#assisted_projection">Assisted Projection</a></li>
+            <li><a href="#haunt">Haunt</a></li>
+            <li><a href="#oracle">Oracle</a></li>            
+            <!-- Translocation Subschool -->
+            <li><a href="#translocation_subschool">Translocation Subschool</a></li>
+            <li><a href="#jaunt">Jaunt</a></li>
+            <li><a href="#phase">Phase</a></li>
+            <li><a href="#speed">Speed</a></li>
+            <li><a href="#banish">Banish</a></li>
+            <li><a href="#portal">Portal</a></li>
+            <li><a href="#spatial_overlap">Spatial Overlap</a></li>
+            <li><a href="#warp">Warp</a></li>
+            <li><a href="#azonian_entanglement">Azonian Entanglement</a></li>
+            <li><a href="#sanctuary">Sanctuary</a></li>
+            <li><a href="#thread_the_eye">Thread the Eye</a></li>
+            <!-- Transmutation Subschool -->
+            <li><a href="#transmutation_subschool">Transmutation Subschool</a></li>
+            <li><a href="#alter">Alter</a></li>
+            <li><a href="#meld">Meld</a></li>
+            <li><a href="#phase_shift">Phase Shift</a></li>
+            <li><a href="#polymorph">Polymorph</a></li>
+            <li><a href="#transmute">Transmute</a></li>
+            <li><a href="#disintegrate">Disintegrate</a></li>
+            <li><a href="#sculpt">Sculpt</a></li>
+            <li><a href="#synthesis">Synthesis</a></li>            
+         </ul>
+    </div>
+
+    <div class="localContent">
+        <h2 class="localHead" id="spell_architecture_catalog">Spell Architecture Catalog</h2>
+        <p class="localHeadBody">Beep borp boop bop.</p>
+        
+        <!-- Adaptation School -->
+        <h4 class="sectionHead" id="adaptation_school">Adaptation School Architectures</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Animism Subschool -->
+        <h4 class="sectionHead" id="animism_subschool">Animism Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="confusion">Confusion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="psionic_link">Psionic Link</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="call_spirit">Call Spirit</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="symbiotic_bond">Symbiotic Bond</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="thoughtsteal">Thoughtsteal</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="thoughtblur">Thoughtblur</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="communion">Communion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="invest_spirit">Invest Spirit</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Harmonics Subschool -->
+        <h4 class="sectionHead" id="harmonics_subschool">Harmonics Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="cure">Cure</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="feign_death">Feign Death</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="renew">Renew</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="regenerate">Regenerate</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="restore">Restore</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="resurgence">Resurgence</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="siphon">Siphon</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="group_cure">Group Cure</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="harvest">Harvest</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="lifeburn">Lifeburn</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="vital_surge">Vital Surge</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Occlusion Subschool -->
+        <h4 class="sectionHead" id="occlusion_subschool">Occlusion Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="ward">Ward</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="fortify">Fortify</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="barrier">Barrier</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="stasis">Stasis</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="bonded_ward">Bonded Ward</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="nullification_field">Nullification Field</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="phalanx">Phalanx</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Projection School -->
+        <h4 class="sectionHead" id="projection_school">Projection School Architectures</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Conduction Subschool -->
+        <h4 class="sectionHead" id="conduction_subschool">Conduction Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="buoy">Buoy</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="expulsion">Expulsion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="jolt">Jolt</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="arc_wave">Arc Wave</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="flight">Flight</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="flux_beam">Flux Beam</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="arc_vortex">Arc Vortex</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="chain_reaction">Chain Reaction</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="fluxion">Fluxion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Enchantment Subschool -->
+        <h4 class="sectionHead" id="enchantment_subschool">Enchantment Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="enhance">Enhance</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="glyph">Glyph</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="accelerate">Accelerate</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="construct">Construct</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="disrupt">Disrupt</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="invest">Invest</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="torpor">Torpor</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="dispel">Dispel</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="arcanomaton">Arcanomaton</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="imbue">Imbue</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Perception Subschool -->
+        <h4 class="sectionHead" id="perception_subschool">Perception Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="blur">Blur</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="illusory_guise">Illusory Guise</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="sensory_deprivation">Sensory Deprivation</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="spotlight">Spotlight</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="stable_illusion">Stable Illusion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="subtle_illusion">Subtle Illusion</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="illusion_field">Illusion Field</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="stage_lighting">Stage Lighting</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Unification School -->
+        <h4 class="sectionHead" id="unification_school">Unification School Architectures</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Augury Subschool -->
+        <h4 class="sectionHead" id="augury_subschool">Augury Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="acumen">Acumen</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="astral_projection">Astral Projection</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="identify">Identify</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="dreamshape">Dreamshape</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="foretelling">Foretelling</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="seeing">Seeing</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="assisted_projection">Assisted Projection</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="haunt">Haunt</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="oracle">Oracle</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Translocation Subschool -->
+        <h4 class="sectionHead" id="translocation_subschool">Translocation Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="jaunt">Jaunt</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="phase">Phase</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="speed">Speed</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="banish">Banish</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="portal">Portal</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="spatial_overlap">Spatial Overlap</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="warp">Warp</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="azonian_entanglement">Azonian Entanglement</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="sanctuary">Sanctuary</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="thread_the_eye">Thread the Eye</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <!-- Transmutation Subschool -->
+        <h4 class="sectionHead" id="transmutation_subschool">Transmutation Subschool</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="alter">Alter</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="meld">Meld</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="phase_shift">Phase Shift</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="polymorph">Polymorph</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="transmute">Transmute</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="disintegrate">Disintegrate</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="sculpt">Sculpt</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+        <h4 class="sectionHead" id="synthesis">Synthesis</h4>
+        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+    </div>    
 </body>
 </html>
