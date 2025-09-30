@@ -18,112 +18,161 @@
     Links will be ordered according to roadmap, with a blurb going over its content/intended use.
 -->
 
-<!-- TopNav Bar Elements -->
-<div class="topnav">
-    <!-- Dropdown Menu for Intrasection Navigation -->
-    <span class="topnavMenuButton" onclick="menuTransform(this)">
-        <!-- Bar 1-3 | Hamburger Menu button icons-->
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <!-- Dropdown Links | Display when Menu active -->
-        <ul class="topnavMenuContent">
-            <li><a href="character-generator.html">Character Generator</a></li>
-            <li><a href="degrees-of-success.html">Degrees of Success</a></li>
-            <li><a href="actions.html">Actions</a></li>
-            <li><a href="status-effects.html">Status Effects</a></li>
-            <li><a href="exploration.html">Exploration</a></li>
-            <li><a href="dreamers.html">Dreamers</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="style.html">Style</a></li>
-            <li><a href="attributes.html">Attributes</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="azaian-magic.html">Azaian Magic</a></li>
-            <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
-            <li><a href="specializations.html">Specializations</a></li>
-            <li><a href="companions.html">Companions</a></li>
-        </ul>
-    </span>
 
-    <!-- Links to Other Site Sections -->
-    <span class="topnavLinks">
-        <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
-    </span>
+<!--
+    Tracking Changes:
+        - Body element now wraps all html elements below. Body section localBody is now a div nested within the larger body.
+        - Removed margin-top for localBody as offset was no longer necessary with above changes
+        - Changed z-index on localBody to 0, set topnav z-index to 2 so that menu links would continue to show / function properly
+        - Floats and other erroneous settings in topnav CSS removed out and flexbox implemented on elements within (it's all properly aligned now!)
+        - Added additional div wrapper to body elements to build a grid between header / sidenav / main
+        - Added template areas to .grid class and localbody
+        - Added grid row templating to keep uniform height on page elements (topnav set to 3rem, body below set to 100vh - 3rem)
+        - Added inset to sidenav for proper sticky behavior
+        -> Should I remove the sidenav from localBody wrapper and have them all stay separate? (Probably, yes, but not sure how hard to implement)
+        - -> Commented out localBody and was able to implement with relative ease. Next step: determine if localContent should be displayed as a grid
 
-    <!-- Section Title -->
-    <span class="topnavTitle">Thymoran Dreams Codex</span>
-</div>
+-->
 
-<body class="localBody">
-    <!-- Table of Contents Area-->
-    <div class="sidenav">
-        <!-- Intradocument Directory -->
-         <h3 class="sidenavHead">Table of Contents</h3>
-         <!-- Links to topics within localContent -->
-         <ul class="sidenavLinks">
-            <li><a href="#character_generator">Character Generator</a></li>
-            <li><a href="#degrees_of_success">Degrees of Success</a></li>
-            <li><a href="#actions">Actions</a></li>
-            <li><a href="#status_effects">Status Effects</a></li>
-            <li><a href="#exploration">Exploration</a></li>
-            <li><a href="#dreamers">Dreamers</a></li>
-            <li><a href="#statistics">Statistics</a></li>
-            <li><a href="#style">Style</a></li>
-            <li><a href="#attributes">Attributes</a></li>
-            <li><a href="#items">Items</a></li>
-            <li><a href="#azaian_magic">Azaian Magic</a></li>
-            <li><a href="#spell_architecture_catalog">Spell Architecture Catalog</a></li>
-            <li><a href="#specializations">Specializations</a></li>
-            <li><a href="#companions">Companions</a></li>
-         </ul>
-    </div>
+<body>
+    <div class="grid">
+        <!-- TopNav Bar Elements -->
+        <!-- <div class="gridbox"> -->
+            <div class="topnav">
+                <!-- Dropdown Menu for Intrasection Navigation -->
+                <span class="topnavMenuButton" onclick="menuTransform(this)">
+                    <!-- Bar 1-3 | Hamburger Menu button icons-->
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <!-- Dropdown Links | Display when Menu active -->
+                    <ul class="topnavMenuContent">
+                        <li><a href="character-generator.html">Character Generator</a></li>
+                        <li><a href="degrees-of-success.html">Degrees of Success</a></li>
+                        <li><a href="actions.html">Actions</a></li>
+                        <li><a href="status-effects.html">Status Effects</a></li>
+                        <li><a href="exploration.html">Exploration</a></li>
+                        <li><a href="dreamers.html">Dreamers</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="style.html">Style</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="items.html">Items</a></li>
+                        <li><a href="azaian-magic.html">Azaian Magic</a></li>
+                        <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
+                        <li><a href="specializations.html">Specializations</a></li>
+                        <li><a href="companions.html">Companions</a></li>
+                    </ul>
+                </span>
 
-    <div class="localContent">
-        <!-- Page Content -->
-        <h2 class="localHead">Thymoran Dreams</h2>
-        <p class="localHeadBody">This is the landing page for the game system, which I have tentatively titled Thymoran Dreams. This section will contain the entire System Codex, as well as a proto-character generator.</p> 
+                <!-- Links to Other Site Sections -->
+                <span class="topnavLinks">
+                    <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                </span>
 
-        <h4 class="sectionHead" id="character_generator"><a href="character-generator.html">Character Generator</a></h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur laudantium perferendis aliquam quisquam accusamus, dolorem fuga consectetur ex modi non aliquid doloribus veritatis hic dolore sed numquam, voluptate nobis.</p>
+                <!-- Section Title -->
+                <span class="topnavTitle">Thymoran Dreams Codex</span>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="localBody"> -->
+            <!-- Table of Contents Area-->
+            <aside class="sidenav">
+                <!-- Intradocument Directory -->
+                <h3 class="sidenavHead">Table of Contents</h3>
+                <!-- Links to topics within localContent -->
+                <ul class="sidenavLinks">
+                    <li><a href="#character_generator">Character Generator</a></li>
+                    <li><a href="#degrees_of_success">Degrees of Success</a></li>
+                    <li><a href="#actions">Actions</a></li>
+                    <li><a href="#status_effects">Status Effects</a></li>
+                    <li><a href="#exploration">Exploration</a></li>
+                    <li><a href="#dreamers">Dreamers</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#style">Style</a></li>
+                    <li><a href="#attributes">Attributes</a></li>
+                    <li><a href="#items">Items</a></li>
+                    <li><a href="#azaian_magic">Azaian Magic</a></li>
+                    <li><a href="#spell_architecture_catalog">Spell Architecture Catalog</a></li>
+                    <li><a href="#specializations">Specializations</a></li>
+                    <li><a href="#companions">Companions</a></li>
+                </ul>
+            </aside>
 
-        <h4 class="sectionHead" id="degrees_of_success"><a href="degrees-of-success.html">Degrees of Success</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+            <div class="localContent">
+                <!-- Page Content -->
+                <h2 class="localHead">Thymoran Dreams</h2>
+                <p class="localHeadBody">This is the landing page for the game system, which I have tentatively titled Thymoran Dreams. This section will contain the entire System Codex, as well as a proto-character generator.</p>
 
-        <h4 class="sectionHead" id="actions"><a href="actions.html">Actions</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="character_generator"><a href="character-generator.html">Character Generator</a></h4>
+                    <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tenetur laudantium perferendis aliquam quisquam accusamus, dolorem fuga consectetur ex modi non aliquid doloribus veritatis hic dolore sed numquam, voluptate nobis.</p>
+                </div> 
 
-        <h4 class="sectionHead" id="status_effects"><a href="status-effects.html">Status Effects</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="degrees_of_success"><a href="degrees-of-success.html">Degrees of Success</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="exploration"><a href="exploration.html">Exploration</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="actions"><a href="actions.html">Actions</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="dreamers"><a href="dreamers.html">Dreamers</a></h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea voluptate, doloribus molestias sunt voluptatum alias iste fuga, ad exercitationem magni animi aspernatur accusamus corrupti? Error autem eum at voluptatem.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="status_effects"><a href="status-effects.html">Status Effects</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="statistics"><a href="statistics.html">Statistics</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="exploration"><a href="exploration.html">Exploration</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="style"><a href="style.html">Style</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="dreamers"><a href="dreamers.html">Dreamers</a></h4>
+                    <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea voluptate, doloribus molestias sunt voluptatum alias iste fuga, ad exercitationem magni animi aspernatur accusamus corrupti? Error autem eum at voluptatem.</p>
+                </div>
 
-        <h4 class="sectionHead" id="attributes"><a href="attributes.html">Attributes</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="statistics"><a href="statistics.html">Statistics</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="items"><a href="items.html">Items</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="style"><a href="style.html">Style</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="azaian_magic"><a href="azaian-magic.html">Azaian Magic</a></h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea voluptate, doloribus molestias sunt voluptatum alias iste fuga, ad exercitationem magni animi aspernatur accusamus corrupti? Error autem eum at voluptatem.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="attributes"><a href="attributes.html">Attributes</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="spell_architecture_catalog"><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="items"><a href="items.html">Items</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
 
-        <h4 class="sectionHead" id="specializations"><a href="specializations.html">Specializations</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="azaian_magic"><a href="azaian-magic.html">Azaian Magic</a></h4>
+                    <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea voluptate, doloribus molestias sunt voluptatum alias iste fuga, ad exercitationem magni animi aspernatur accusamus corrupti? Error autem eum at voluptatem.</p>
+                </div>
 
-        <h4 class="sectionHead" id="companions"><a href="companions.html">Companions</a></h4>
-        <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
-    </div>       
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="spell_architecture_catalog"><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
+
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="specializations"><a href="specializations.html">Specializations</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
+
+                <div class="gridbox">
+                    <h4 class="sectionHead" id="companions"><a href="companions.html">Companions</a></h4>
+                    <p class="sectionBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur fugiat assumenda, fugit consequatur, labore mollitia nemo sapiente veniam commodi aperiam nostrum sint animi dolorem ut natus similique, quisquam perspiciatis.</p>
+                </div>
+            </div> 
+        <!-- </div> -->
+    </div>      
 </body>
 </html>

@@ -2,9 +2,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
+    /* Offset to account for topnav */
     scroll-padding-top: 4rem;
 }
 
@@ -15,36 +17,62 @@ body {
     font-family: sans-serif;
 }
 
+/* Grid layout */
+.grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 3rem auto;
+    grid-template-areas: 
+        "tn tn tn tn tn tn tn"
+        "sn lc lc lc lc lc lc";
+}
+
+.gridbox {
+    display: grid;
+    backdrop-filter: blur(5px);
+    background-color: #6C757D;
+    margin: 0.7rem;
+
+    clip-path:
+        polygon(
+            /* top-left 1 */
+            0 1.3rem,
+            /* top-left 2 */
+            1.3rem 0,
+            /* top-right 1 */
+            calc(100% - 1.3rem) 0,
+            /* top-right 2 */
+            100% 1.3rem,
+            /* bot-right 1 */
+            100% calc(100% - 1.3rem),
+            /* bot-right 2 */
+            calc(100% - 1.3rem) 100%,
+            /* bot-left 1 */
+            1.3rem 100%,
+            /* bot-left 2 */
+            0 calc(100% - 1.3rem)
+        );
+}
+
 /* Topnav Settings */
 .topnav {
+    grid-area: tn;
     background-color: #6C757D;
-    position: fixed;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
-    width: 100%;
-    padding: 0 0.5rem;
-}
-
-.topnavTitle {
-    font-size: 2.0rem;
-    font-weight: bold;
-    float: right;
-    position: relative;
-    margin-right: 1.0rem;
-}
-
-.topnavLinks {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-    font-size: 1.5rem;
+    padding: 0 0.3rem;
+    z-index: 2;  
 }
 
 .topnavMenuButton {
-    float: left;
     cursor: pointer;
-    padding-right: 0.5rem;
+    margin-right: 1rem;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .bar1, .bar2, .bar3 {
@@ -57,11 +85,9 @@ body {
 
 .topnavMenuContent {
     display: none;
-    z-index: 22;
     position: fixed;
     width: 11.5vw;
     height: 100vh;
-    float: left;
     background-color: #6C757D;
     padding: 0 1rem;
     margin: 0;
@@ -71,6 +97,19 @@ body {
 
 .topnavMenuContent li {
     margin: 1rem 0;
+}
+
+.topnavLinks {   
+    font-size: 1.5rem;
+}
+
+.topnavTitle {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-right: 1.0rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
 }
 
 /* Rotate first bar */
@@ -86,32 +125,57 @@ body {
   transform: translate(0, -11px) rotate(-45deg);
 }
 
+/* Display menu */
 .change .topnavMenuContent {
     display: block;
 }
 
 
 /* Body Settings */
+
+/* localBody currently deprecated / will need to remove once finalizing new layout */
 .localBody{
-    /* Offset margin to account for topnav */
-    margin-top: 3rem;
-    position: relative;
-    z-index: -1;
+    grid-area: lb;
+    z-index: 0;
     overflow: auto;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
+    /* grid-row: 2/-1;
+    grid-column: 1/-1; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(7, 1fr); */
 }
 
 /* sidenav */
 .sidenav {
-    width: 13vw;
-    border-right: 0.2rem solid #6C757D;
-    position: fixed;
-    z-index: -1;
-    height: 100%;
+    grid-area: sn;
+    border: 0.1rem solid #6C757D;
+    position: sticky;
+    margin: 0 0.5rem 0;
+    inset: 3.25rem 0 0;
     overflow-wrap: normal;
     text-align: center;
-    display: block;
     overflow-y: auto;
+    background-color: #6C757D;
+
+    clip-path:
+        polygon(
+            /* top-left 1 */
+            0 1.3rem,
+            /* top-left 2 */
+            1.3rem 0,
+            /* top-right 1 */
+            calc(100% - 1.3rem) 0,
+            /* top-right 2 */
+            100% 1.3rem,
+            /* bot-right 1 */
+            100% calc(100% - 1.3rem),
+            /* bot-right 2 */
+            calc(100% - 1.3rem) 100%,
+            /* bot-left 1 */
+            1.3rem 100%,
+            /* bot-left 2 */
+            0 calc(100% - 1.3rem)
+        );
 }
 
 .sidenavHead {
@@ -124,10 +188,12 @@ body {
 
 /* body content */
 .localContent {
+    grid-area: lc;
+    overflow: auto;
     /* Offset margin to account for sidenav */
-    margin-left: 14vw;
-    width: 85vw;
-    display: block;
+    /* margin-left: 14vw; */
+    /* width: 85vw;
+    grid-column: 2 / -1; */
 }
 
 .localHead {
@@ -150,7 +216,7 @@ body {
 }
 
 .sectionBody {
-    margin: 0 2rem 1rem;
+    margin: 0 1.5rem 1.5rem;
 }
 
 .exampleTitle {
@@ -287,6 +353,3 @@ a:active {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 2rem 2rem;
 }
-
-
-
