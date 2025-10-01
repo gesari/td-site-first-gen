@@ -5,37 +5,17 @@
     box-sizing: border-box;
 }
 
-html {
-    /* Offset to account for topnav */
-    scroll-padding-top: 4rem;
-}
+:root {
+    /* Colors */
+    --thymora-jade: #B7E1CD;
+    --link-gold: #E1CDB7;
 
-/* Shared Content */
-body {
-    color: #b7e1cd;
-    background-color: black;
-    font-family: sans-serif;
-}
 
-/* Grid layout */
-.grid {
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 3rem auto;
-    grid-template-areas: 
-        "tn tn tn tn tn tn tn"
-        "sn lc lc lc lc lc lc";
-}
+    --primary-600: hsl(252, 9%, 22%);
+    --primary-500: hsl(259, 13%, 28%);
 
-.gridbox {
-    display: grid;
-    backdrop-filter: blur(5px);
-    background-color: #6C757D;
-    margin: 0.7rem;
 
-    clip-path:
-        polygon(
+    --corner-notch: polygon(
             /* top-left 1 */
             0 1.3rem,
             /* top-left 2 */
@@ -52,13 +32,53 @@ body {
             1.3rem 100%,
             /* bot-left 2 */
             0 calc(100% - 1.3rem)
-        );
+        )
+}
+
+html {
+    /* Offset to account for topnav */
+    scroll-padding-top: 4rem;
+}
+
+/* Shared Content */
+body {
+    color: var(--thymora-jade);
+    /* background-color: black; */
+    font-family: sans-serif;
+
+    background-attachment: fixed;
+    background-position-y: center;
+    background-image: 
+        /* filter to darken background */
+        linear-gradient(hsl(0 0 0 / 0.65)),
+        /* Actual background image */
+        url("/img/aurora-background2.jpg");
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 3rem auto;
+    grid-template-areas: 
+        "tn tn tn tn tn tn tn"
+        "sn lc lc lc lc lc rn";
+}
+
+.gridbox {
+    display: grid;
+    margin: 0.7rem;
+
+    background-color: hsl(from #6C757D h s l / 0.2);
+    backdrop-filter: blur(5px);
+
+    clip-path: var(--corner-notch);
 }
 
 /* Topnav Settings */
 .topnav {
     grid-area: tn;
-    background-color: #6C757D;
     position: sticky;
     display: flex;
     justify-content: space-between;
@@ -66,6 +86,9 @@ body {
     top: 0;
     padding: 0 0.3rem;
     z-index: 2;  
+
+    background-color: hsl(from #6C757D h s l / 0.2);
+    backdrop-filter: blur(15px);
 }
 
 .topnavMenuButton {
@@ -78,7 +101,7 @@ body {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #6C757D;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -86,13 +109,15 @@ body {
 .topnavMenuContent {
     display: none;
     position: fixed;
-    width: 11.5vw;
+    width: 14vw;
     height: 100vh;
-    background-color: #6C757D;
     padding: 0 1rem;
     margin: 0;
     left: 0;
     list-style-type: none;
+
+    background-color: hsl(from #6C757D h s l / 0.2);
+    backdrop-filter: blur(20px);
 }
 
 .topnavMenuContent li {
@@ -101,6 +126,7 @@ body {
 
 .topnavLinks {   
     font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
 .topnavTitle {
@@ -148,34 +174,18 @@ body {
 /* sidenav */
 .sidenav {
     grid-area: sn;
-    border: 0.1rem solid #6C757D;
     position: sticky;
     margin: 0 0.5rem 0;
     inset: 3.25rem 0 0;
     overflow-wrap: normal;
     text-align: center;
     overflow-y: auto;
-    background-color: #6C757D;
+    
+    
+    background-color: hsl(from #6C757D h s l / 0.2);
+    backdrop-filter: blur(5px);
 
-    clip-path:
-        polygon(
-            /* top-left 1 */
-            0 1.3rem,
-            /* top-left 2 */
-            1.3rem 0,
-            /* top-right 1 */
-            calc(100% - 1.3rem) 0,
-            /* top-right 2 */
-            100% 1.3rem,
-            /* bot-right 1 */
-            100% calc(100% - 1.3rem),
-            /* bot-right 2 */
-            calc(100% - 1.3rem) 100%,
-            /* bot-left 1 */
-            1.3rem 100%,
-            /* bot-left 2 */
-            0 calc(100% - 1.3rem)
-        );
+    clip-path: var(--corner-notch);
 }
 
 .sidenavHead {
@@ -183,6 +193,31 @@ body {
 }
 
 .sidenavLinks li {
+    margin: 0.5rem 0.5rem;
+}
+
+/* rightnav */
+.rightnav {
+    grid-area: rn;
+    position: sticky;
+    margin: 0 0.5rem 0;
+    inset: 3.25rem 0 0;
+    overflow-wrap: normal;
+    text-align: center;
+    overflow-y: auto;
+    
+    
+    background-color: hsl(from #6C757D h s l / 0.2);
+    backdrop-filter: blur(5px);
+
+    clip-path: var(--corner-notch);
+}
+
+.rightnavHead {
+    margin: 1rem 0.5rem;
+}
+
+.rightnavLinks li {
     margin: 0.5rem 0.5rem;
 }
 
