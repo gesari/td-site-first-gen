@@ -9,319 +9,350 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- TopNav Bar Elements -->
-<div class="topnav">
-    <!-- Dropdown Menu for Intrasection Navigation -->
-    <span class="topnavMenuButton" onclick="menuTransform(this)">
-        <!-- Bar 1-3 | Hamburger Menu button icons-->
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <!-- Dropdown Links | Display when Menu active -->
-        <ul class="topnavMenuContent">
-            <li><a href="Primer.html">Primer Base</a></li>
-            <li><a href="system-basics.html">System Basics</a></li>
-            <li><a href="entity-basics.html">Entity Basics</a></li>
-            <li><a href="key-points.html">Key Points</a></li>
-            <li><a href="fitting-in.html">Fitting In</a></li>
-        </ul>
-    </span>
 
-    <!-- Links to Other Site Sections -->
-    <span class="topnavLinks">
-        <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
-    </span>
+<body>
+    <div class="grid">
+        <!-- TopNav Bar Elements -->
+        <div class="topnav">
+            <!-- Links to Other Site Sections -->
+            <span class="topnavLinks">
+                <a href="/td-primer/gameland.html">Game</a> | <a href="../index.html">Home</a> | <a href="/td-setting/dreamland.html">Setting</a>
+            </span>
 
-    <!-- Section Title -->
-    <span class="topnavTitle">Character Creation</span>
-</div>
-
-<body class="localBody">
-    <!-- Table of Contents Area-->
-    <div class="sidenav">
-        <!-- Intradocument Directory -->
-         <h3 class="sidenavHead">Table of Contents</h3>
-         <!-- Links to topics within localContent -->
-         <ul class="sidenavLinks">
-            <li><a href="#system_basics">Myriad Paths</a></li>
-            <li><a href="#premise">Premise</a></li>
-            <li><a href="#preconceived_notions">Preconceived Notions</a></li>
-            <li><a href="#getting_started">Getting Started</a></li>
-            <li><a href="#attributes">Attributes</a></li>
-            <li><a href="#attunement">Attunement</a></li>
-            <li><a href="#touchstone">Touchstone</a></li>
-            <li><a href="#quirk">Quirk</a></li>
-            <li><a href="#traits">Traits</a></li>
-            <li><a href="#concrete_features">Concrete Features</a></li>
-            <li><a href="#specializations">Specializations</a></li>
-            <li><a href="#style">Style</a></li>
-            <li><a href="#stat_allocation">Stat Allocation</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-         </ul>
-    </div>
-
-    <div class="localContent">
-        <!-- Page Content -->
-        <h2 class="localHead">Character Creation</h2>
-        <p class="localHeadBody">This section is meant to show an example Session 0 for how I envision creating these things. All of the characters in here I made up on the spot as I wrote out the examples, just to sort of simulate how I imagined it going. I’m sure I missed some stuff, though, so let me know what I can do better explaining.</p> 
-
-        <!-- Myriad Paths-->
-        <h4 class="sectionHead" id="system_basics">Myriad Paths</h4>
-        <p class="sectionBody">There are plenty of methods for managing character selection, and what works best for one group will not necessarily be the best for another. The example scenario presented here shouldn’t be prescriptive; it’s just meant to show how all of these things can come together.</p>
-        
-        <p class="sectionBody">For the purposes of this example, we will assume the bulk of character creation is being done together during a Session 0 between four players: one GM and three PCs. The GM will have sent out a blurb for the premise of the game ahead of time, so it’s expected that PCs will show up having thought about the character they’d like to play in some capacity. They’ll start by pitching these ideas to the group before moving on to make their non-statistical determinations, and then choose our more concrete features once they have a good idea in mind.</p>
-
-        <!-- Premise -->
-        <h4 class="sectionHead" id="premise">Premise</a></h4>
-        <p class="sectionBody">When the group scheduled their Session 0, the GM told them to expect characters starting at level 1. The characters should be aged in their early 20s, as they would all be applying for apprenticeship at their Court's Censorate, the portion of their arcology's government that handles internal oversight. The Censorate has been very busy lately, fending off attempts at espionage and subversion. The Castrum Court of Katahven is a minor player on the realm of Luu'Selyn, but within your home lies something wholly unique on this world: the Thymoran Gate, which once granted passage to all the other known realms of the Dream. It has been dormant for almost three centuries now, during which time your home arcology of Katavhven has gone from the central Thymoran hub on the realm to a minor player within Luu’Selyn’s geopolitical sphere: your existence is remembered, but no part of your local area contains resources or areas of strategic value. Thus the Thymoran defectors of the Crusaders Court, along with their enemies, the realm’s native Selyn’ba, have been happy to observe you from afar like uninvolved parents leaving a child to their own devices.</p>
-
-        <p class="sectionBody">Within the last few years all that has changed. The once dormant Gate has begun emitting signals at random intervals; this observable phenomenon, coupled with rumors that the Gate may have activated and established connection with other Thymorans on distant realms, has drawn the attention of outsiders to your home. As members of the Censorate, you would be uniquely positioned to protect your home while stewarding its growth...if you can qualify for entry.</p>
-
-        <!-- Preconceived Notions -->
-        <h4 class="sectionHead" id="preconceived_notions">Preconceived Notions</h4>
-        <p class="sectionBody">These are the things each Player has considered prior to showing up to build their characters. This example will assume that all three Players have arrived at Session 0 with their character's name(s), pronouns/gender, and Attunement/physicality decided for general ease of flow.</p>
-
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Player 1</p>
-                <p class="triColTitle">Taken Name</p>
-                <p class="triColText">Suul</p>
-                <p class="triColTitle">Given Name</p>
-                <p class="triColText">Twilighthaze</p>
-                <p class="triColTitle">Pronouns</p>
-                <p class="triColText">they/them</p>
-                <p class="triColTitle">Attunement</p>
-                <p class="triColText">Dreamheart</p>
-                <p class="triColTitle">Appearance</p>
-                <p class="triColText">Suul has a medium build, just shy of 6ft tall. They change their form often, but default to a lithe masculine physique with long wavy hair, swept to one side to expose an undercut.</p>
-                <p class="triColTitle">About</p>
-                <p class="triColText">Suul is exuberant and loves interacting with people. They use the powers of their Dreamheart attunement to alter their form as a means of communicating with others, changing themselves to be what is most helpful in the moment. As such, they have had trouble distinguishing their own wants and needs with those they adopt from others, but they have a strong sense of justice, and wish to lean into that by joining the Censorate.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Player 2</p>
-                <p class="triColTitle">Taken Name</p>
-                <p class="triColText">Dalyny</p>
-                <p class="triColTitle">Given Name</p>
-                <p class="triColText">Steadybreeze</p>
-                <p class="triColTitle">Pronouns</p>
-                <p class="triColText">she/hers</p>
-                <p class="triColTitle">Attunement</p>
-                <p class="triColText">Lightheart</p>
-                <p class="triColTitle">Appearance</p>
-                <p class="triColText">Dalyny is a relatively diminutive woman who may be somewhat easily mistaken for a child. She has olive skin and straight black hair which extends half way down her back, but is often bound in a braid. She often wears flowing clothing cinched with cuffs.</p>
-                <p class="triColTitle">About</p>
-                <p class="triColText">Dalyny is used to being treated like a child and not taken seriously, but rather than fight against that, she wishes to use it to her advantage. She wishes to protect her home, but was concerned that work for the Ministry of War would take her too far from Katahven: her attachment is more to the people she loves than the place itself, so she wishes to stay close by for their sake.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Player 3</p>
-                <p class="triColTitle">Taken Name</p>
-                <p class="triColText">Kelorin</p>
-                <p class="triColTitle">Given Name</p>
-                <p class="triColText">Brightgem</p>
-                <p class="triColTitle">Pronouns</p>
-                <p class="triColText">he/his</p>
-                <p class="triColTitle">Attunement</p>
-                <p class="triColText">Airheart</p>
-                <p class="triColTitle">Appearance</p>
-                <p class="triColText">Kelorin is a large man, both in stature and brawn. His head is shaven bald: a stark contrast with his bushy blonde beard, which, even braided, reaches down to the base of his sternum. He wears sleeveless shirts and flowing pants cuffed at the bottom, covered in a hooded robe.</p>
-                <p class="triColTitle">About</p>
-                <p class="triColText">People have always reacted very strongly to Kelorin's size, taking his dry sarcasm as threatening rather than good-natured, as he intends. It's led to a lot of attention he was uncomfortable with, leading him to seek solitude in the natural world. Over the past few years, he's become closely bonded to a raven from Katahven's aery, and the two have taken to watching the arcology's inhabitants together from afar. Most recently, it led to them witnessing a clandestine meeting; when Kelorin reported it to a Censor, they suggested he seek an apprenticeship with their ministry.</p>
-            </div>
-         </div>
-
-        <!-- Getting Started -->
-        <h4 class="sectionHead" id="getting_started">Getting Started</a></h4>
-        <p class="sectionBody">There's a lot to work with even from what the players have already come up with. Before going onwards with anything else, the GM suggests the players share a bit of information about their characters and start to brainstorm ideas about how they'll all fit together as a group. The GM explains that the current scenario they'll be playing will introduce the PCs to each other relatively quickly, as their test for admission to the Censorate Academy is a group assessment. What relationship they would have had prior to this, however, is entirely up to the players.</p>
-
-        <!-- Attributes -->
-        <h4 class="sectionHead" id="attributes">Attributes</h4>
-        <p class="sectionBody">The next step of character creation will involve the PC's attributes, intending to build them out in a way that will allow Players to use their Lucidity Tokens to confirm these beliefs.</p>
-
-        <!-- Attunement -->
-        <h4 class="sectionHead" id="attunement">Attunement</h4>
-        <p class="sectionBody">In this exercise, the Players arrived with their Attunements already selected, so they'll skip over this consideration here. However, that may not be the case in all situations, and in others a Player may get together with their group for a Session 0 to begin discussing their party only to find that the preconceived notions about their character need to be amended.
-</p>
-
-        <!-- Touchstone -->
-        <h4 class="sectionHead" id="touchstone">Touchstone</a></h4>
-        <p class="sectionBody">Based on what they've already come up with for their characters and their discussions with their fellow Players after sharing their preconceived notions with each other, each PC will come up with a Touchstone for their character. This can be anything the PC feels is applicable, and is meant to provide a ready prompt for how a character might engage with the game space.</p>
-
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                After some consideration, Player 1 chooses Impostor for Suul's Touchstone. As a shapeshifter, they often find themselves taking on different appearances in order to masquerade as someone else entirely, and they've found the most success at doing so when they fully embody a new persona: there's no need to worry about a convincing performance if you're not really performing. They have seven (their favorite number) alias forms they refer to consistently, along with an entirely crafted identity for each, allowing them to assume any of these identities without issue. Such practice has helped hone their improvisational skills for trying on and assuming new identities with different appearances.
-            </div>
-            <div class="triColBox">
-                Player 2 feels like Dalyny is a very physically active individual and that she would have been self-aware enough to know that, due to her size, she would never be able to be the strongest or fastest of her peers. Instead, she sought to become the most capable, and has spent years training as a performing artist with members of her community. Player 2 chooses Acrobat as Dalyny's Touchstone. Her dynamic training has accounted for strength and excessive flexibility. Dalyny is capable of feats many others lack the core strength, coordination, or are simply too big to accomplish and, when accounting for her stature, is especially versed in being vaulted into the air by a strong partner. While it was not intended at the outset, this could still prove advantageous for the party if Kelorin is amenable to trying his hand at acrobatics.
-
-            </div>
-            <div class="triColBox">
-                Player 3 views Kelorin as a bit of a loner, but not the type to brood: from a young age he taught himself to use his telepathy to speak to the other creatures around the arcology, and he has simply grown to prefer their company. As such, Player 3 chooses I Get Along Better With Animals Than People for Kelorin's Touchstone. The Player decides that Kelorin probably doesn't have any issues with people in general, but that his relatively straightforward communication style and dry wit, which works so well when communicating with the ravens (his favorite), has a tendency to come off as rude at best or, due to his size, threatening at worst. His interactions with the ravens and other creatures of the arcology and its environs are usually just easier, that's all.
-            </div>
-         </div>
-
-        <!-- Quirk -->
-        <h4 class="sectionHead" id="quirk">Quirk</h4>
-        <p class="sectionBody">Now that they've come up with a Touchstone for each of their characters, the Players will have the opportunity to develop that idea further. Their Quirk should serve to accentuate their chosen Touchstone to create something unique and exciting for the Player. To reference Player 1's Touchstone for Suul above: there are a lot of method actors, so what is it about Suul that sets them apart from others? Quirks can sometimes prove problematic for the PC, depending on their choice, but it's not something that should happen often and it is not meant to be debilitating (unless the Player explicitly chooses to make it so). We're just trying to get a grasp on the character prior to play.</p>
-
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                Player 1 decides that Suul has a problem breaking character or stopping a performance, even when they know they should. They choose Committed To The Bit as their Quirk. It makes their performances very passionate and authentic to everyone...except those who see through it and really wish Suul would stop.
-            </div>
-            <div class="triColBox">
-                Because much of Dalyny's training involved coordinated, choreographed performances with a team, most of her goals for training have been derived from the needs of a group: if a performance involved fitting into smaller spaces, she might train contortion; if it involved being vaulted through the air, she might practice landing smoothly from a fall. Even though she would pursue her goals with a single-minded determination once she had one, she always had trouble picking a direction of her own. Player 2 chooses Team Reliant as Dalyny's Quirk to represent her strong preference for interdependence within a group to individual self sufficiency.
-            </div>
-            <div class="triColBox">
-                Having spent so much time with the ravens who nest about Katahven's heights from the time he was a young boy, many of Kelorin's mannerisms have been influenced by his bond with them. These effects were accelerated in the past decade since he became bonded to one of the ravens, Alfred. The pair are remarkably discerning when hyperfixated on something, but also very excitable. To demonstrate this, Player 3 chose Bird Brained as Kelorin's Quirk.
-            </div>
-         </div>
-
-        <!-- Traits -->
-        <h4 class="sectionHead" id="traits">Traits</a></h4>
-        <p class="sectionBody">There are plenty of ways to go about generating Traits, depending on what works best for each group. For the purposes of this example, the GM will have brought a few extra sheets of paper to their Session 0. They hand each Player a piece of paper, and ask them to write down their first Trait on it while explaining the rest of the process. After they've done that, each Player will pass their paper to the Player to their right. Players will review the new sheet of paper and write down a second trait for their own character, but in relation to the trait already written on the page before them. This will continue until every player has written at least three Traits out, though more could be done to give Players options to choose from. Ultimately, though, characters will only have three active Traits at a time.</p>
-        <p class="sectionBody">Unlike the more personal choices made for their Touchstone and Quirk, a character's Traits should uncover ways in which the characters relate to specific parts of the game space in order to create a sense of interconnectedness between the characters and the game space itself. They are the ways in which a character's Touchstone and Quirk manifest through their actions.</p>
-
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Paper 1 - Starting with Suul</p>
-                <p class="triColText">A good outfit can be more effective at altering one's identity than changing one's outward appearance in the right circumstances, and Suul has spent no small amount of time experimenting with a combination of both forms of disguise. While there are many types of clothing fashioned specifically for Dreamhearts, many of them are not "authentic" enough for Suul's tastes. As such, they've spent a good amount of time teaching themselves to design and tailor costumes for their many pursuits. They choose Seamsmith as their first Trait.</p>
-                <p class="triColText">Player 3 gets Suul's paper and immediately feels like there's a connection between Suul and Kelorin: their costumes could come in very handy for pranks. After some discussion, the two Players decide their characters would have both been relative loners who bonded and became best friends one day, when Kelorin and Alfred decided it would be funny to trip someone chasing after Suul just because the opportunity presented itself. After escaping, Suul later visited Kelorin, asking why he had helped them; the resultant conversation taught both of them they'd be better off pulling their pranks together, with Suul acting as the face of their group, while Kelorin and Alfred kept a look out and created diversions. Player 3 writes in Kelorin's second Trait as "Suul's Backup".</p>
-                <p class="triColText">Player 2 reads over Suul's paper and is struck by the bond of friendship established between them and Kelorin. Player 2 decides to build off this for Dalyny, but instead of applying it to a specific friendship, decides to go for something a little more general. When it comes to a physically demanding practice, nutrition is incredibly important. Since it's already established that Dalyny is drawn to caring for people via her Combat Medic Trait, Player 2 decides another way this would manifest is with food provided to those she loves. Bread and pastries seem especially apropos for whatever reason, so Player 2 chooses Baker as Dalyny's third Trait.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Paper 2 - Starting with Dalyny</p>
-                <p class="triColText">Having spent so much time training, Dalyny is no stranger to physical injuries. Dreamers naturally regenerate rather quickly: this is often thought of as a boon, but it can prove problematic if, for instance, a broken bone heals before it can be properly set. To prevent any potential disfiguration, many members of her team have learned first aid to help each other and themselves; her Player writes Combat Medic down for her first Trait.</p>
-                <p class="triColText">Player 1 gets Dalyny's paper after the first swap, and decides that one of Suul's identities is a member of the same community which puts on the performances in which Dalyny stars. Suul is by no means a staple in the group, and they usually do not join in the public performances, but they do find it incredibly helpful to have a place to hone their skills to better embody the characters they create. They don't ever seek out the spotlight in their performances, however, and instead focus on becoming a moving set piece. Player 1 chooses Stage Extra for Suul's second Trait to emphasize their practice at blending into crowds.</p>
-                <p class="triColText">Player 3 receives Dalyny's paper and decides that, even though Kelorin is not drawn to such athletic performances as Dalyny and Suul, he would likely have followed Suul's lead and started practicing some type of performance art. Player 3 figures Kelorin (and Alfred!) would probably go all-in on being tricksters, and would most likely be drawn to performing acts of improvisational comedy both for making people laugh, and the ability to create distractions on the spot. They choose Comedian for Kelorin's third Trait.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Paper 3 - Starting with Kelorin</p>
-                <p class="triColText">Kelorin and Alfred love engaging in trickery, especially in regards to members of the court who meander through the gardens, or anywhere that Alfred can fly and spy upon people in an inconspicuous manner. Depending on the target, one of the pair will cause a distraction or keep a look out while the other does the deed. They've come up with a series of different maneuvers they will employ to collect trinkets from unsuspecting passersby. Thus, they choose Petty Thieves for their first Trait.</p>
-                 <p class="triColText">Player 2 is handed Kelorin's paper after they swap, and immediately decides that the two would be familiar: not because they have a relationship, but simply because they would have seen each other around the raven's aery. Dalyny loves animals, Player 2 decides, but especially birds because of how graceful they look when they fly; it's one of the reasons she loves her acrobatic practices. As a way to get some of the ravens to trust her, Dalyny would come to practice by herself near some of the feeding areas for the birds. They seemed skittish when she would move too quickly, though, so she spent most of her time trying to achieve static holds in certain poses. If she stood still long enough, Dalyny discovered some of the birds would come perch on her limbs...and so she immediately began training to balance on a single hand or foot to provide as many perches as possible for her feathered friends. Player 2 writes Statuesque for Dalyny's second Trait to signify her ability to stand still long enough as to appear solid.</p>
-                <p class="triColText">Player 1 reviews Kelorin's paper and decides that, unlike Kelorin or Dalyny, Suul might seek out crowded spaces for relaxation. The ability to form connections via simple social rituals are comforting to Suul, especially when it comes to smoking: the tendency for people to congregate and discuss things while smoking is an activity Suul enjoys and finds it easy to learn interesting things about people while doing it. Player 3 chooses Social Smoker for Suul's third Trait.</p>
-            </div>
+            <!-- Section Title -->
+            <span class="topnavTitle">Character Creation</span>
         </div>
 
-         <p class="exampleTitleCenter">Finalized Traits</p>
 
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Suul</p>
-                <p class="triColText">Seamsmith</p>
-                <p class="triColText">Stage Extra</p>
-                <p class="triColText">Social Smoker</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Dalyny</p>
-                <p class="triColText">Combat Medic</p>
-                <p class="triColText">Statuesque</p>
-                <p class="triColText">Baker</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Kelorin</p>
-                <p class="triColText">Petty Thieves</p>
-                <p class="triColText">Suul's Backup</p>
-                <p class="triColText">Comedian</p>
-            </div>
-         </div>
+        <!-- Table of Contents Area-->
+        <div class="sidenav">
+            <!-- Intradocument Directory -->
+            <h3 class="sidenavHead">Table of Contents</h3>
+            <!-- Links to topics within localContent -->
+            <ul class="sidenavLinks">
+                <li><a href="#system_basics">Myriad Paths</a></li>
+                <li><a href="#premise">Premise</a></li>
+                <li><a href="#preconceived_notions">Preconceived Notions</a></li>
+                <li><a href="#getting_started">Getting Started</a></li>
+                <li><a href="#attributes">Attributes</a></li>
+                <li><a href="#attunement">Attunement</a></li>
+                <li><a href="#touchstone">Touchstone</a></li>
+                <li><a href="#quirk">Quirk</a></li>
+                <li><a href="#traits">Traits</a></li>
+                <li><a href="#concrete_features">Concrete Features</a></li>
+                <li><a href="#specializations">Specializations</a></li>
+                <li><a href="#style">Style</a></li>
+                <li><a href="#stat_allocation">Stat Allocation</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
 
-        <!-- Concrete Features -->
-        <h4 class="sectionHead" id="concrete_features">Concrete Features</h4>
-        <p class="sectionBody">At this point, the party is beginning to come together nicely. The PCs have bonds formed between each of their characters, which should make early roleplay easier, and give the players things to build off of as they go throughout the game space. Even though Dalyny is not directly involved with either Kelorin or Suul, they've discovered enough overlap through their Trait selection process that they'll have a basis from which to begin their interaction regardless of what situation they find themselves in when they meet for the first time in game. Plus, they’ve already set up an amusing reveal for the first time Dalyny realizes that they recognize one of Suul’s usual personas.</p>
-        <p class="sectionBody">From here on out, the choices made by the PCs will be informed by the people they now know their characters to be. They will be able to choose the Specialization, Style, and Stat allocation they feel will best achieve that.</p>
+        <!-- Rightnav Intrasection Navigation -->
+        <div class="rightnav">
+            <h3 class="rightnavHead"><a href="Primer.html">Primer Base</a></h3>
+            <h3 class="rightnavHead">Game Primers</h3>
+                <ul class="rightnavLinks">
+                    <li><a href="system-basics.html">System Basics</a></li>
+                    <li><a href="entity-basics.html">Entity Basics</a></li>
+                </ul>
+            <h3 class="rightnavHead">Setting Primers</h3>
+                <ul class="rightnavLinks">
+                    <li><a href="key-points.html">Key Points</a></li>
+                    <li><a href="fitting-in.html">Fitting In</a></li>
+                </ul>
+        </div>
 
-        <!-- Specializations -->
-        <h4 class="sectionHead" id="specializations">Specializations</h4>
-        <p class="sectionBody">Based on the way things are set up with Suul's ability to change form on the fly, Dalyny's physical prowess, and Kelorin's penchant for mischief with Alfred, the Players feel like their group would be especially good at things like infiltration and covert operations. They decide to tailor their choices going forward to that end.</p>
+        <div class="localContent">
+            <!-- Page Content -->
+            <h2 class="localHead">Character Creation</h2>
+            <p class="localHeadBody">This section is meant to show an example Session 0 for how I envision creating these things. All of the characters in here I made up on the spot as I wrote out the examples, just to sort of simulate how I imagined it going. I’m sure I missed some stuff, though, so let me know what I can do better explaining.</p> 
 
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Suul - Luminary</p>
-                <p class="triColText">As someone who already deals a lot with misdirection and blending into crowds, Suul's training as a Luminary seems pretty obvious to Player 1. Its mastery of illusion magic should really enhance the character portrait they've already developed, accentuating Suul's personality and empowering them to go wherever they please.</p>
+            <!-- Myriad Paths-->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="system_basics">Myriad Paths</h4>
+                <p class="sectionBody">There are plenty of methods for managing character selection, and what works best for one group will not necessarily be the best for another. The example scenario presented here shouldn’t be prescriptive; it’s just meant to show how all of these things can come together.</p>
+                
+                <p class="sectionBody">For the purposes of this example, we will assume the bulk of character creation is being done together during a Session 0 between four players: one GM and three PCs. The GM will have sent out a blurb for the premise of the game ahead of time, so it’s expected that PCs will show up having thought about the character they’d like to play in some capacity. They’ll start by pitching these ideas to the group before moving on to make their non-statistical determinations, and then choose our more concrete features once they have a good idea in mind.</p>
             </div>
-            <div class="triColBox">
-                <p class="triColTitle">Dalyny - Phantom</p>
-                <p class="triColText">Dalyny's acrobatic training, coupled with her small size, has made her incredibly fast. But she's also at a severe disadvantage simply due to the length of her limbs when it comes to distances, so training in teleportation magics as a Phantom seems like a perfect fit for Player 2. They did consider Conduit briefly, as that specialization’s support elements fit really well with Dalyny's Touchstone and first Trait, but Player 2 decided that her desire to protect people would have taken on a more active, physical form.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Kelorin - Spiritist</p>
-                <p class="triColText">Player 3 discovered via the course of character creation that Kelorin was perhaps not so isolated as they had previously envisioned, but they still want to continue to highlight the bond that Kelorin has with Alfred as each other's primary companion. Spiritist easily facilitates this by choosing Alfred as his Avatar.</p>
-            </div>
-         </div>
 
-        <!-- Style -->
-        <h4 class="sectionHead" id="style">Style</a></h4>
-        <p class="sectionBody">There is always variance between two practitioners of the same art form, much in the same way that two players of the same sport can have very different experiences based on the position they play.</p>
+            <!-- Premise -->
+            <div class="gridbox">
+            <h4 class="sectionHead" id="premise">Premise</a></h4>
+            <p class="sectionBody">When the group scheduled their Session 0, the GM told them to expect characters starting at level 1. The characters should be aged in their early 20s, as they would all be applying for apprenticeship at their Court's Censorate, the portion of their arcology's government that handles internal oversight. The Censorate has been very busy lately, fending off attempts at espionage and subversion. The Castrum Court of Katahven is a minor player on the realm of Luu'Selyn, but within your home lies something wholly unique on this world: the Thymoran Gate, which once granted passage to all the other known realms of the Dream. It has been dormant for almost three centuries now, during which time your home arcology of Katavhven has gone from the central Thymoran hub on the realm to a minor player within Luu’Selyn’s geopolitical sphere: your existence is remembered, but no part of your local area contains resources or areas of strategic value. Thus the Thymoran defectors of the Crusaders Court, along with their enemies, the realm’s native Selyn’ba, have been happy to observe you from afar like uninvolved parents leaving a child to their own devices.</p>
 
-        <!-- Example Text -->
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Suul - Astral Style</p>
-                <p class="triColText">The Projected Focus passive from Astral Style fits Player 1's idea of Suul's penchant for misdirection, and harmonizes nicely with the idea of why Suul may have been drawn to the use of a Luminary's Projectors.</p>
+            <p class="sectionBody">Within the last few years all that has changed. The once dormant Gate has begun emitting signals at random intervals; this observable phenomenon, coupled with rumors that the Gate may have activated and established connection with other Thymorans on distant realms, has drawn the attention of outsiders to your home. As members of the Censorate, you would be uniquely positioned to protect your home while stewarding its growth...if you can qualify for entry.</p>
             </div>
-            <div class="triColBox">
-                <p class="triColTitle">Dalyny - Lightning Style</p>
-                <p class="triColText">With all her focus on speed and agility, Lightning Style fits perfect for Dalyny. The additional range on her spells helps when she's often moving through the air at high velocities, and the Dual Strikes passive fits in perfect with Player 2's conceptual understanding of her athleticism.</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Kelorin - Assertive Style</p>
-                <p class="triColText">As a big guy who likes to facilitate pranks, Player 3 figures Kelorin would have learned how to wield his size to draw attention to him, or at least divert attention from his more inconspicuous comrades. Player 3 chooses Assertive Style to supplement this.</p>
-            </div>
-         </div>
 
-        <!-- Stat Allocation -->
-        <h4 class="sectionHead" id="stat_allocation">Stat Allocation</h4>
-        <p class="sectionBody">Players are given 5 skill points to invest as they see fit at level 1. Since all three Players will eventually want to train in Magical Adept to enhance their Free-Casting abilities, they decide to each invest at least 1 point into Substat training to begin to cover one of the two Schools of magic not covered by their Specialization. Suul’s PC opts to invest two points in substat training now, and put one point in each of their three statistics, but Dalyny and Kelorin’s PC choose instead to secure a +2 boost in a stat of their choice instead.</p>
+            <!-- Preconceived Notions -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="preconceived_notions">Preconceived Notions</h4>
+                <p class="sectionBody">These are the things each Player has considered prior to showing up to build their characters. This example will assume that all three Players have arrived at Session 0 with their character's name(s), pronouns/gender, and Attunement/physicality decided for general ease of flow.</p>
 
-        <!-- Example Text -->
-         <p class="exampleText">Magical Adept is an ability which requires training in all three schools of azaian magic to unlock, but which grants a character the ability to avoid almost all the potential negative consequences of Free-Casting for all of their spells.</p>
-         <div class="triCol">
-            <div class="triColBox">
-                <p class="triColTitle">Suul</p>
-                <p class="triColText">Since Luminaries specialize in the Perception Subschool, Suul has the Projection School covered. They choose to invest a point into Occlusion magic for the Adaptation School, and Transmutation magic for the Unification school. Occlusion magics are not as helpful to Suul now, as they're not planning on a very tanky build, but they are still looking forward to higher tier spells such as Barrier and Nullification Field, which could be incredibly useful for infiltration/exfiltration depending on the situation. As for the Transfiguration Subschool, Suul is fascinated by the capacity for things to seemingly become something else entirely, much like themself. For their Primary stats, they choose to go for balance, to give them a solid foundation to build from.</p>
-                <p class="triColText2">1 Cognition</p>
-                <p class="triColText2">1 Force</p>
-                <p class="triColText">1 Insight</p>
-                <p class="triColText2">1 Occlusion</p>
-                <p class="triColText2">Ward</p>
-                <p class="triColText">Fortify</p>
-                <p class="triColText2">1 Transmutation</p>
-                <p class="triColText2">Alter</p>
-                <p class="triColText">Meld</p>
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Player 1</p>
+                            <p class="triColTitle">Taken Name</p>
+                            <p class="triColText">Suul</p>
+                            <p class="triColTitle">Given Name</p>
+                            <p class="triColText">Twilighthaze</p>
+                            <p class="triColTitle">Pronouns</p>
+                            <p class="triColText">they/them</p>
+                            <p class="triColTitle">Attunement</p>
+                            <p class="triColText">Dreamheart</p>
+                            <p class="triColTitle">Appearance</p>
+                            <p class="triColText">Suul has a medium build, just shy of 6ft tall. They change their form often, but default to a lithe masculine physique with long wavy hair, swept to one side to expose an undercut.</p>
+                            <p class="triColTitle">About</p>
+                            <p class="triColText">Suul is exuberant and loves interacting with people. They use the powers of their Dreamheart attunement to alter their form as a means of communicating with others, changing themselves to be what is most helpful in the moment. As such, they have had trouble distinguishing their own wants and needs with those they adopt from others, but they have a strong sense of justice, and wish to lean into that by joining the Censorate.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Player 2</p>
+                            <p class="triColTitle">Taken Name</p>
+                            <p class="triColText">Dalyny</p>
+                            <p class="triColTitle">Given Name</p>
+                            <p class="triColText">Steadybreeze</p>
+                            <p class="triColTitle">Pronouns</p>
+                            <p class="triColText">she/hers</p>
+                            <p class="triColTitle">Attunement</p>
+                            <p class="triColText">Lightheart</p>
+                            <p class="triColTitle">Appearance</p>
+                            <p class="triColText">Dalyny is a relatively diminutive woman who may be somewhat easily mistaken for a child. She has olive skin and straight black hair which extends half way down her back, but is often bound in a braid. She often wears flowing clothing cinched with cuffs.</p>
+                            <p class="triColTitle">About</p>
+                            <p class="triColText">Dalyny is used to being treated like a child and not taken seriously, but rather than fight against that, she wishes to use it to her advantage. She wishes to protect her home, but was concerned that work for the Ministry of War would take her too far from Katahven: her attachment is more to the people she loves than the place itself, so she wishes to stay close by for their sake.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Player 3</p>
+                            <p class="triColTitle">Taken Name</p>
+                            <p class="triColText">Kelorin</p>
+                            <p class="triColTitle">Given Name</p>
+                            <p class="triColText">Brightgem</p>
+                            <p class="triColTitle">Pronouns</p>
+                            <p class="triColText">he/his</p>
+                            <p class="triColTitle">Attunement</p>
+                            <p class="triColText">Airheart</p>
+                            <p class="triColTitle">Appearance</p>
+                            <p class="triColText">Kelorin is a large man, both in stature and brawn. His head is shaven bald: a stark contrast with his bushy blonde beard, which, even braided, reaches down to the base of his sternum. He wears sleeveless shirts and flowing pants cuffed at the bottom, covered in a hooded robe.</p>
+                            <p class="triColTitle">About</p>
+                            <p class="triColText">People have always reacted very strongly to Kelorin's size, taking his dry sarcasm as threatening rather than good-natured, as he intends. It's led to a lot of attention he was uncomfortable with, leading him to seek solitude in the natural world. Over the past few years, he's become closely bonded to a raven from Katahven's aery, and the two have taken to watching the arcology's inhabitants together from afar. Most recently, it led to them witnessing a clandestine meeting; when Kelorin reported it to a Censor, they suggested he seek an apprenticeship with their ministry.</p>
+                        </div>
+                </div>
             </div>
-            <div class="triColBox">
-                <p class="triColTitle">Dalyny</p>
-                <p class="triColText">Player 2 invests Force high on Dalyny's Primary stats to indicate her high level of physicality. Her choice of the Phantom Specialization will cover her Unification School requirement for Magical Adept, so she just has to focus on Adaptation and Projection. Because of her chosen trait of Combat Medic, she elects to first focus on the Adaptation subschool of Harmonics.</p>
-                <p class="triColText2">1 Cognition</p>
-                <p class="triColText2">2 Force</p>
-                <p class="triColText">1 Insight</p>
-                <p class="triColText2">1 Harmonics</p>
-                <p class="triColText2">Renew</p>
-                <p class="triColText">Cure</p>
-            </div>
-            <div class="triColBox">
-                <p class="triColTitle">Kelorin</p>
-                <p class="triColText">Player 3 invests Cognition high for Kelorin to both benefit his Animism spells gained as a Spiritist and bolster his Shield maximum, since Shield is more easily replenished than Vitality, and Augury magic is chosen from the Unification School primarily so Kelorin will have an easier time keeping an eye on Alfred when necessary.</p>
-                <p class="triColText2">2 Cognition</p>
-                <p class="triColText2">1 Force</p>
-                <p class="triColText">1 Insight</p>
-                <p class="triColText2">1 Augury</p>
-                <p class="triColText2">Identify</p>
-                <p class="triColText">Astral Projection</p>
-                <p class="triColText">Player 3 will also need to make stat determinations for Kelorin's Avatar, Alfred the Raven. Alfred has 3 stat points to invest, and, since Spiritist Avatars do not have access to substat training, Player 3 decides to supplement their sense of Kelorin's Avatar as an intelligent and observant companion.</p>
-                <p class="triColText2">2 Cognition</p>
-                <p class="triColText2">0 Force</p>
-                <p class="triColText">1 Insight</p>
-            </div>
-         </div>
 
-        <!-- Conclusion -->
-        <h4 class="sectionHead" id="conclusion">Conclusion</a></h4>
-        <p class="sectionBody">At this point, the Players have a fully-formed party, each with playable characters. The next step will be playing the actual game the GM has devised for them!</p>
+            <!-- Getting Started -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="getting_started">Getting Started</a></h4>
+                <p class="sectionBody">There's a lot to work with even from what the players have already come up with. Before going onwards with anything else, the GM suggests the players share a bit of information about their characters and start to brainstorm ideas about how they'll all fit together as a group. The GM explains that the current scenario they'll be playing will introduce the PCs to each other relatively quickly, as their test for admission to the Censorate Academy is a group assessment. What relationship they would have had prior to this, however, is entirely up to the players.</p>
+            </div>
+
+            <!-- Attributes -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="attributes">Attributes</h4>
+                <p class="sectionBody">The next step of character creation will involve the PC's attributes, intending to build them out in a way that will allow Players to use their Lucidity Tokens to confirm these beliefs.</p>
+            </div>
+
+            <!-- Attunement -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="attunement">Attunement</h4>
+                <p class="sectionBody">In this exercise, the Players arrived with their Attunements already selected, so they'll skip over this consideration here. However, that may not be the case in all situations, and in others a Player may get together with their group for a Session 0 to begin discussing their party only to find that the preconceived notions about their character need to be amended.</p>
+            </div>
+
+            <!-- Touchstone -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="touchstone">Touchstone</a></h4>
+                <p class="sectionBody">Based on what they've already come up with for their characters and their discussions with their fellow Players after sharing their preconceived notions with each other, each PC will come up with a Touchstone for their character. This can be anything the PC feels is applicable, and is meant to provide a ready prompt for how a character might engage with the game space.</p>
+
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            After some consideration, Player 1 chooses Impostor for Suul's Touchstone. As a shapeshifter, they often find themselves taking on different appearances in order to masquerade as someone else entirely, and they've found the most success at doing so when they fully embody a new persona: there's no need to worry about a convincing performance if you're not really performing. They have seven (their favorite number) alias forms they refer to consistently, along with an entirely crafted identity for each, allowing them to assume any of these identities without issue. Such practice has helped hone their improvisational skills for trying on and assuming new identities with different appearances.
+                        </div>
+                        <div class="triColBox">
+                            Player 2 feels like Dalyny is a very physically active individual and that she would have been self-aware enough to know that, due to her size, she would never be able to be the strongest or fastest of her peers. Instead, she sought to become the most capable, and has spent years training as a performing artist with members of her community. Player 2 chooses Acrobat as Dalyny's Touchstone. Her dynamic training has accounted for strength and excessive flexibility. Dalyny is capable of feats many others lack the core strength, coordination, or are simply too big to accomplish and, when accounting for her stature, is especially versed in being vaulted into the air by a strong partner. While it was not intended at the outset, this could still prove advantageous for the party if Kelorin is amenable to trying his hand at acrobatics.
+
+                        </div>
+                        <div class="triColBox">
+                            Player 3 views Kelorin as a bit of a loner, but not the type to brood: from a young age he taught himself to use his telepathy to speak to the other creatures around the arcology, and he has simply grown to prefer their company. As such, Player 3 chooses I Get Along Better With Animals Than People for Kelorin's Touchstone. The Player decides that Kelorin probably doesn't have any issues with people in general, but that his relatively straightforward communication style and dry wit, which works so well when communicating with the ravens (his favorite), has a tendency to come off as rude at best or, due to his size, threatening at worst. His interactions with the ravens and other creatures of the arcology and its environs are usually just easier, that's all.
+                        </div>
+                </div>
+            </div>
+
+            <!-- Quirk -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="quirk">Quirk</h4>
+                <p class="sectionBody">Now that they've come up with a Touchstone for each of their characters, the Players will have the opportunity to develop that idea further. Their Quirk should serve to accentuate their chosen Touchstone to create something unique and exciting for the Player. To reference Player 1's Touchstone for Suul above: there are a lot of method actors, so what is it about Suul that sets them apart from others? Quirks can sometimes prove problematic for the PC, depending on their choice, but it's not something that should happen often and it is not meant to be debilitating (unless the Player explicitly chooses to make it so). We're just trying to get a grasp on the character prior to play.</p>
+
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            Player 1 decides that Suul has a problem breaking character or stopping a performance, even when they know they should. They choose Committed To The Bit as their Quirk. It makes their performances very passionate and authentic to everyone...except those who see through it and really wish Suul would stop.
+                        </div>
+                        <div class="triColBox">
+                            Because much of Dalyny's training involved coordinated, choreographed performances with a team, most of her goals for training have been derived from the needs of a group: if a performance involved fitting into smaller spaces, she might train contortion; if it involved being vaulted through the air, she might practice landing smoothly from a fall. Even though she would pursue her goals with a single-minded determination once she had one, she always had trouble picking a direction of her own. Player 2 chooses Team Reliant as Dalyny's Quirk to represent her strong preference for interdependence within a group to individual self sufficiency.
+                        </div>
+                        <div class="triColBox">
+                            Having spent so much time with the ravens who nest about Katahven's heights from the time he was a young boy, many of Kelorin's mannerisms have been influenced by his bond with them. These effects were accelerated in the past decade since he became bonded to one of the ravens, Alfred. The pair are remarkably discerning when hyperfixated on something, but also very excitable. To demonstrate this, Player 3 chose Bird Brained as Kelorin's Quirk.
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Traits -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="traits">Traits</a></h4>
+                <p class="sectionBody">There are plenty of ways to go about generating Traits, depending on what works best for each group. For the purposes of this example, the GM will have brought a few extra sheets of paper to their Session 0. They hand each Player a piece of paper, and ask them to write down their first Trait on it while explaining the rest of the process. After they've done that, each Player will pass their paper to the Player to their right. Players will review the new sheet of paper and write down a second trait for their own character, but in relation to the trait already written on the page before them. This will continue until every player has written at least three Traits out, though more could be done to give Players options to choose from. Ultimately, though, characters will only have three active Traits at a time.</p>
+                <p class="sectionBody">Unlike the more personal choices made for their Touchstone and Quirk, a character's Traits should uncover ways in which the characters relate to specific parts of the game space in order to create a sense of interconnectedness between the characters and the game space itself. They are the ways in which a character's Touchstone and Quirk manifest through their actions.</p>
+
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Paper 1 - Starting with Suul</p>
+                            <p class="triColText">A good outfit can be more effective at altering one's identity than changing one's outward appearance in the right circumstances, and Suul has spent no small amount of time experimenting with a combination of both forms of disguise. While there are many types of clothing fashioned specifically for Dreamhearts, many of them are not "authentic" enough for Suul's tastes. As such, they've spent a good amount of time teaching themselves to design and tailor costumes for their many pursuits. They choose Seamsmith as their first Trait.</p>
+                            <p class="triColText">Player 3 gets Suul's paper and immediately feels like there's a connection between Suul and Kelorin: their costumes could come in very handy for pranks. After some discussion, the two Players decide their characters would have both been relative loners who bonded and became best friends one day, when Kelorin and Alfred decided it would be funny to trip someone chasing after Suul just because the opportunity presented itself. After escaping, Suul later visited Kelorin, asking why he had helped them; the resultant conversation taught both of them they'd be better off pulling their pranks together, with Suul acting as the face of their group, while Kelorin and Alfred kept a look out and created diversions. Player 3 writes in Kelorin's second Trait as "Suul's Backup".</p>
+                            <p class="triColText">Player 2 reads over Suul's paper and is struck by the bond of friendship established between them and Kelorin. Player 2 decides to build off this for Dalyny, but instead of applying it to a specific friendship, decides to go for something a little more general. When it comes to a physically demanding practice, nutrition is incredibly important. Since it's already established that Dalyny is drawn to caring for people via her Combat Medic Trait, Player 2 decides another way this would manifest is with food provided to those she loves. Bread and pastries seem especially apropos for whatever reason, so Player 2 chooses Baker as Dalyny's third Trait.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Paper 2 - Starting with Dalyny</p>
+                            <p class="triColText">Having spent so much time training, Dalyny is no stranger to physical injuries. Dreamers naturally regenerate rather quickly: this is often thought of as a boon, but it can prove problematic if, for instance, a broken bone heals before it can be properly set. To prevent any potential disfiguration, many members of her team have learned first aid to help each other and themselves; her Player writes Combat Medic down for her first Trait.</p>
+                            <p class="triColText">Player 1 gets Dalyny's paper after the first swap, and decides that one of Suul's identities is a member of the same community which puts on the performances in which Dalyny stars. Suul is by no means a staple in the group, and they usually do not join in the public performances, but they do find it incredibly helpful to have a place to hone their skills to better embody the characters they create. They don't ever seek out the spotlight in their performances, however, and instead focus on becoming a moving set piece. Player 1 chooses Stage Extra for Suul's second Trait to emphasize their practice at blending into crowds.</p>
+                            <p class="triColText">Player 3 receives Dalyny's paper and decides that, even though Kelorin is not drawn to such athletic performances as Dalyny and Suul, he would likely have followed Suul's lead and started practicing some type of performance art. Player 3 figures Kelorin (and Alfred!) would probably go all-in on being tricksters, and would most likely be drawn to performing acts of improvisational comedy both for making people laugh, and the ability to create distractions on the spot. They choose Comedian for Kelorin's third Trait.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Paper 3 - Starting with Kelorin</p>
+                            <p class="triColText">Kelorin and Alfred love engaging in trickery, especially in regards to members of the court who meander through the gardens, or anywhere that Alfred can fly and spy upon people in an inconspicuous manner. Depending on the target, one of the pair will cause a distraction or keep a look out while the other does the deed. They've come up with a series of different maneuvers they will employ to collect trinkets from unsuspecting passersby. Thus, they choose Petty Thieves for their first Trait.</p>
+                            <p class="triColText">Player 2 is handed Kelorin's paper after they swap, and immediately decides that the two would be familiar: not because they have a relationship, but simply because they would have seen each other around the raven's aery. Dalyny loves animals, Player 2 decides, but especially birds because of how graceful they look when they fly; it's one of the reasons she loves her acrobatic practices. As a way to get some of the ravens to trust her, Dalyny would come to practice by herself near some of the feeding areas for the birds. They seemed skittish when she would move too quickly, though, so she spent most of her time trying to achieve static holds in certain poses. If she stood still long enough, Dalyny discovered some of the birds would come perch on her limbs...and so she immediately began training to balance on a single hand or foot to provide as many perches as possible for her feathered friends. Player 2 writes Statuesque for Dalyny's second Trait to signify her ability to stand still long enough as to appear solid.</p>
+                            <p class="triColText">Player 1 reviews Kelorin's paper and decides that, unlike Kelorin or Dalyny, Suul might seek out crowded spaces for relaxation. The ability to form connections via simple social rituals are comforting to Suul, especially when it comes to smoking: the tendency for people to congregate and discuss things while smoking is an activity Suul enjoys and finds it easy to learn interesting things about people while doing it. Player 3 chooses Social Smoker for Suul's third Trait.</p>
+                        </div>
+                    </div>
+
+                    <p class="exampleTitleCenter">Finalized Traits</p>
+
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Suul</p>
+                            <p class="triColText">Seamsmith</p>
+                            <p class="triColText">Stage Extra</p>
+                            <p class="triColText">Social Smoker</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Dalyny</p>
+                            <p class="triColText">Combat Medic</p>
+                            <p class="triColText">Statuesque</p>
+                            <p class="triColText">Baker</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Kelorin</p>
+                            <p class="triColText">Petty Thieves</p>
+                            <p class="triColText">Suul's Backup</p>
+                            <p class="triColText">Comedian</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Concrete Features -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="concrete_features">Concrete Features</h4>
+                <p class="sectionBody">At this point, the party is beginning to come together nicely. The PCs have bonds formed between each of their characters, which should make early roleplay easier, and give the players things to build off of as they go throughout the game space. Even though Dalyny is not directly involved with either Kelorin or Suul, they've discovered enough overlap through their Trait selection process that they'll have a basis from which to begin their interaction regardless of what situation they find themselves in when they meet for the first time in game. Plus, they’ve already set up an amusing reveal for the first time Dalyny realizes that they recognize one of Suul’s usual personas.</p>
+                <p class="sectionBody">From here on out, the choices made by the PCs will be informed by the people they now know their characters to be. They will be able to choose the Specialization, Style, and Stat allocation they feel will best achieve that.</p>
+            </div>
+
+            <!-- Specializations -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="specializations">Specializations</h4>
+                <p class="sectionBody">Based on the way things are set up with Suul's ability to change form on the fly, Dalyny's physical prowess, and Kelorin's penchant for mischief with Alfred, the Players feel like their group would be especially good at things like infiltration and covert operations. They decide to tailor their choices going forward to that end.</p>
+
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Suul - Luminary</p>
+                            <p class="triColText">As someone who already deals a lot with misdirection and blending into crowds, Suul's training as a Luminary seems pretty obvious to Player 1. Its mastery of illusion magic should really enhance the character portrait they've already developed, accentuating Suul's personality and empowering them to go wherever they please.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Dalyny - Phantom</p>
+                            <p class="triColText">Dalyny's acrobatic training, coupled with her small size, has made her incredibly fast. But she's also at a severe disadvantage simply due to the length of her limbs when it comes to distances, so training in teleportation magics as a Phantom seems like a perfect fit for Player 2. They did consider Conduit briefly, as that specialization’s support elements fit really well with Dalyny's Touchstone and first Trait, but Player 2 decided that her desire to protect people would have taken on a more active, physical form.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Kelorin - Spiritist</p>
+                            <p class="triColText">Player 3 discovered via the course of character creation that Kelorin was perhaps not so isolated as they had previously envisioned, but they still want to continue to highlight the bond that Kelorin has with Alfred as each other's primary companion. Spiritist easily facilitates this by choosing Alfred as his Avatar.</p>
+                        </div>
+                    </div>
+            </div>
+
+
+            <!-- Style -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="style">Style</a></h4>
+                <p class="sectionBody">There is always variance between two practitioners of the same art form, much in the same way that two players of the same sport can have very different experiences based on the position they play.</p>
+
+                    <!-- Example Text -->
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Suul - Astral Style</p>
+                            <p class="triColText">The Projected Focus passive from Astral Style fits Player 1's idea of Suul's penchant for misdirection, and harmonizes nicely with the idea of why Suul may have been drawn to the use of a Luminary's Projectors.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Dalyny - Lightning Style</p>
+                            <p class="triColText">With all her focus on speed and agility, Lightning Style fits perfect for Dalyny. The additional range on her spells helps when she's often moving through the air at high velocities, and the Dual Strikes passive fits in perfect with Player 2's conceptual understanding of her athleticism.</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Kelorin - Assertive Style</p>
+                            <p class="triColText">As a big guy who likes to facilitate pranks, Player 3 figures Kelorin would have learned how to wield his size to draw attention to him, or at least divert attention from his more inconspicuous comrades. Player 3 chooses Assertive Style to supplement this.</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Stat Allocation -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="stat_allocation">Stat Allocation</h4>
+                <p class="sectionBody">Players are given 5 skill points to invest as they see fit at level 1. Since all three Players will eventually want to train in Magical Adept to enhance their Free-Casting abilities, they decide to each invest at least 1 point into Substat training to begin to cover one of the two Schools of magic not covered by their Specialization. Suul’s PC opts to invest two points in substat training now, and put one point in each of their three statistics, but Dalyny and Kelorin’s PC choose instead to secure a +2 boost in a stat of their choice instead.</p>
+
+                    <!-- Example Text -->
+                    <p class="exampleText">Magical Adept is an ability which requires training in all three schools of azaian magic to unlock, but which grants a character the ability to avoid almost all the potential negative consequences of Free-Casting for all of their spells.</p>
+                    <div class="triCol">
+                        <div class="triColBox">
+                            <p class="triColTitle">Suul</p>
+                            <p class="triColText">Since Luminaries specialize in the Perception Subschool, Suul has the Projection School covered. They choose to invest a point into Occlusion magic for the Adaptation School, and Transmutation magic for the Unification school. Occlusion magics are not as helpful to Suul now, as they're not planning on a very tanky build, but they are still looking forward to higher tier spells such as Barrier and Nullification Field, which could be incredibly useful for infiltration/exfiltration depending on the situation. As for the Transfiguration Subschool, Suul is fascinated by the capacity for things to seemingly become something else entirely, much like themself. For their Primary stats, they choose to go for balance, to give them a solid foundation to build from.</p>
+                            <p class="triColText2">1 Cognition</p>
+                            <p class="triColText2">1 Force</p>
+                            <p class="triColText">1 Insight</p>
+                            <p class="triColText2">1 Occlusion</p>
+                            <p class="triColText2">Ward</p>
+                            <p class="triColText">Fortify</p>
+                            <p class="triColText2">1 Transmutation</p>
+                            <p class="triColText2">Alter</p>
+                            <p class="triColText">Meld</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Dalyny</p>
+                            <p class="triColText">Player 2 invests Force high on Dalyny's Primary stats to indicate her high level of physicality. Her choice of the Phantom Specialization will cover her Unification School requirement for Magical Adept, so she just has to focus on Adaptation and Projection. Because of her chosen trait of Combat Medic, she elects to first focus on the Adaptation subschool of Harmonics.</p>
+                            <p class="triColText2">1 Cognition</p>
+                            <p class="triColText2">2 Force</p>
+                            <p class="triColText">1 Insight</p>
+                            <p class="triColText2">1 Harmonics</p>
+                            <p class="triColText2">Renew</p>
+                            <p class="triColText">Cure</p>
+                        </div>
+                        <div class="triColBox">
+                            <p class="triColTitle">Kelorin</p>
+                            <p class="triColText">Player 3 invests Cognition high for Kelorin to both benefit his Animism spells gained as a Spiritist and bolster his Shield maximum, since Shield is more easily replenished than Vitality, and Augury magic is chosen from the Unification School primarily so Kelorin will have an easier time keeping an eye on Alfred when necessary.</p>
+                            <p class="triColText2">2 Cognition</p>
+                            <p class="triColText2">1 Force</p>
+                            <p class="triColText">1 Insight</p>
+                            <p class="triColText2">1 Augury</p>
+                            <p class="triColText2">Identify</p>
+                            <p class="triColText">Astral Projection</p>
+                            <p class="triColText">Player 3 will also need to make stat determinations for Kelorin's Avatar, Alfred the Raven. Alfred has 3 stat points to invest, and, since Spiritist Avatars do not have access to substat training, Player 3 decides to supplement their sense of Kelorin's Avatar as an intelligent and observant companion.</p>
+                            <p class="triColText2">2 Cognition</p>
+                            <p class="triColText2">0 Force</p>
+                            <p class="triColText">1 Insight</p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="conclusion">Conclusion</a></h4>
+                <p class="sectionBody">At this point, the Players have a fully-formed party, each with playable characters. The next step will be playing the actual game the GM has devised for them!</p>
+            </div>
+        </div>
     </div>
        
 </body>
