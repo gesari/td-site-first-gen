@@ -282,6 +282,8 @@ body {
     text-align: center;
 }
 
+/* DUOCOL/TRICOL MAY BE BETTER SERVED SWAPPING TO GRID TEMPLATES */
+
 /* Settings for duo column display in primer 
     Similar settings to triCol but leaving separate in case of eventual divergence
 */
@@ -296,7 +298,7 @@ body {
 
 .duoColBox {
     font-size: 1rem;
-    margin: 2rem 8rem;
+    margin: 0.8rem 3rem;
 }
 
 .duoColHead {
