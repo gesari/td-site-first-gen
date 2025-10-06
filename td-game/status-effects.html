@@ -9,157 +9,159 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- TopNav Bar Elements -->
-<div class="topnav">
-    <!-- Dropdown Menu for Intrasection Navigation -->
-    <span class="topnavMenuButton" onclick="menuTransform(this)">
-        <!-- Bar 1-3 | Hamburger Menu button icons-->
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <!-- Dropdown Links | Display when Menu active -->
-        <ul class="topnavMenuContent">
-            <li><a href="gameland.html">Codex Base</a></li>
-            <li><a href="character-generator.html">Character Generator</a></li>
-            <li><a href="degrees-of-success.html">Degrees of Success</a></li>
-            <li><a href="actions.html">Actions</a></li>
-            <li><a href="exploration.html">Exploration</a></li>
-            <li><a href="dreamers.html">Dreamers</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="style.html">Style</a></li>
-            <li><a href="attributes.html">Attributes</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="azaian-magic.html">Azaian Magic</a></li>
-            <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
-            <li><a href="specializations.html">Specializations</a></li>
-            <li><a href="companions.html">Companions</a></li>
-        </ul>
-    </span>
+<body>
+    <div class="grid">
+        <!-- TopNav Bar Elements -->
+        <div class="topnav">
+            <!-- Links to Other Site Sections -->
+            <span class="topnavLinks">
+                <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+            </span>
 
-    <!-- Links to Other Site Sections -->
-    <span class="topnavLinks">
-        <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
-    </span>
+            <!-- Section Title -->
+            <span class="topnavTitle">Thymoran Dreams Codex</span>
+        </div>
 
-    <!-- Section Title -->
-    <span class="topnavTitle">Thymoran Dreams Codex</span>
-</div>
+        <!-- Flow: 
+            Removing Effects | 
+            Types of Effects | Addled | Assailed | Confused | Dazed | Disrupted | Engaged | Engulfed | Entangled | Flaring | Illuminated |
+                Immobilized | Impaired (Sensory) | Obscured | Off-Balance | Polymorphed | Projected | Rent | Restrained | Sundered | Suppressed | Suspended    
+        -->
 
-<!-- Flow: 
-    Removing Effects | 
-    Types of Effects | Addled | Assailed | Confused | Dazed | Disrupted | Engaged | Engulfed | Entangled | Flaring | Illuminated |
-        Immobilized | Impaired (Sensory) | Obscured | Off-Balance | Polymorphed | Projected | Rent | Restrained | Sundered | Suppressed | Suspended    
--->
 
-<body class="localBody">
-    <!-- Table of Contents Area-->
-    <div class="sidenav">
-        <!-- Intradocument Directory -->
-         <h3 class="sidenavHead">Table of Contents</h3>
-         <!-- Links to topics within localContent -->
-         <ul class="sidenavLinks">
+        <!-- Table of Contents Area-->
+        <div class="sidenav">
+            <!-- Intradocument Directory -->
+            <h3 class="sidenavHead">Table of Contents</h3>
+            <!-- Links to topics within localContent -->
+            <ul class="sidenavLinks">
+                <!-- Removing Effects -->
+                <li><a href="#removing_effects">Removing Effects</a></li>
+                <!-- Types of Effects -->
+                <li><a href="#types_of_effects">Types of Effects</a></li>
+                <li><a href="#addled">Addled</a></li>
+                <li><a href="#assailed">Assailed</a></li>
+                <li><a href="#confused">Confused</a></li>
+                <li><a href="#dazed">Dazed</a></li>
+                <li><a href="#disrupted">Disrupted</a></li>
+                <li><a href="#engaged">Engaged</a></li>
+                <li><a href="#engulfed">Engulfed</a></li>
+                <li><a href="#entangled">Entangled</a></li>
+                <li><a href="#flaring">Flaring</a></li>
+                <li><a href="#illuminated">Illuminated</a></li>
+                <li><a href="#immobilized">Immobilized</a></li>
+                <li><a href="#impaired">Impaired (Sensory)</a></li>
+                <li><a href="#obscured">Obscured</a></li>
+                <li><a href="#off_balance">Off-Balance</a></li>
+                <li><a href="#polymorphed">Polymorphed</a></li>
+                <li><a href="#projected">Projected</a></li>
+                <li><a href="#rent">Rent</a></li>
+                <li><a href="#restrained">Restrained</a></li>
+                <li><a href="#sundered">Sundered</a></li>
+                <li><a href="#suppressed">Suppressed</a></li>
+                <li><a href="#suspended">Suspended</a></li>
+            </ul>
+        </div>
+
+        <div class="rightnav">
+            <h3 class="rightnavHead">Codex Links</h3>
+            <ul class="rightnavLinks">
+                <li><a href="gameland.html">Codex Base</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="degrees-of-success.html">Degrees of Success</a></li>
+                <li><a href="actions.html">Actions</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="dreamers.html">Dreamers</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="azaian-magic.html">Azaian Magic</a></li>
+                <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
+                <li><a href="specializations.html">Specializations</a></li>
+                <li><a href="companions.html">Companions</a></li>
+            </ul>
+        </div>
+
+        <div class="localContent">
+            <h2 class="localHead">Status Effects</h2>
+            <p class="localHeadBody">Beep borp boop bop.</p>
+
             <!-- Removing Effects -->
-            <li><a href="#removing_effects">Removing Effects</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="removing_effects">Removing Effects</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Types of Effects -->
-            <li><a href="#types_of_effects">Types of Effects</a></li>
-            <li><a href="#addled">Addled</a></li>
-            <li><a href="#assailed">Assailed</a></li>
-            <li><a href="#confused">Confused</a></li>
-            <li><a href="#dazed">Dazed</a></li>
-            <li><a href="#disrupted">Disrupted</a></li>
-            <li><a href="#engaged">Engaged</a></li>
-            <li><a href="#engulfed">Engulfed</a></li>
-            <li><a href="#entangled">Entangled</a></li>
-            <li><a href="#flaring">Flaring</a></li>
-            <li><a href="#illuminated">Illuminated</a></li>
-            <li><a href="#immobilized">Immobilized</a></li>
-            <li><a href="#impaired">Impaired (Sensory)</a></li>
-            <li><a href="#obscured">Obscured</a></li>
-            <li><a href="#off_balance">Off-Balance</a></li>
-            <li><a href="#polymorphed">Polymorphed</a></li>
-            <li><a href="#projected">Projected</a></li>
-            <li><a href="#rent">Rent</a></li>
-            <li><a href="#restrained">Restrained</a></li>
-            <li><a href="#sundered">Sundered</a></li>
-            <li><a href="#suppressed">Suppressed</a></li>
-            <li><a href="#suspended">Suspended</a></li>
-         </ul>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="types_of_effects">Types of Effects</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            
+                <p class="sectionHead" id="addled">Addled</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="assailed">Assailed</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="confused">Confused</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="dazed">Dazed</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="disrupted">Disrupted</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="engaged">Engaged</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="engulfed">Engulfed</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <p class="sectionHead" id="entangled">Entangled</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="flaring">Flaring</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consecteur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="illuminated">Illuminated</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="immobilized">Immobilized</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="impaired">Impaired</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="obscured">Obscured</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="off_balance">Off-Balance</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <p class="sectionHead" id="polymorphed">Polymorphed</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="projected">Projected</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="rent">Rent</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="restrained">Restrained</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="sundered">Sundered</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="suppressed">Suppressed</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="suspended">Suspended</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+        </div>    
     </div>
-
-    <div class="localContent">
-        <h2 class="localHead">Degrees of Success</h2>
-        <p class="localHeadBody">Beep borp boop bop.</p>
-
-        <!-- Removing Effects -->
-        <h4 class="sectionHead" id="removing_effects">Removing Effects</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Types of Effects -->
-        <h4 class="sectionHead" id="types_of_effects">Types of Effects</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="addled">Addled</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="assailed">Assailed</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="confused">Confused</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="dazed">Dazed</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="disrupted">Disrupted</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="engaged">Engaged</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="engulfed">Engulfed</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="entangled">Entangled</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="flaring">Flaring</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="illuminated">Illuminated</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="immobilized">Immobilized</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="impaired">Impaired</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="obscured">Obscured</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="off_balance">Off-Balance</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="polymorphed">Polymorphed</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="projected">Projected</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="rent">Rent</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="restrained">Restrained</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="sundered">Sundered</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="suppressed">Suppressed</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="suspended">Suspended</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-    </div>    
 </body>
 </html>
