@@ -180,7 +180,7 @@ body {
     overflow-wrap: normal;
     text-align: center;
     overflow-y: auto;
-    
+    max-height: calc(100vh - 4rem);
     
     background-color: hsl(from #6C757D h s l / 0.2);
     backdrop-filter: blur(5px);
@@ -205,7 +205,7 @@ body {
     overflow-wrap: normal;
     text-align: center;
     overflow-y: auto;
-    
+    max-height: calc(100vh - 4rem);
     
     background-color: hsl(from #6C757D h s l / 0.2);
     backdrop-filter: blur(5px);
