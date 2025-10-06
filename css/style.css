@@ -192,6 +192,10 @@ body {
     margin: 1rem 0.5rem;
 }
 
+.sidenavLinks {
+    margin-bottom: 1rem;
+}
+
 .sidenavLinks li {
     margin: 0.5rem 0.5rem;
 }
@@ -215,6 +219,10 @@ body {
 
 .rightnavHead {
     margin: 1rem 0.5rem;
+}
+
+.rightnavLinks {
+    margin-bottom: 1rem;
 }
 
 .rightnavLinks li {
