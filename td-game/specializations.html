@@ -9,530 +9,554 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- TopNav Bar Elements -->
-<div class="topnav">
-    <!-- Dropdown Menu for Intrasection Navigation -->
-    <span class="topnavMenuButton" onclick="menuTransform(this)">
-        <!-- Bar 1-3 | Hamburger Menu button icons-->
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <!-- Dropdown Links | Display when Menu active -->
-        <ul class="topnavMenuContent">
-            <li><a href="gameland.html">Codex Base</a></li>
-            <li><a href="character-generator.html">Character Generator</a></li>
-            <li><a href="degrees-of-success.html">Degrees of Success</a></li>
-            <li><a href="actions.html">Actions</a></li>
-            <li><a href="status-effects.html">Status Effects</a></li>
-            <li><a href="exploration.html">Exploration</a></li>
-            <li><a href="dreamers.html">Dreamers</a></li>
-            <li><a href="statistics.html">Statistics</a></li>
-            <li><a href="style.html">Style</a></li>
-            <li><a href="attributes.html">Attributes</a></li>
-            <li><a href="items.html">Items</a></li>
-            <li><a href="azaian-magic.html">Azaian Magic</a></li>
-            <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
-            <li><a href="companions.html">Companions</a></li>
-        </ul>
-    </span>
 
-    <!-- Links to Other Site Sections -->
-    <span class="topnavLinks">
-        <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
-    </span>
+<body>
+    <div class="grid">
+        <!-- TopNav Bar Elements -->
+        <div class="topnav">
+            <!-- Links to Other Site Sections -->
+            <span class="topnavLinks">
+                <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+            </span>
 
-    <!-- Section Title -->
-    <span class="topnavTitle">Thymoran Dreams Codex</span>
-</div>
+            <!-- Section Title -->
+            <span class="topnavTitle">Thymoran Dreams Codex</span>
+        </div>
 
-<!--
-    Flow:
-    Specialization Tree
-    Node Notation
-    The 3-2 Talent
-    Alchemist | Internal Alchemy 1-1 | 
-        Vital Technique 2-1 | Stalwart Technique 2-2 | 
-        Mend 3-1 | Ascended Form 3-2 | Dragonflame 3-3 | 
-        Bolster 4-1 | Fusion 4-2 | Entomb 4-3 | Caustic Environment 4-4
-    Arcanist | Astral Empowerment 1-1
-        Loft 2-1 | Arc Lance 2-2
-        Azonian Anchor 3-1 | Confluence 3-2 | Replication Matrix 3-3
-        Singularity 4-1 | Counterspell 4-2 | Azaian Density 4-3 | Spell Sniper 4-4
-    Conduit | Aura 1-1
-        Synergism 2-1 | Replenishing State 2-2
-        Intercede 3-1 | Convection 3-2 | Kinetic State 3-3
-        Paean 4-1 | Cleanse 4-2 | Siphoning State 4-3 | Reflexive State 4-4
-    Luminary | Perception Projectors 1-1
-        Blurred Image 2-1 | Memory Wipe 2-2
-        Stunt Double 3-1 | Labyrinth 3-2 | Phantasmagoria 3-3
-        Clandestine Interchange 4-1 | Avatar 4-2 | Luminous Execution 4-3 | Projected Magnification 4-4
-    Operative | The Swarm 1-1
-        Pulse 2-1 | Jolt 2-2
-        Tempest 3-1 | Turrets 3-2 | Stasis Field 3-3
-        Swarm Animation 4-1 | Barrage 4-2 | Rapid Deployment 4-3 | Torpor 4-4
-    Phantom | Spatial Anomaly 1-1
-        Entanglement 2-1 | Charge 2-2
-        Shuffle 3-1 | Flurry 3-2 | Impel 3-3
-        Sanctuary Recall 4-1 | Mindfulness 4-2 | Spatial Presence 4-3 | Impact 4-4
-    Sage | Auspicious Personage 1-1
-        Threads of Fate 2-1 | Charted Course 2-2
-        Empowerment 3-1 | Portents Foreseen 3-2 | Altered Probability 3-3
-        Interject 4-1 | Cyclic Insight 4-2 | Opportunistic Foresight 4-3 | Oracular Marker 4-4
-    Sentinel | Runic Magic 1-1
-        Surge 2-1 | Tether 2-2
-        Aftershock 3-1 | Shifting Currents 3-2 | Dive 3-3
-        Accelerant 4-1 | Surging Tides 4-2 | Runic Sigil 4-3 | Aerial Bonds 4-4
-    Spiritist | Spiritbond 1-1
-        Predatory Instinct 2-1 | Foreceful Motion 2-2
-        Replenish 3-1 | Amplified Bond 3-2 | Reciprocal Motion 3-3
-        Warder's Call 4-1 | Vital Motion 4-2 | Harmonic Motion 4-3 | Warding Motion 4-4
--->
+        <!--
+            Flow:
+            Specialization Tree
+            Node Notation
+            The 3-2 Talent
+            Alchemist | Internal Alchemy 1-1 | 
+                Vital Technique 2-1 | Stalwart Technique 2-2 | 
+                Mend 3-1 | Ascended Form 3-2 | Dragonflame 3-3 | 
+                Bolster 4-1 | Fusion 4-2 | Entomb 4-3 | Caustic Environment 4-4
+            Arcanist | Astral Empowerment 1-1
+                Loft 2-1 | Arc Lance 2-2
+                Azonian Anchor 3-1 | Confluence 3-2 | Replication Matrix 3-3
+                Singularity 4-1 | Counterspell 4-2 | Azaian Density 4-3 | Spell Sniper 4-4
+            Conduit | Aura 1-1
+                Synergism 2-1 | Replenishing State 2-2
+                Intercede 3-1 | Convection 3-2 | Kinetic State 3-3
+                Paean 4-1 | Cleanse 4-2 | Siphoning State 4-3 | Reflexive State 4-4
+            Luminary | Perception Projectors 1-1
+                Blurred Image 2-1 | Memory Wipe 2-2
+                Stunt Double 3-1 | Labyrinth 3-2 | Phantasmagoria 3-3
+                Clandestine Interchange 4-1 | Avatar 4-2 | Luminous Execution 4-3 | Projected Magnification 4-4
+            Operative | The Swarm 1-1
+                Pulse 2-1 | Jolt 2-2
+                Tempest 3-1 | Turrets 3-2 | Stasis Field 3-3
+                Swarm Animation 4-1 | Barrage 4-2 | Rapid Deployment 4-3 | Torpor 4-4
+            Phantom | Spatial Anomaly 1-1
+                Entanglement 2-1 | Charge 2-2
+                Shuffle 3-1 | Flurry 3-2 | Impel 3-3
+                Sanctuary Recall 4-1 | Mindfulness 4-2 | Spatial Presence 4-3 | Impact 4-4
+            Sage | Auspicious Personage 1-1
+                Threads of Fate 2-1 | Charted Course 2-2
+                Empowerment 3-1 | Portents Foreseen 3-2 | Altered Probability 3-3
+                Interject 4-1 | Cyclic Insight 4-2 | Opportunistic Foresight 4-3 | Oracular Marker 4-4
+            Sentinel | Runic Magic 1-1
+                Surge 2-1 | Tether 2-2
+                Aftershock 3-1 | Shifting Currents 3-2 | Dive 3-3
+                Accelerant 4-1 | Surging Tides 4-2 | Runic Sigil 4-3 | Aerial Bonds 4-4
+            Spiritist | Spiritbond 1-1
+                Predatory Instinct 2-1 | Foreceful Motion 2-2
+                Replenish 3-1 | Amplified Bond 3-2 | Reciprocal Motion 3-3
+                Warder's Call 4-1 | Vital Motion 4-2 | Harmonic Motion 4-3 | Warding Motion 4-4
+        -->
 
-<body class="localBody">
-    <!-- Table of Contents Area-->
-    <div class="sidenav">
-        <!-- Intradocument Directory -->
-         <h3 class="sidenavHead">Table of Contents</h3>
-         <!-- Links to topics within localContent -->
-         <ul class="sidenavLinks">
+
+        <!-- Table of Contents Area-->
+        <div class="sidenav">
+            <!-- Intradocument Directory -->
+            <h3 class="sidenavHead">Table of Contents</h3>
+            <!-- Links to topics within localContent -->
+            <ul class="sidenavLinks">
+                <!-- Specialization Tree -->
+                <li><a href="#specialization_tree">Specialization Tree</a></li>
+                <!-- Node Notation -->
+                <li><a href="#node_notation">Node Notation</a></li>
+                <!-- The 3-2 Talent -->
+                <li><a href="#3_2_talent">The 3-2 Talent</a></li>
+                <!-- Alchemist -->
+                <li><a href="#alchemist">Alchemist</a></li>
+                <li><a href="#internal_alchemy">Internal Alchemy 1-1</a></li>
+                <li><a href="#vital_technique">Vital Technique 2-1</a></li>
+                <li><a href="#stalwart_technique">Stalwart Technique 2-2</a></li>
+                <li><a href="#mend">Mend 3-1</a></li>
+                <li><a href="#ascended_form">Ascended Form 3-2</a></li>
+                <li><a href="#dragonflame">Dragonflame 3-3</a></li>
+                <li><a href="#bolster">Bolster 4-1</a></li>
+                <li><a href="#fusion">Fusion 4-2</a></li>
+                <li><a href="#entomb">Entomb 4-3</a></li>
+                <li><a href="#caustic_environment">Caustic Environment 4-4</a></li>
+                <!-- Arcanist -->
+                <li><a href="#arcanist">Arcanist</a></li>
+                <li><a href="#astral_empowerment">Astral Empowerment 1-1</a></li>
+                <li><a href="#loft">Loft 2-1</a></li>
+                <li><a href="#arc_lance">Arc Lance 2-2</a></li>
+                <li><a href="#azonian_anchor">Azonian Anchor 3-1</a></li>
+                <li><a href="#confluence">Confluence 3-2</a></li>
+                <li><a href="#replication_matrix">Replication Matrix 3-3</a></li>
+                <li><a href="#singularity">Singularity 4-1</a></li>
+                <li><a href="#counterspell">Counterspell 4-2</a></li>
+                <li><a href="#azaian_density">Azaian Density 4-3</a></li>
+                <li><a href="#heavens_reach">Heaven's Reach 4-4</a></li>
+                <!-- Conduit -->
+                <li><a href="#conduit">Conduit</a></li>
+                <li><a href="#aura">Aura 1-1</a></li>
+                <li><a href="#synergism">Synergism 2-1</a></li>
+                <li><a href="#replenishing_state">Replenishing State 2-2</a></li>
+                <li><a href="#intercede">Intercede 3-1</a></li>
+                <li><a href="#convection">Convection 3-2</a></li>
+                <li><a href="#kinetic_state">Kinetic State 3-3</a></li>
+                <li><a href="#paean">Paean 4-1</a></li>
+                <li><a href="#cleanse">Cleanse 4-2</a></li>
+                <li><a href="#siphoning_state">Siphoning State 4-3</a></li>
+                <li><a href="#reflexive_state">Reflexive State 4-4</a></li>
+                <!-- Luminary -->
+                <li><a href="#luminary">Luminary</a></li>
+                <li><a href="#perception_projectors">Perception Projectors 1-1</a></li>
+                <li><a href="#blurred_image">Blurred Image 2-1</a></li>
+                <li><a href="#memory_wipe">Memory Wipe 2-2</a></li>
+                <li><a href="#stunt_double">Stunt Double 3-1</a></li>
+                <li><a href="#labyrinth">Labyrinth 3-2</a></li>
+                <li><a href="#phantasmagoria">Phantasmagoria 3-3</a></li>
+                <li><a href="#clandestine_interchange">Clandestine Interchange 4-1</a></li>
+                <li><a href="#avatar">Avatar 4-2</a></li>
+                <li><a href="#luminous_execution">Luminous Execution 4-3</a></li>
+                <li><a href="#projected_magnification">Projected Magnification 4-4</a></li>
+                <!-- Operative -->
+                <li><a href="#operative">Operative</a></li>
+                <li><a href="#the_swarm">The Swarm 1-1</a></li>
+                <li><a href="#pulse">Pulse 2-1</a></li>
+                <li><a href="#jolt">Jolt 2-2</a></li>
+                <li><a href="#tempest">Tempest 3-1</a></li>
+                <li><a href="#turrets">Turrets 3-2</a></li>
+                <li><a href="#stasis_field">Stasis Field 3-3</a></li>
+                <li><a href="#swarm_animation">Swarm Animation 4-1</a></li>
+                <li><a href="#barrage">Barrage 4-2</a></li>
+                <li><a href="#rapid_deployment">Rapid Deployment 4-3</a></li>
+                <li><a href="#torpor">Torpor 4-4</a></li>
+                <!-- Phantom -->
+                <li><a href="#phantom">Phantom</a></li>
+                <li><a href="#spatial_anomaly">Spatial Anomaly 1-1</a></li>
+                <li><a href="#entanglement">Entanglement 2-1</a></li>
+                <li><a href="#charge">Charge 2-2</a></li>
+                <li><a href="#shuffle">Shuffle 3-1</a></li>
+                <li><a href="#flurry">Flurry 3-2</a></li>
+                <li><a href="#impel">Impel 3-3</a></li>
+                <li><a href="#sanctuary_recall">Sanctuary Recall 4-1</a></li>
+                <li><a href="#mindfulness">Mindfulness 4-2</a></li>
+                <li><a href="#spatial_presence">Spatial Presence 4-3</a></li>
+                <li><a href="#impact">Impact 4-4</a></li>
+                <!-- Sage -->
+                <li><a href="#sage">Sage</a></li>
+                <li><a href="#auspicious_personage">Auspicious Personage 1-1</a></li>
+                <li><a href="#threads_of_fate">Threads of Fate 2-1</a></li>
+                <li><a href="#charted_course">Charted Course 2-2</a></li>
+                <li><a href="#empowerment">Empowerment 3-1</a></li>
+                <li><a href="#portents_foreseen">Portents Foreseen 3-2</a></li>
+                <li><a href="#altered_probability">Altered Probability 3-3</a></li>
+                <li><a href="#interject">Interject 4-1</a></li>
+                <li><a href="#cyclic_insight">Cyclic Insight 4-2</a></li>
+                <li><a href="#opportunistic_foresight">Opportunistic Foresight 4-3</a></li>
+                <li><a href="#oracular_marker">Oracular Marker 4-4</a></li>
+                <!-- Sentinel -->
+                <li><a href="#sentinel">Sentinel</a></li>
+                <li><a href="#runic_magic">Runic Magic 1-1</a></li>
+                <li><a href="#surge">Surge 2-1</a></li>
+                <li><a href="#tether">Tether 2-2</a></li>
+                <li><a href="#aftershock">Aftershock 3-1</a></li>
+                <li><a href="#shifting_currents">Shifting Currents 3-2</a></li>
+                <li><a href="#dive">Dive 3-3</a></li>
+                <li><a href="#accelerant">Accelerant 4-1</a></li>
+                <li><a href="#surging_tides">Surging Tides 4-2</a></li>
+                <li><a href="#runic_sigil">Runic Sigil 4-3</a></li>
+                <li><a href="#aerial_bonds">Aerial Bonds 4-4</a></li>
+                <!-- Spiritist -->
+                <li><a href="#spiritist">Spiritist</a></li>
+                <li><a href="#spiritbond">Spiritbond 1-1</a></li>
+                <li><a href="#predatory_instinct">Predatory Instinct 2-1</a></li>
+                <li><a href="#forceful_motion">Forceful Motion 2-2</a></li>
+                <li><a href="#replenish">Replenish 3-1</a></li>
+                <li><a href="#amplified_bond">Amplified Bond 3-2</a></li>
+                <li><a href="#reciprocal_motion">Reciprocal Motion 3-3</a></li>
+                <li><a href="#warders_call">Warder's Call 4-1</a></li>
+                <li><a href="#vital_motion">Vital Motion 4-2</a></li>
+                <li><a href="#harmonic_motion">Harmonic Motion 4-3</a></li>
+                <li><a href="#warding_motion">Warding Motion 4-4</a></li>
+            </ul>
+        </div>
+
+        <!-- Rightnav Intrasection Navigation -->
+        <div class="rightnav">
+            <h3 class="rightnavHead">Codex Links</h3>
+            <ul class="rightnavLinks">
+                <li><a href="gameland.html">Codex Base</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="degrees-of-success.html">Degrees of Success</a></li>
+                <li><a href="actions.html">Actions</a></li>
+                <li><a href="status-effects.html">Status Effects</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="dreamers.html">Dreamers</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="azaian-magic.html">Azaian Magic</a></li>
+                <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
+                <li><a href="companions.html">Companions</a></li>
+            </ul>
+        </div>
+
+        <div class="localContent">
+            <h2 class="localHead">Specializations</h2>
+            <p class="localHeadBody">Beep borp boop bop.</p>
+
             <!-- Specialization Tree -->
-            <li><a href="#specialization_tree">Specialization Tree</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="specialization_tree">Specialization Tree</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Node Notation -->
-            <li><a href="#node_notation">Node Notation</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="node_notation">Node Notation</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- The 3-2 Talent -->
-            <li><a href="#3_2_talent">The 3-2 Talent</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="3_2_talent">The 3-2 Talent</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Alchemist -->
-            <li><a href="#alchemist">Alchemist</a></li>
-            <li><a href="#internal_alchemy">Internal Alchemy 1-1</a></li>
-            <li><a href="#vital_technique">Vital Technique 2-1</a></li>
-            <li><a href="#stalwart_technique">Stalwart Technique 2-2</a></li>
-            <li><a href="#mend">Mend 3-1</a></li>
-            <li><a href="#ascended_form">Ascended Form 3-2</a></li>
-            <li><a href="#dragonflame">Dragonflame 3-3</a></li>
-            <li><a href="#bolster">Bolster 4-1</a></li>
-            <li><a href="#fusion">Fusion 4-2</a></li>
-            <li><a href="#entomb">Entomb 4-3</a></li>
-            <li><a href="#caustic_environment">Caustic Environment 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="alchemist">Alchemist</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="internal_alchemy">Internal Alchemy 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <p class="sectionHead" id="vital_technique">Vital Technique 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <p class="sectionHead" id="stalwart_technique">Stalwart Technique 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <p class="sectionHead" id="mend">Mend 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="ascended_form">Ascended Form 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="dragonflame">Dragonflame 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="bolster">Bolster 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="fusion">Fusion 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="entomb">Entomb 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="caustic_environment">Caustic Environment 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Arcanist -->
-            <li><a href="#arcanist">Arcanist</a></li>
-            <li><a href="#astral_empowerment">Astral Empowerment 1-1</a></li>
-            <li><a href="#loft">Loft 2-1</a></li>
-            <li><a href="#arc_lance">Arc Lance 2-2</a></li>
-            <li><a href="#azonian_anchor">Azonian Anchor 3-1</a></li>
-            <li><a href="#confluence">Confluence 3-2</a></li>
-            <li><a href="#replication_matrix">Replication Matrix 3-3</a></li>
-            <li><a href="#singularity">Singularity 4-1</a></li>
-            <li><a href="#counterspell">Counterspell 4-2</a></li>
-            <li><a href="#azaian_density">Azaian Density 4-3</a></li>
-            <li><a href="#heavens_reach">Heaven's Reach 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="arcanist">Arcanist</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="astral_empowerment">Astral Empowerment 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="loft">Loft 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="arc_lance">Arc Lance 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="azonian_anchor">Azonian Anchor 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="confluence">Confluence 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="replication_matrix">Replication Matrix 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="singularity">Singularity 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="counterspell">Counterspell 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="azaian_density">Azaian Density 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="heavens_reach">Heaven's Reach 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Conduit -->
-            <li><a href="#conduit">Conduit</a></li>
-            <li><a href="#aura">Aura 1-1</a></li>
-            <li><a href="#synergism">Synergism 2-1</a></li>
-            <li><a href="#replenishing_state">Replenishing State 2-2</a></li>
-            <li><a href="#intercede">Intercede 3-1</a></li>
-            <li><a href="#convection">Convection 3-2</a></li>
-            <li><a href="#kinetic_state">Kinetic State 3-3</a></li>
-            <li><a href="#paean">Paean 4-1</a></li>
-            <li><a href="#cleanse">Cleanse 4-2</a></li>
-            <li><a href="#siphoning_state">Siphoning State 4-3</a></li>
-            <li><a href="#reflexive_state">Reflexive State 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="conduit">Conduit</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="aura">Aura 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="synergism">Synergism 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="replenishing_state">Replenishing State 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="intercede">Intercede 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="convection">Convection 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="kinetic_state">Kinetic State 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="paean">Paean 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="cleanse">Cleanse 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="siphoning_state">Siphoning State 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="reflexive_state">Reflexive State 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Luminary -->
-            <li><a href="#luminary">Luminary</a></li>
-            <li><a href="#perception_projectors">Perception Projectors 1-1</a></li>
-            <li><a href="#blurred_image">Blurred Image 2-1</a></li>
-            <li><a href="#memory_wipe">Memory Wipe 2-2</a></li>
-            <li><a href="#stunt_double">Stunt Double 3-1</a></li>
-            <li><a href="#labyrinth">Labyrinth 3-2</a></li>
-            <li><a href="#phantasmagoria">Phantasmagoria 3-3</a></li>
-            <li><a href="#clandestine_interchange">Clandestine Interchange 4-1</a></li>
-            <li><a href="#avatar">Avatar 4-2</a></li>
-            <li><a href="#luminous_execution">Luminous Execution 4-3</a></li>
-            <li><a href="#projected_magnification">Projected Magnification 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="luminary">Luminary</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="perception_projectors">Perception Projectors 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="blurred_image">Blurred Image 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="memory_wipe">Memory Wipe 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="stunt_double">Stunt Double 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="labyrinth">Labyrinth 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="phantasmagoria">Phantasmagoria 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="clandestine_interchange">Clandestine Interchange 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="avatar">Avatar 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="luminous_execution">Luminous Execution 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="projected_magnification">Projected Magnification 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Operative -->
-            <li><a href="#operative">Operative</a></li>
-            <li><a href="#the_swarm">The Swarm 1-1</a></li>
-            <li><a href="#pulse">Pulse 2-1</a></li>
-            <li><a href="#jolt">Jolt 2-2</a></li>
-            <li><a href="#tempest">Tempest 3-1</a></li>
-            <li><a href="#turrets">Turrets 3-2</a></li>
-            <li><a href="#stasis_field">Stasis Field 3-3</a></li>
-            <li><a href="#swarm_animation">Swarm Animation 4-1</a></li>
-            <li><a href="#barrage">Barrage 4-2</a></li>
-            <li><a href="#rapid_deployment">Rapid Deployment 4-3</a></li>
-            <li><a href="#torpor">Torpor 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="operative">Operative</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="the_swarm">The Swarm 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="pulse">Pulse 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="jolt">Jolt 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="tempest">Tempest 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="turrets">Turrets 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="stasis_field">Stasis Field 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="swarm_animation">Swarm Animation 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="barrage">Barrage 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="rapid_deployment">Rapid Deployment 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="torpor">Torpor 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Phantom -->
-            <li><a href="#phantom">Phantom</a></li>
-            <li><a href="#spatial_anomaly">Spatial Anomaly 1-1</a></li>
-            <li><a href="#entanglement">Entanglement 2-1</a></li>
-            <li><a href="#charge">Charge 2-2</a></li>
-            <li><a href="#shuffle">Shuffle 3-1</a></li>
-            <li><a href="#flurry">Flurry 3-2</a></li>
-            <li><a href="#impel">Impel 3-3</a></li>
-            <li><a href="#sanctuary_recall">Sanctuary Recall 4-1</a></li>
-            <li><a href="#mindfulness">Mindfulness 4-2</a></li>
-            <li><a href="#spatial_presence">Spatial Presence 4-3</a></li>
-            <li><a href="#impact">Impact 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="phantom">Phantom</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="spatial_anomaly">Spatial Anomaly 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="entanglement">Entanglement 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="charge">Charge 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="shuffle">Shuffle 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="flurry">Flurry 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="impel">Impel 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="sanctuary_recall">Sanctuary Recall 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="mindfulness">Mindfulness 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="spatial_presence">Spatial Presence 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="impact">Impact 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Sage -->
-            <li><a href="#sage">Sage</a></li>
-            <li><a href="#auspicious_personage">Auspicious Personage 1-1</a></li>
-            <li><a href="#threads_of_fate">Threads of Fate 2-1</a></li>
-            <li><a href="#charted_course">Charted Course 2-2</a></li>
-            <li><a href="#empowerment">Empowerment 3-1</a></li>
-            <li><a href="#portents_foreseen">Portents Foreseen 3-2</a></li>
-            <li><a href="#altered_probability">Altered Probability 3-3</a></li>
-            <li><a href="#interject">Interject 4-1</a></li>
-            <li><a href="#cyclic_insight">Cyclic Insight 4-2</a></li>
-            <li><a href="#opportunistic_foresight">Opportunistic Foresight 4-3</a></li>
-            <li><a href="#oracular_marker">Oracular Marker 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="sage">Sage</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="auspicious_personage">Auspicious Personage 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="threads_of_fate">Threads of Fate 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="charted_course">Charted Course 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="empowerment">Empowerment 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="portents_foreseen">Portents Foreseen 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="altered_probability">Altered Probability 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="interject">Interject 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="cyclic_insight">Cyclic Insight 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="opportunistic_foresight">Opportunistic Foresight 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="oracular_marker">Oracular Marker 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Sentinel -->
-            <li><a href="#sentinel">Sentinel</a></li>
-            <li><a href="#runic_magic">Runic Magic 1-1</a></li>
-            <li><a href="#surge">Surge 2-1</a></li>
-            <li><a href="#tether">Tether 2-2</a></li>
-            <li><a href="#aftershock">Aftershock 3-1</a></li>
-            <li><a href="#shifting_currents">Shifting Currents 3-2</a></li>
-            <li><a href="#dive">Dive 3-3</a></li>
-            <li><a href="#accelerant">Accelerant 4-1</a></li>
-            <li><a href="#surging_tides">Surging Tides 4-2</a></li>
-            <li><a href="#runic_sigil">Runic Sigil 4-3</a></li>
-            <li><a href="#aerial_bonds">Aerial Bonds 4-4</a></li>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="sentinel">Sentinel</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="runic_magic">Runic Magic 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="surge">Surge 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="tether">Tether 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="aftershock">Aftershock 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="shifting_currents">Shifting Currents 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="dive">Dive 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="accelerant">Accelerant 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="surging_tides">Surging Tides 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="runic_sigil">Runic Sigil 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="aerial_bonds">Aerial Bonds 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+
             <!-- Spiritist -->
-            <li><a href="#spiritist">Spiritist</a></li>
-            <li><a href="#spiritbond">Spiritbond 1-1</a></li>
-            <li><a href="#predatory_instinct">Predatory Instinct 2-1</a></li>
-            <li><a href="#forceful_motion">Forceful Motion 2-2</a></li>
-            <li><a href="#replenish">Replenish 3-1</a></li>
-            <li><a href="#amplified_bond">Amplified Bond 3-2</a></li>
-            <li><a href="#reciprocal_motion">Reciprocal Motion 3-3</a></li>
-            <li><a href="#warders_call">Warder's Call 4-1</a></li>
-            <li><a href="#vital_motion">Vital Motion 4-2</a></li>
-            <li><a href="#harmonic_motion">Harmonic Motion 4-3</a></li>
-            <li><a href="#warding_motion">Warding Motion 4-4</a></li>
-         </ul>
+            <div class="gridbox">
+                <h4 class="sectionHead" id="spiritist">Spiritist</h4>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="spiritbond">Spiritbond 1-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="predatory_instinct">Predatory Instinct 2-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="forceful_motion">Forceful Motion 2-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="replenish">Replenish 3-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="amplified_bond">Amplified Bond 3-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="reciprocal_motion">Reciprocal Motion 3-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="warders_call">Warder's Call 4-1</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="vital_motion">Vital Motion 4-2</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="harmonic_motion">Harmonic Motion 4-3</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+
+                <p class="sectionHead" id="warding_motion">Warding Motion 4-4</p>
+                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+            </div>
+        </div>    
     </div>
-
-    <div class="localContent">
-        <h2 class="localHead">Specializations</h2>
-        <p class="localHeadBody">Beep borp boop bop.</p>
-
-        <!-- Specialization Tree -->
-        <h4 class="sectionHead" id="specialization_tree">Specialization Tree</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Node Notation -->
-        <h4 class="sectionHead" id="node_notation">Node Notation</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- The 3-2 Talent -->
-        <h4 class="sectionHead" id="3_2_talent">The 3-2 Talent</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Alchemist -->
-        <h4 class="sectionHead" id="alchemist">Alchemist</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="internal_alchemy">Internal Alchemy 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="vital_technique">Vital Technique 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="stalwart_technique">Stalwart Technique 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-        
-        <h4 class="sectionHead" id="mend">Mend 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="ascended_form">Ascended Form 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="dragonflame">Dragonflame 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="bolster">Bolster 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="fusion">Fusion 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="entomb">Entomb 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="caustic_environment">Caustic Environment 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Arcanist -->
-        <h4 class="sectionHead" id="arcanist">Arcanist</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="astral_empowerment">Astral Empowerment 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="loft">Loft 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="arc_lance">Arc Lance 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="azonian_anchor">Azonian Anchor 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="confluence">Confluence 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="replication_matrix">Replication Matrix 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="singularity">Singularity 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="counterspell">Counterspell 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="azaian_density">Azaian Density 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="heavens_reach">Heaven's Reach 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Conduit -->
-        <h4 class="sectionHead" id="conduit">Conduit</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="aura">Aura 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="synergism">Synergism 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="replenishing_state">Replenishing State 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="intercede">Intercede 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="convection">Convection 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="kinetic_state">Kinetic State 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="paean">Paean 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="cleanse">Cleanse 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="siphoning_state">Siphoning State 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="reflexive_state">Reflexive State 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Luminary -->
-        <h4 class="sectionHead" id="luminary">Luminary</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="perception_projectors">Perception Projectors 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="blurred_image">Blurred Image 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="memory_wipe">Memory Wipe 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="stunt_double">Stunt Double 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="labyrinth">Labyrinth 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="phantasmagoria">Phantasmagoria 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="clandestine_interchange">Clandestine Interchange 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="avatar">Avatar 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="luminous_execution">Luminous Execution 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="projected_magnification">Projected Magnification 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Operative -->
-        <h4 class="sectionHead" id="operative">Operative</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="the_swarm">The Swarm 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="pulse">Pulse 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="jolt">Jolt 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="tempest">Tempest 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="turrets">Turrets 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="stasis_field">Stasis Field 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="swarm_animation">Swarm Animation 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="barrage">Barrage 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="rapid_deployment">Rapid Deployment 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="torpor">Torpor 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Phantom -->
-        <h4 class="sectionHead" id="phantom">Phantom</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="spatial_anomaly">Spatial Anomaly 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="entanglement">Entanglement 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="charge">Charge 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="shuffle">Shuffle 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="flurry">Flurry 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="impel">Impel 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="sanctuary_recall">Sanctuary Recall 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="mindfulness">Mindfulness 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="spatial_presence">Spatial Presence 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="impact">Impact 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Sage -->
-        <h4 class="sectionHead" id="sage">Sage</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="auspicious_personage">Auspicious Personage 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="threads_of_fate">Threads of Fate 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="charted_course">Charted Course 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="empowerment">Empowerment 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="portents_foreseen">Portents Foreseen 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="altered_probability">Altered Probability 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="interject">Interject 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="cyclic_insight">Cyclic Insight 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="opportunistic_foresight">Opportunistic Foresight 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="oracular_marker">Oracular Marker 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Sentinel -->
-        <h4 class="sectionHead" id="sentinel">Sentinel</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="runic_magic">Runic Magic 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="surge">Surge 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="tether">Tether 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="aftershock">Aftershock 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="shifting_currents">Shifting Currents 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="dive">Dive 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="accelerant">Accelerant 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="surging_tides">Surging Tides 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="runic_sigil">Runic Sigil 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="aerial_bonds">Aerial Bonds 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <!-- Spiritist -->
-        <h4 class="sectionHead" id="spiritist">Spiritist</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="spiritbond">Spiritbond 1-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="predatory_instinct">Predatory Instinct 2-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="forceful_motion">Forceful Motion 2-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="replenish">Replenish 3-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="amplified_bond">Amplified Bond 3-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="reciprocal_motion">Reciprocal Motion 3-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="warders_call">Warder's Call 4-1</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="vital_motion">Vital Motion 4-2</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="harmonic_motion">Harmonic Motion 4-3</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-        <h4 class="sectionHead" id="warding_motion">Warding Motion 4-4</h4>
-        <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-    </div>    
 </body>
 </html>
