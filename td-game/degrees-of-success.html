@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -31,15 +31,33 @@
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
                 <!-- Making Checks -->
-                <li><a href="#making_checks">Making Checks</a></li>
-                <li><a href="#modifiers">Modifiers</a></li>
-                <li><a href="#bonuses">Bonuses</a></li>
-                <li><a href="#penalties">Penalties</a></li>
-                <li><a href="#standard_difficulty_penalties">Standard Difficulty Penalties</a></li>
-                <li><a href="#area_checks">Area Checks</a></li>
+                <li class="dropdownContainer">
+                    <a href="#making_checks" class="dropdownToggle">Making Checks
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#modifiers">Modifiers</a></li>
+                        <li><a href="#bonuses">Bonuses</a></li>
+                        <li><a href="#penalties">Penalties</a></li>
+                        <li><a href="#standard_difficulty_penalties">Standard Difficulty Penalties</a></li>
+                        <li><a href="#area_checks">Area Checks</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Dice Pools -->
-                <li><a href="#dice_pools">Dice Pools</a></li>
-                <li><a href="#polarity">Polarity</a></li>
+                <li class="dropdownContainer">
+                    <a href="#dice_pools" class="dropdownToggle">Dice Pools
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#polarity">Polarity</a></li>
+                    </ul>
+                </li>
+
                 <!-- Lucidity Tokens -->
                 <li><a href="#lucidity_tokens">Lucidity Tokens</a></li>
             </ul>

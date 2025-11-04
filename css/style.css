@@ -98,6 +98,7 @@ body {
     flex-basis: 0;
 }
 
+/* Should also be deprecated, check before removing */
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -178,8 +179,9 @@ body {
     margin: 0 0.5rem 0;
     inset: 3.25rem 0 0;
     overflow-wrap: normal;
-    text-align: center;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thymora-jade) transparent;
     max-height: calc(100vh - 4rem);
     
     background-color: hsl(from #6C757D h s l / 0.2);
@@ -189,15 +191,40 @@ body {
 }
 
 .sidenavHead {
-    margin: 1rem 0.5rem;
+    margin: 1.5rem 1.5rem 0.5rem;
+    text-align: left;
 }
 
 .sidenavLinks {
-    margin-bottom: 1rem;
+    margin: 0 1.5rem 1.5rem;
+    list-style-type: none;
 }
 
 .sidenavLinks li {
     margin: 0.5rem 0.5rem;
+}
+
+
+/* dropdown menus */
+.dropdownIcon {
+    vertical-align: middle;
+    color: var(--link-gold);
+}
+
+
+.dropdownContainer.open .dropdownIcon {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.dropdownMenu {
+    /* Want height to transition back to auto for opening, plus transition effect */
+    height: 0;
+    overflow-y: hidden;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 1.0rem;
+    transition: height 0.5s ease-in;
 }
 
 /* rightnav */
