@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -15,47 +15,84 @@
         <div class="topnav">
             <!-- Links to Other Site Sections -->
             <span class="topnavLinks">
-                <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M80-80v-440h80v80h80l119-395v-85h80v80h81v-80h80v80l120 400h80v-80h80v440H520v-200h-80v200H80Zm268-440h264l-24-80H372l-24 80Zm48-160h168l-24-80H420l-24 80ZM160-160h200v-200h240v200h200v-200H660l-24-80H324l-24 80H160v200Zm320-300Z"/>
+                    </svg>
+                    <span class="topnavIconText">Home</span>
+                </a> | 
+                <a href="/td-primer/primer.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6q47 0 91.5 10.5T440-278Zm40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q74 0 126 17t112 52q11 6 16.5 14t5.5 21v418q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-481q15 5 29.5 11t28.5 14q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm140-240v-440l120-40v440l-120 40Zm-340-99Z"/>
+                    </svg>
+                    <span class="topnavIconText">Primer</span>
+                </a> | 
+                <a href="/td-game/gameland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M838-393q5-23 0-46t-15-45q-17 16-30 35.5T775-406q-5 23 .5 45.5T790-316q17-16 30-35t18-42ZM207-626q19 19 43.5 25t47.5-2l-19-19q-18-18-43-24.5t-48 1.5l19 19Zm73-180-79 78q36-3 71.5 9t63.5 40l19 19q8-23 3-48t-25-44l-53-54ZM823-80 357-544q-49 30-107 23.5T150-569L40-680l240-239 110 110q43 43 48.5 101T414-601l289 289q-8-26-10-54t3-56q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 51-42.5 91T797-218l82 82-56 56ZM310-650Zm334 166-56-57 212-212v-47h-47L541-588l-57-56 236-236h160v160L644-484ZM142-92l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 48-48 57 56-48 48 47 47 48-48 56 57-48 48 5 4q23 23 23 57t-23 57l-28 28-88-88L198-92q-12 12-28 12t-28-12Z"/>
+                    </svg>
+                    <span class="topnavIconText">Game</span>
+                </a> | 
+                <a href="/td-setting/dreamland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+                    </svg>
+                    <span class="topnavIconText">Setting</span>
+                </a>
             </span>
 
             <!-- Section Title -->
             <span class="topnavTitle">Thymoran Dreams Codex</span>
         </div>
 
-        <!-- 
-            Flow: 
-            Attunement | Airheart | Dreamheart | Fireheart | Lightheart | Stoneheart | Sylvanheart | Waterheart
-            Touchstone | 
-            Quirk | 
-            Traits | 
-            Invoking Attributes | 
-            Changing Attributes
-        -->
-
 
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
-            <h3 class="sidenavHead">Table of Contents</h3>
+
+            <!-- Button to toggle sidenav display on small screens -->
+            <button class="sidenavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
+                <li class="sidenavHead">Table of Contents</li>
                 <!-- Attunements -->
-                <li><a href="#attunement">Attunement</a></li>
-                <li><a href="#airheart">Airheart</a></li>
-                <li><a href="#dreamheart">Dreamheart</a></li>
-                <li><a href="#fireheart">Fireheart</a></li>
-                <li><a href="#lightheart">Lightheart</a></li>
-                <li><a href="#stoneheart">Stoneheart</a></li>
-                <li><a href="#sylvanheart">Sylvanheart</a></li>
-                <li><a href="#waterheart">Waterheart</a></li>
+                <li class="dropdownContainer">
+                    <a href="#attunement" class="dropdownToggle">
+                        <span class="nowrapSpan">Attunement
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#airheart">Airheart</a></li>
+                        <li><a href="#dreamheart">Dreamheart</a></li>
+                        <li><a href="#fireheart">Fireheart</a></li>
+                        <li><a href="#lightheart">Lightheart</a></li>
+                        <li><a href="#stoneheart">Stoneheart</a></li>
+                        <li><a href="#sylvanheart">Sylvanheart</a></li>
+                        <li><a href="#waterheart">Waterheart</a></li>
+                    </ul>
+                </li>
+                
+
                 <!-- Touchstone -->
                 <li><a href="#touchstone">Touchstone</a></li>
+
                 <!-- Quirk -->
                 <li><a href="#quirk">Quirk</a></li>
+
                 <!-- Traits -->
                 <li><a href="#traits">Traits</a></li>
+
                 <!-- Invoking Attributes -->
                 <li><a href="#invoking_attributes">Invoking Attributes</a></li>
+
                 <!-- Changing Attributes -->
                 <li><a href="#changing_attributes">Changing Attributes</a></li>
             </ul>
@@ -63,8 +100,16 @@
 
         <!-- Rightnav Intrasection Links -->
         <div class="rightnav">
-            <h3 class="rightnavHead">Codex Links</h3>
+
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <ul class="rightnavLinks">
+                <li class="rightnavHead">Codex Links</li>
                 <li><a href="gameland.html">Codex Base</a></li>
                 <li><a href="character-generator.html">Character Generator</a></li>
                 <li><a href="degrees-of-success.html">Degrees of Success</a></li>
