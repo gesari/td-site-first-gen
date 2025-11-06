@@ -14,7 +14,6 @@ const closeAllDropdowns = () => {
 // Attach click event to all dropdown toggles
 document.querySelectorAll(".dropdownToggle").forEach(dropdownToggle => {
     dropdownToggle.addEventListener("click", e => {
-        e.preventDefault();
 
         const dropdown = e.target.closest(".dropdownContainer");
         const menu = dropdown.querySelector(".dropdownMenu");
@@ -35,18 +34,39 @@ document.querySelector(".dropdownContainer").addEventListener("click", () => {
 const sidenav = document.querySelector('.sidenav');
 const sidenavToggle = document.querySelector('.sidenavToggle');
 
-sidenavToggle.addEventListener('click', () => {
+sidenavToggle.addEventListener('click', e => {
     const isOpen = sidenav.classList.contains("open");
 
     sidenav.classList.toggle("open");
 
     if (!isOpen) {
-        sidenav.style.height = 'auto';
+        sidenav.style.height = 'calc(100vh - 3rem)';
         sidenavToggle.style.transform = 'rotate(0)';
     }
     else {
         sidenav.style.height = '3rem';
         sidenavToggle.style.transform = 'rotate(180deg)';
         // setTimeout(sidenav.style.display = 'none', 5000);
+    }
+})
+
+// Toggle display of rightnav at smaller screen sizes
+const rightnav = document.querySelector('.rightnav');
+const rightnavToggle = document.querySelector('.rightnavToggle');
+
+rightnavToggle.addEventListener('click', () => {
+    
+    const isOpen = rightnav.classList.contains("open");
+
+    rightnav.classList.toggle("open");
+
+    if (!isOpen) {
+        rightnav.style.height = 'calc(100vh - 3rem)';
+        rightnavToggle.style.transform = 'rotate(0)';
+    }
+    else {
+        rightnav.style.height = '3rem';
+        rightnavToggle.style.transform = 'rotate(180deg)';
+        // setTimeout(rightnav.style.display = 'none', 5000);
     }
 })

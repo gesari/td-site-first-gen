@@ -50,20 +50,25 @@
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
+
+            <!-- Button to toggle sidenav display on small screens -->
             <button class="sidenavToggle">
                 <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
                     <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                 </svg>
             </button>
+
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
-                <li class="sidenavHead"><h3></h3>Table of Contents</li>
+                <li class="sidenavHead">Table of Contents</li>
                 <!-- Making Checks -->
                 <li class="dropdownContainer">
-                    <a href="#making_checks" class="dropdownToggle">Making Checks
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
-                            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
-                        </svg>
+                    <a href="#making_checks" class="dropdownToggle">Making 
+                        Checks<span class="nowrapSpan">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
                     </a>
                     <ul class="dropdownMenu">
                         <li><a href="#modifiers">Modifiers</a></li>
@@ -76,10 +81,12 @@
                 
                 <!-- Dice Pools -->
                 <li class="dropdownContainer">
-                    <a href="#dice_pools" class="dropdownToggle">Dice Pools
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
-                            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
-                        </svg>
+                    <a href="#dice_pools" class="dropdownToggle">Dice 
+                        <span class="nowrapSpan">Pools
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
                     </a>
                     <ul class="dropdownMenu">
                         <li><a href="#polarity">Polarity</a></li>
@@ -93,25 +100,34 @@
 
         <!-- RightNav -->
 
-        <aide class="rightnav">
-            <h3 class="rightnavHead">Codex Links</h3>
-                <ul class="rightnavLinks">
-                    <li><a href="gameland.html">Codex Base</a></li>
-                    <li><a href="character-generator.html">Character Generator</a></li>
-                    <li><a href="actions.html">Actions</a></li>
-                    <li><a href="status-effects.html">Status Effects</a></li>
-                    <li><a href="exploration.html">Exploration</a></li>
-                    <li><a href="dreamers.html">Dreamers</a></li>
-                    <li><a href="statistics.html">Statistics</a></li>
-                    <li><a href="style.html">Style</a></li>
-                    <li><a href="attributes.html">Attributes</a></li>
-                    <li><a href="items.html">Items</a></li>
-                    <li><a href="azaian-magic.html">Azaian Magic</a></li>
-                    <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
-                    <li><a href="specializations.html">Specializations</a></li>
-                    <li><a href="companions.html">Companions</a></li>
-                </ul>
-        </aide>
+        <div class="rightnav">
+
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+
+            <!-- Intrasection Directory -->
+            <ul class="rightnavLinks">
+                <li class="rightnavHead">Codex Links</li>
+                <li><a href="gameland.html">Codex Base</a></li>
+                <li><a href="character-generator.html">Character Generator</a></li>
+                <li><a href="actions.html">Actions</a></li>
+                <li><a href="status-effects.html">Status Effects</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="dreamers.html">Dreamers</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="style.html">Style</a></li>
+                <li><a href="attributes.html">Attributes</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="azaian-magic.html">Azaian Magic</a></li>
+                <li><a href="spell-architecture-catalog.html">Spell Architecture Catalog</a></li>
+                <li><a href="specializations.html">Specializations</a></li>
+                <li><a href="companions.html">Companions</a></li>
+            </ul>
+        </div>
 
 
         <div class="localContent">
@@ -153,7 +169,7 @@
                 <h4 class="sectionHead" id="lucidity_tokens">Lucidity Tokens</h4>
                 <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
             </div>
-        </div>    
+        </div>  
     </div>
 </body>
 </html>

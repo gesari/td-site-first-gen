@@ -6,8 +6,6 @@
 }
 
 :root {
-    interpolate-size: allow-keywords;
-
     /* Colors */
     --thymora-jade: #B7E1CD;
     --link-gold: #E1CDB7;
@@ -44,6 +42,8 @@ html {
     scroll-padding-top: 4rem;
 }
 
+
+
 /* Shared Content */
 body {
     color: var(--thymora-jade);
@@ -60,6 +60,12 @@ body {
 
     overflow-x: hidden;
 }
+
+.nowrapSpan {
+    white-space: nowrap;
+}
+
+
 
 /* Grid layout */
 .grid {
@@ -83,6 +89,7 @@ body {
 }
 
 
+
 /* Topnav Settings */
 .topnav {
     grid-area: tn;
@@ -98,33 +105,6 @@ body {
     background-color: hsl(from #6C757D h s l / 0.2);
     backdrop-filter: blur(15px);
 }
-
-/* I believe this is all deprecated.
-    Leaving in while updating rest of menus / media queries to be sure before removing */
-/* .topnavMenuButton {
-    cursor: pointer;
-    margin-right: 1rem;
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-.topnavMenuContent {
-    display: none;
-    position: fixed;
-    width: 14vw;
-    height: 100vh;
-    padding: 0 1rem;
-    margin: 0;
-    left: 0;
-    list-style-type: none;
-
-    background-color: hsl(from #6C757D h s l / 0.2);
-    backdrop-filter: blur(20px);
-}
-
-.topnavMenuContent li {
-    margin: 1rem 0;
-} */
 
 .topnavLinks {   
     font-size: 1.0rem;
@@ -145,8 +125,8 @@ body {
 }
 
 
-/* Body Settings */
 
+/* Body Settings */
 
 /* sidenav */
 .sidenav {
@@ -187,10 +167,8 @@ body {
 }
 
 .sidenavLinks {
-    margin: 0 1.5rem 1.5rem;
+    margin: 1.5rem;
     list-style-type: none;
-
-    /* transition: height 0.5s ease, visibility 0.2s ease; */
 }
 
 .sidenavLinks li {
@@ -198,12 +176,14 @@ body {
 }
 
 
+
+
 /* sidenav dropdown menus */
 .dropdownIcon {
     vertical-align: middle;
     color: var(--link-gold);
+    white-space: nowrap;
 }
-
 
 .dropdownContainer.open .dropdownIcon {
     transform: rotate(90deg);
@@ -211,7 +191,6 @@ body {
 }
 
 .dropdownMenu {
-    /* Want height to transition back to auto for opening, plus transition effect */
     height: 0;
     overflow-y: hidden;
     list-style-type: none;
@@ -220,6 +199,8 @@ body {
     transition: height 0.5s ease-in;
 }
 
+
+
 /* rightnav */
 .rightnav {
     grid-area: rn;
@@ -227,8 +208,8 @@ body {
     margin: 0 0.5rem 0;
     inset: 3.25rem 0 0;
     overflow-wrap: normal;
-    text-align: center;
     overflow-y: auto;
+    text-align: right;
     max-height: calc(100vh - 4rem);
     
     background-color: hsl(from #6C757D h s l / 0.2);
@@ -237,26 +218,41 @@ body {
     clip-path: var(--corner-notch);
 }
 
+.rightnavToggle {
+    display: none;
+    aspect-ratio: 1;
+    background: transparent;
+    border: 0;
+    
+    color: var(--link-gold);
+
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.rightnavToggle:hover, .rightnavtoggle:focus {
+    color: var(--link-hover);
+}
+
 .rightnavHead {
-    margin: 1rem 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .rightnavLinks {
-    margin-bottom: 1rem;
+    margin: 1.5rem;
+    list-style-type: none;
 }
 
 .rightnavLinks li {
     margin: 0.5rem 0.5rem;
 }
 
+
+
 /* body content */
 .localContent {
     grid-area: lc;
-    overflow: auto;
-    /* Offset margin to account for sidenav */
-    /* margin-left: 14vw; */
-    /* width: 85vw;
-    grid-column: 2 / -1; */
 }
 
 .localHead {
@@ -392,14 +388,10 @@ a:active {
     color: #E1B7CB;
 }
 
-/* Media Queries for Size changes will go here */
-/* Gridbox is fine, update clip paths for sidenav/rightnav to be rectangular for full bottom coverage to mirror topnav */
-/* Sidenav/rightnav backgrounds will need to adjust to match topnav blur for things passing behind */
-/* Set text size for topnav smaller (topnavLinks / topnavTitle) */
-/* Add in margins for Local body passing beneath? */
+/* Media Queries for screens less than 1000px */
 @media (max-width: 1000px) {
     .grid {
-        grid-template-rows: 3rem auto 3rem;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas: 
             "tn tn tn tn tn tn tn"
             "lc lc lc lc lc lc lc"
@@ -422,41 +414,24 @@ a:active {
         display: none;
     }
 
-    .sidenav {
-        bottom: 0;
-        margin: 0;
-        min-height: 3rem;
-        z-index: 2;
-
-        transition: height 0.5s ease;
-
-        overflow-y: hidden;
-
-        backdrop-filter: blur(15px);
-        clip-path: none;
-    }
-
-    .sidenavToggle {
-        display: block;
-    }
-
-    .sidenavLinks {
-        /* height: 0; */
-        overflow: hidden;
-        /* visibility: hidden; */
-        /* display: none; */
-    }
-
-    .rightnav {
+    .sidenav, .rightnav {
         bottom: 0;
         margin: 0;
         height: 3rem;
         z-index: 2;
 
-        overflow-y: hidden;
-        
+        transition: height 0.5s ease;
+
+        overflow: hidden;
+        overscroll-behavior: none;
+
         backdrop-filter: blur(15px);
         clip-path: none;
+    }
+
+    .sidenavToggle, .rightnavToggle {
+        display: block;
+        margin: auto;
     }
 }
 
