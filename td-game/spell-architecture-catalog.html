@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -16,147 +16,272 @@
         <div class="topnav">
             <!-- Links to Other Site Sections -->
             <span class="topnavLinks">
-                <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M80-80v-440h80v80h80l119-395v-85h80v80h81v-80h80v80l120 400h80v-80h80v440H520v-200h-80v200H80Zm268-440h264l-24-80H372l-24 80Zm48-160h168l-24-80H420l-24 80ZM160-160h200v-200h240v200h200v-200H660l-24-80H324l-24 80H160v200Zm320-300Z"/>
+                    </svg>
+                    <span class="topnavIconText">Home</span>
+                </a> | 
+                <a href="/td-primer/primer.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6q47 0 91.5 10.5T440-278Zm40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q74 0 126 17t112 52q11 6 16.5 14t5.5 21v418q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-481q15 5 29.5 11t28.5 14q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm140-240v-440l120-40v440l-120 40Zm-340-99Z"/>
+                    </svg>
+                    <span class="topnavIconText">Primer</span>
+                </a> | 
+                <a href="/td-game/gameland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M838-393q5-23 0-46t-15-45q-17 16-30 35.5T775-406q-5 23 .5 45.5T790-316q17-16 30-35t18-42ZM207-626q19 19 43.5 25t47.5-2l-19-19q-18-18-43-24.5t-48 1.5l19 19Zm73-180-79 78q36-3 71.5 9t63.5 40l19 19q8-23 3-48t-25-44l-53-54ZM823-80 357-544q-49 30-107 23.5T150-569L40-680l240-239 110 110q43 43 48.5 101T414-601l289 289q-8-26-10-54t3-56q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 51-42.5 91T797-218l82 82-56 56ZM310-650Zm334 166-56-57 212-212v-47h-47L541-588l-57-56 236-236h160v160L644-484ZM142-92l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 48-48 57 56-48 48 47 47 48-48 56 57-48 48 5 4q23 23 23 57t-23 57l-28 28-88-88L198-92q-12 12-28 12t-28-12Z"/>
+                    </svg>
+                    <span class="topnavIconText">Game</span>
+                </a> | 
+                <a href="/td-setting/dreamland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+                    </svg>
+                    <span class="topnavIconText">Setting</span>
+                </a>
             </span>
 
             <!-- Section Title -->
             <span class="topnavTitle">Thymoran Dreams Codex</span>
         </div>
 
-        <!-- Flow: 
-            Architecture Catalog
-                Adaptation School Architectures
-                    Animism Subschool | Confusion | Psionic Link | Call Spirit | Symbiotic Bond | Thoughtsteal | Thoughtblur | Communion | Invest Spirit (9)
-                    Harmonics Subschool | Cure | Feign Death | Renew | Regenerate | Restore | Resurgence | Siphon | Group Cure | Harvest | Lifeburn | Vital Surge (12)
-                    Occlusion Subschool | Ward | Fortify | Barrier | Stasis | Bonded Ward | Nullification Field | Phalanx (8)
-                Projection School Architectures
-                    Conduction Subschool | Buoy | Expulsion | Jolt | Arc Wave | Flight | Flux Beam | Arc Vortex | Chain Reaction | Fluxion (10)
-                    Enchantment Subschool | Enhance | Glyph | Accelerate | Construct | Disrupt | Invest | Torpor | Dispel | Arcanomaton | Imbue (11)
-                    Perception Subschool | Blur | Illusory Guise | Sensory Deprivation | Spotlight | Stable Illusion | Subtle Illusion | Illusion Field | Stage Lighting (9)
-                Unification School Architectures 
-                    Augury Subschool | Acumen | Astral Projection | Identify | Dreamshape | Foretelling | Seeing | Assisted Projection | Haunt | Oracle (10)
-                    Translocation Subschool | Jaunt | Phase | Speed | Banish | Portal | Spatial Overlap | Warp | Azonian Entanglement | Sanctuary | Thread the Eye (11)
-                    Transmutation Subschool | Alter | Meld | Phase Shift | Polymorph | Transmute | Disintegrate | Sculpt | Synthesis (9)
-        -->
-
 
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
-            <h3 class="sidenavHead">Table of Contents</h3>
+
+            <!-- Button to toggle sidenav display on small screens -->
+            <button class="sidenavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
+                <li class="sidenavHead">Table of Contents</li>
                 <!-- Adaptation School -->
                 <li><a href="#adaptation_school">Adaptation School Architectures</a></li>
+
                 <!-- Animism Subschool -->
-                <li><a href="#animism_subschool">Animism Subschool</a></li>
-                <li><a href="#confusion">Confusion</a></li>
-                <li><a href="#psionic_link">Psionic Link</a></li>
-                <li><a href="#call_spirit">Call Spirit</a></li>
-                <li><a href="#symbiotic_bond">Symbiotic Bond</a></li>
-                <li><a href="#thoughtsteal">Thoughtsteal</a></li>
-                <li><a href="#thoughtblur">Thoughtblur</a></li>
-                <li><a href="#communion">Communion</a></li>
-                <li><a href="#invest_spirit">Invest Spirit</a></li>
+                <li class="dropdownContainer">
+                    <a href="#animism_subschool" class="dropdownToggle">Animism 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#confusion">Confusion</a></li>
+                        <li><a href="#call_spirit">Call Spirit</a></li>
+                        <li><a href="#symbiotic_bond">Symbiotic Bond</a></li>
+                        <li><a href="#thoughtsteal">Thoughtsteal</a></li>
+                        <li><a href="#thoughtblur">Thoughtblur</a></li>
+                        <li><a href="#communion">Communion</a></li>
+                        <li><a href="#invest_spirit">Invest Spirit</a></li>
+                        <li><a href="#psionic_link">Psionic Link</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Harmonics Subschool -->
-                <li><a href="#harmonics_subschool">Harmonics Subschool</a></li>
-                <li><a href="#cure">Cure</a></li>
-                <li><a href="#feign_death">Feign Death</a></li>
-                <li><a href="#renew">Renew</a></li>
-                <li><a href="#regenerate">Regenerate</a></li>
-                <li><a href="#restore">Restore</a></li>
-                <li><a href="#resurgence">Resurgence</a></li>
-                <li><a href="#siphon">Siphon</a></li>
-                <li><a href="#group_cure">Group Cure</a></li>
-                <li><a href="#harvest">Harvest</a></li>
-                <li><a href="#lifeburn">Lifeburn</a></li>
-                <li><a href="#vital_surge">Vital Surge</a></li>
+                <li class="dropdownContainer">
+                    <a href="#harmonics_subschool" class="dropdownToggle">Harmonics 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#cure">Cure</a></li>
+                        <li><a href="#renew">Renew</a></li>
+                        <li><a href="#regenerate">Regenerate</a></li>
+                        <li><a href="#restore">Restore</a></li>
+                        <li><a href="#resurgence">Resurgence</a></li>
+                        <li><a href="#siphon">Siphon</a></li>
+                        <li><a href="#group_cure">Group Cure</a></li>
+                        <li><a href="#harvest">Harvest</a></li>
+                        <li><a href="#lifeburn">Lifeburn</a></li>
+                        <li><a href="#vital_surge">Vital Surge</a></li>
+                        <li><a href="#feign_death">Feign Death</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Occlusion Subschool -->
-                <li><a href="#occlusion_subschool">Occlusion Subschool</a></li>
-                <li><a href="#ward">Ward</a></li>
-                <li><a href="#fortify">Fortify</a></li>
-                <li><a href="#barrier">Barrier</a></li>
-                <li><a href="#stasis">Stasis</a></li>
-                <li><a href="#bonded_ward">Bonded Ward</a></li>
-                <li><a href="#nullification_field">Nullification Field</a></li>
-                <li><a href="#phalanx">Phalanx</a></li>
+                <li class="dropdownContainer">
+                    <a href="#occlusion_subschool" class="dropdownToggle">Occlusion 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#ward">Ward</a></li>
+                        <li><a href="#barrier">Barrier</a></li>
+                        <li><a href="#stasis">Stasis</a></li>
+                        <li><a href="#bonded_ward">Bonded Ward</a></li>
+                        <li><a href="#nullification_field">Nullification Field</a></li>
+                        <li><a href="#phalanx">Phalanx</a></li>
+                        <li><a href="#fortify">Fortify</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Projection School -->
                 <li><a href="#projection_school">Projection School Architectures</a></li>
+
                 <!-- Conduction Subschool -->
-                <li><a href="#conduction_subschool">Conduction Subschool</a></li>
-                <li><a href="#buoy">Buoy</a></li>
-                <li><a href="#expulsion">Expulsion</a></li>
-                <li><a href="#jolt">Jolt</a></li>
-                <li><a href="#arc_wave">Arc Wave</a></li>
-                <li><a href="#flight">Flight</a></li>
-                <li><a href="#flux_beam">Flux Beam</a></li>
-                <li><a href="#arc_vortex">Arc Vortex</a></li>
-                <li><a href="#chain_reaction">Chain Reaction</a></li>
-                <li><a href="#fluxion">Fluxion</a></li>
+                <li class="dropdownContainer">
+                    <a href="#conduction_subschool" class="dropdownToggle">Conduction 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#buoy">Buoy</a></li>
+                        <li><a href="#jolt">Jolt</a></li>
+                        <li><a href="#arc_wave">Arc Wave</a></li>
+                        <li><a href="#flight">Flight</a></li>
+                        <li><a href="#flux_beam">Flux Beam</a></li>
+                        <li><a href="#arc_vortex">Arc Vortex</a></li>
+                        <li><a href="#chain_reaction">Chain Reaction</a></li>
+                        <li><a href="#fluxion">Fluxion</a></li>
+                        <li><a href="#expulsion">Expulsion</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Enchantment Subschool -->
-                <li><a href="#enchantment_subschool">Enchantment Subschool</a></li>
-                <li><a href="#enhance">Enhance</a></li>
-                <li><a href="#glyph">Glyph</a></li>
-                <li><a href="#accelerate">Accelerate</a></li>
-                <li><a href="#construct">Construct</a></li>
-                <li><a href="#disrupt">Disrupt</a></li>
-                <li><a href="#invest">Invest</a></li>
-                <li><a href="#lethargy">Lethargy</a></li>
-                <li><a href="#dispel">Dispel</a></li>
-                <li><a href="#arcanomaton">Arcanomaton</a></li>
-                <li><a href="#imbue">Imbue</a></li>
+                <li class="dropdownContainer">
+                    <a href="#enchantment_subschool" class="dropdownToggle">Enchantment 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#enhance">Enhance</a></li>
+                        <li><a href="#accelerate">Accelerate</a></li>
+                        <li><a href="#construct">Construct</a></li>
+                        <li><a href="#disrupt">Disrupt</a></li>
+                        <li><a href="#invest">Invest</a></li>
+                        <li><a href="#lethargy">Lethargy</a></li>
+                        <li><a href="#dispel">Dispel</a></li>
+                        <li><a href="#arcanomaton">Arcanomaton</a></li>
+                        <li><a href="#imbue">Imbue</a></li>
+                        <li><a href="#glyph">Glyph</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Perception Subschool -->
-                <li><a href="#perception_subschool">Perception Subschool</a></li>
-                <li><a href="#blur">Blur</a></li>
-                <li><a href="#illusory_guise">Illusory Guise</a></li>
-                <li><a href="#sensory_deprivation">Sensory Deprivation</a></li>
-                <li><a href="#spotlight">Spotlight</a></li>
-                <li><a href="#stable_illusion">Stable Illusion</a></li>
-                <li><a href="#subtle_illusion">Subtle Illusion</a></li>
-                <li><a href="#illusion_field">Illusion Field</a></li>
-                <li><a href="#stage_lighting">Stage Lighting</a></li>
+                <li class="dropdownContainer">
+                    <a href="#perception_subschool" class="dropdownToggle">Perception 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#blur">Blur</a></li>
+                        <li><a href="#sensory_deprivation">Sensory Deprivation</a></li>
+                        <li><a href="#spotlight">Spotlight</a></li>
+                        <li><a href="#stable_illusion">Stable Illusion</a></li>
+                        <li><a href="#subtle_illusion">Subtle Illusion</a></li>
+                        <li><a href="#illusion_field">Illusion Field</a></li>
+                        <li><a href="#stage_lighting">Stage Lighting</a></li>
+                        <li><a href="#illusory_guise">Illusory Guise</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Unification School -->
                 <li><a href="#unification_school">Unification School Architectures</a></li>
+
                 <!-- Augury Subschool -->
-                <li><a href="#augury_subschool">Augury Subschool</a></li>
-                <li><a href="#acumen">Acumen</a></li>
-                <li><a href="#astral_projection">Astral Projection</a></li>
-                <li><a href="#identify">Identify</a></li>
-                <li><a href="#dreamshape">Dreamshape</a></li>
-                <li><a href="#foretelling">Foretelling</a></li>
-                <li><a href="#seeing">Seeing</a></li>
-                <li><a href="#assisted_projection">Assisted Projection</a></li>
-                <li><a href="#haunt">Haunt</a></li>
-                <li><a href="#oracle">Oracle</a></li>            
+                <li class="dropdownContainer">
+                    <a href="#augury_subschool" class="dropdownToggle">Augury 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#astral_projection">Astral Projection</a></li>
+                        <li><a href="#identify">Identify</a></li>
+                        <li><a href="#dreamshape">Dreamshape</a></li>
+                        <li><a href="#foretelling">Foretelling</a></li>
+                        <li><a href="#seeing">Seeing</a></li>
+                        <li><a href="#assisted_projection">Assisted Projection</a></li>
+                        <li><a href="#haunt">Haunt</a></li>
+                        <li><a href="#oracle">Oracle</a></li> 
+                        <li><a href="#acumen">Acumen</a></li>
+                    </ul>
+                </li>
+                           
                 <!-- Translocation Subschool -->
-                <li><a href="#translocation_subschool">Translocation Subschool</a></li>
-                <li><a href="#jaunt">Jaunt</a></li>
-                <li><a href="#phase">Phase</a></li>
-                <li><a href="#speed">Speed</a></li>
-                <li><a href="#banish">Banish</a></li>
-                <li><a href="#portal">Portal</a></li>
-                <li><a href="#spatial_overlap">Spatial Overlap</a></li>
-                <li><a href="#warp">Warp</a></li>
-                <li><a href="#azonian_entanglement">Azonian Entanglement</a></li>
-                <li><a href="#sanctuary">Sanctuary</a></li>
-                <li><a href="#thread_the_eye">Thread the Eye</a></li>
+                <li class="dropdownContainer">
+                    <a href="#translocation_subschool" class="dropdownToggle">Translocation 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#phase">Phase</a></li>
+                        <li><a href="#speed">Speed</a></li>
+                        <li><a href="#banish">Banish</a></li>
+                        <li><a href="#portal">Portal</a></li>
+                        <li><a href="#spatial_overlap">Spatial Overlap</a></li>
+                        <li><a href="#warp">Warp</a></li>
+                        <li><a href="#azonian_entanglement">Azonian Entanglement</a></li>
+                        <li><a href="#sanctuary">Sanctuary</a></li>
+                        <li><a href="#thread_the_eye">Thread the Eye</a></li>
+                        <li><a href="#jaunt">Jaunt</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Transmutation Subschool -->
-                <li><a href="#transmutation_subschool">Transmutation Subschool</a></li>
-                <li><a href="#alter">Alter</a></li>
-                <li><a href="#meld">Meld</a></li>
-                <li><a href="#phase_shift">Phase Shift</a></li>
-                <li><a href="#polymorph">Polymorph</a></li>
-                <li><a href="#transmute">Transmute</a></li>
-                <li><a href="#disintegrate">Disintegrate</a></li>
-                <li><a href="#sculpt">Sculpt</a></li>
-                <li><a href="#synthesis">Synthesis</a></li>            
+                <li class="dropdownContainer">
+                    <a href="#transmutation_subschool" class="dropdownToggle">Transmutation 
+                        <span class="nowrapSpan">Subschool
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#meld">Meld</a></li>
+                        <li><a href="#phase_shift">Phase Shift</a></li>
+                        <li><a href="#polymorph">Polymorph</a></li>
+                        <li><a href="#transmute">Transmute</a></li>
+                        <li><a href="#disintegrate">Disintegrate</a></li>
+                        <li><a href="#sculpt">Sculpt</a></li>
+                        <li><a href="#synthesis">Synthesis</a></li> 
+                        <li><a href="#alter">Alter</a></li>
+                    </ul>
+                </li>
+                           
             </ul>
         </div>
 
         <!-- Rightnav Intrasection Links -->
         <div class="rightnav">
-            <h3 class="rightnavHead">Codex Links</h3>
+
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <ul class="rightnavLinks">
+                <li class="rightnavHead">Codex Links</li>
                 <li><a href="gameland.html">Codex Base</a></li>
                 <li><a href="character-generator.html">Character Generator</a></li>
                 <li><a href="degrees-of-success.html">Degrees of Success</a></li>
