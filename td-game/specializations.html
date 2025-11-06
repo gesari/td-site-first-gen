@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -16,184 +16,282 @@
         <div class="topnav">
             <!-- Links to Other Site Sections -->
             <span class="topnavLinks">
-                <a href="../index.html">Home</a> | <a href="/td-primer/primer.html">Primer</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M80-80v-440h80v80h80l119-395v-85h80v80h81v-80h80v80l120 400h80v-80h80v440H520v-200h-80v200H80Zm268-440h264l-24-80H372l-24 80Zm48-160h168l-24-80H420l-24 80ZM160-160h200v-200h240v200h200v-200H660l-24-80H324l-24 80H160v200Zm320-300Z"/>
+                    </svg>
+                    <span class="topnavIconText">Home</span>
+                </a> | 
+                <a href="/td-primer/primer.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6q47 0 91.5 10.5T440-278Zm40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q74 0 126 17t112 52q11 6 16.5 14t5.5 21v418q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-481q15 5 29.5 11t28.5 14q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm140-240v-440l120-40v440l-120 40Zm-340-99Z"/>
+                    </svg>
+                    <span class="topnavIconText">Primer</span>
+                </a> | 
+                <a href="/td-game/gameland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M838-393q5-23 0-46t-15-45q-17 16-30 35.5T775-406q-5 23 .5 45.5T790-316q17-16 30-35t18-42ZM207-626q19 19 43.5 25t47.5-2l-19-19q-18-18-43-24.5t-48 1.5l19 19Zm73-180-79 78q36-3 71.5 9t63.5 40l19 19q8-23 3-48t-25-44l-53-54ZM823-80 357-544q-49 30-107 23.5T150-569L40-680l240-239 110 110q43 43 48.5 101T414-601l289 289q-8-26-10-54t3-56q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 51-42.5 91T797-218l82 82-56 56ZM310-650Zm334 166-56-57 212-212v-47h-47L541-588l-57-56 236-236h160v160L644-484ZM142-92l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 48-48 57 56-48 48 47 47 48-48 56 57-48 48 5 4q23 23 23 57t-23 57l-28 28-88-88L198-92q-12 12-28 12t-28-12Z"/>
+                    </svg>
+                    <span class="topnavIconText">Game</span>
+                </a> | 
+                <a href="/td-setting/dreamland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+                    </svg>
+                    <span class="topnavIconText">Setting</span>
+                </a>
             </span>
 
             <!-- Section Title -->
             <span class="topnavTitle">Thymoran Dreams Codex</span>
         </div>
 
-        <!--
-            Flow:
-            Specialization Tree
-            Node Notation
-            The 3-2 Talent
-            Alchemist | Internal Alchemy 1-1 | 
-                Vital Technique 2-1 | Stalwart Technique 2-2 | 
-                Mend 3-1 | Ascended Form 3-2 | Dragonflame 3-3 | 
-                Bolster 4-1 | Fusion 4-2 | Entomb 4-3 | Caustic Environment 4-4
-            Arcanist | Astral Empowerment 1-1
-                Loft 2-1 | Arc Lance 2-2
-                Azonian Anchor 3-1 | Confluence 3-2 | Replication Matrix 3-3
-                Singularity 4-1 | Counterspell 4-2 | Azaian Density 4-3 | Spell Sniper 4-4
-            Conduit | Aura 1-1
-                Synergism 2-1 | Replenishing State 2-2
-                Intercede 3-1 | Convection 3-2 | Kinetic State 3-3
-                Paean 4-1 | Cleanse 4-2 | Siphoning State 4-3 | Reflexive State 4-4
-            Luminary | Perception Projectors 1-1
-                Blurred Image 2-1 | Memory Wipe 2-2
-                Stunt Double 3-1 | Labyrinth 3-2 | Phantasmagoria 3-3
-                Clandestine Interchange 4-1 | Avatar 4-2 | Luminous Execution 4-3 | Projected Magnification 4-4
-            Operative | The Swarm 1-1
-                Pulse 2-1 | Jolt 2-2
-                Tempest 3-1 | Turrets 3-2 | Stasis Field 3-3
-                Swarm Animation 4-1 | Barrage 4-2 | Rapid Deployment 4-3 | Torpor 4-4
-            Phantom | Spatial Anomaly 1-1
-                Entanglement 2-1 | Charge 2-2
-                Shuffle 3-1 | Flurry 3-2 | Impel 3-3
-                Sanctuary Recall 4-1 | Mindfulness 4-2 | Spatial Presence 4-3 | Impact 4-4
-            Sage | Auspicious Personage 1-1
-                Threads of Fate 2-1 | Charted Course 2-2
-                Empowerment 3-1 | Portents Foreseen 3-2 | Altered Probability 3-3
-                Interject 4-1 | Cyclic Insight 4-2 | Opportunistic Foresight 4-3 | Oracular Marker 4-4
-            Sentinel | Runic Magic 1-1
-                Surge 2-1 | Tether 2-2
-                Aftershock 3-1 | Shifting Currents 3-2 | Dive 3-3
-                Accelerant 4-1 | Surging Tides 4-2 | Runic Sigil 4-3 | Aerial Bonds 4-4
-            Spiritist | Spiritbond 1-1
-                Predatory Instinct 2-1 | Foreceful Motion 2-2
-                Replenish 3-1 | Amplified Bond 3-2 | Reciprocal Motion 3-3
-                Warder's Call 4-1 | Vital Motion 4-2 | Harmonic Motion 4-3 | Warding Motion 4-4
-        -->
-
 
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
-            <h3 class="sidenavHead">Table of Contents</h3>
+
+            <!-- Button to toggle sidenav display on small screens -->
+            <button class="sidenavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
+                <li class="sidenavHead">Table of Contents</li>
                 <!-- Specialization Tree -->
                 <li><a href="#specialization_tree">Specialization Tree</a></li>
+
                 <!-- Node Notation -->
                 <li><a href="#node_notation">Node Notation</a></li>
+
                 <!-- The 3-2 Talent -->
                 <li><a href="#3_2_talent">The 3-2 Talent</a></li>
+
                 <!-- Alchemist -->
-                <li><a href="#alchemist">Alchemist</a></li>
-                <li><a href="#internal_alchemy">Internal Alchemy 1-1</a></li>
-                <li><a href="#vital_technique">Vital Technique 2-1</a></li>
-                <li><a href="#stalwart_technique">Stalwart Technique 2-2</a></li>
-                <li><a href="#mend">Mend 3-1</a></li>
-                <li><a href="#ascended_form">Ascended Form 3-2</a></li>
-                <li><a href="#dragonflame">Dragonflame 3-3</a></li>
-                <li><a href="#bolster">Bolster 4-1</a></li>
-                <li><a href="#fusion">Fusion 4-2</a></li>
-                <li><a href="#entomb">Entomb 4-3</a></li>
-                <li><a href="#caustic_environment">Caustic Environment 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#alchemist" class="dropdownToggle">
+                        <span class="nowrapSpan">Alchemist
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#internal_alchemy">Internal Alchemy 1-1</a></li>
+                        <li><a href="#vital_technique">Vital Technique 2-1</a></li>
+                        <li><a href="#stalwart_technique">Stalwart Technique 2-2</a></li>
+                        <li><a href="#mend">Mend 3-1</a></li>
+                        <li><a href="#ascended_form">Ascended Form 3-2</a></li>
+                        <li><a href="#dragonflame">Dragonflame 3-3</a></li>
+                        <li><a href="#bolster">Bolster 4-1</a></li>
+                        <li><a href="#fusion">Fusion 4-2</a></li>
+                        <li><a href="#entomb">Entomb 4-3</a></li>
+                        <li><a href="#caustic_environment">Caustic Environment 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Arcanist -->
-                <li><a href="#arcanist">Arcanist</a></li>
-                <li><a href="#astral_empowerment">Astral Empowerment 1-1</a></li>
-                <li><a href="#loft">Loft 2-1</a></li>
-                <li><a href="#arc_lance">Arc Lance 2-2</a></li>
-                <li><a href="#azonian_anchor">Azonian Anchor 3-1</a></li>
-                <li><a href="#confluence">Confluence 3-2</a></li>
-                <li><a href="#replication_matrix">Replication Matrix 3-3</a></li>
-                <li><a href="#singularity">Singularity 4-1</a></li>
-                <li><a href="#counterspell">Counterspell 4-2</a></li>
-                <li><a href="#azaian_density">Azaian Density 4-3</a></li>
-                <li><a href="#heavens_reach">Heaven's Reach 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#arcanist" class="dropdownToggle">
+                        <span class="nowrapSpan">Arcanist
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#astral_empowerment">Astral Empowerment 1-1</a></li>
+                        <li><a href="#loft">Loft 2-1</a></li>
+                        <li><a href="#arc_lance">Arc Lance 2-2</a></li>
+                        <li><a href="#azonian_anchor">Azonian Anchor 3-1</a></li>
+                        <li><a href="#confluence">Confluence 3-2</a></li>
+                        <li><a href="#replication_matrix">Replication Matrix 3-3</a></li>
+                        <li><a href="#singularity">Singularity 4-1</a></li>
+                        <li><a href="#counterspell">Counterspell 4-2</a></li>
+                        <li><a href="#azaian_density">Azaian Density 4-3</a></li>
+                        <li><a href="#heavens_reach">Heaven's Reach 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Conduit -->
-                <li><a href="#conduit">Conduit</a></li>
-                <li><a href="#aura">Aura 1-1</a></li>
-                <li><a href="#synergism">Synergism 2-1</a></li>
-                <li><a href="#replenishing_state">Replenishing State 2-2</a></li>
-                <li><a href="#intercede">Intercede 3-1</a></li>
-                <li><a href="#convection">Convection 3-2</a></li>
-                <li><a href="#kinetic_state">Kinetic State 3-3</a></li>
-                <li><a href="#paean">Paean 4-1</a></li>
-                <li><a href="#cleanse">Cleanse 4-2</a></li>
-                <li><a href="#siphoning_state">Siphoning State 4-3</a></li>
-                <li><a href="#reflexive_state">Reflexive State 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#conduit" class="dropdownToggle">
+                        <span class="nowrapSpan">Conduit
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#aura">Aura 1-1</a></li>
+                        <li><a href="#synergism">Synergism 2-1</a></li>
+                        <li><a href="#replenishing_state">Replenishing State 2-2</a></li>
+                        <li><a href="#intercede">Intercede 3-1</a></li>
+                        <li><a href="#convection">Convection 3-2</a></li>
+                        <li><a href="#kinetic_state">Kinetic State 3-3</a></li>
+                        <li><a href="#paean">Paean 4-1</a></li>
+                        <li><a href="#cleanse">Cleanse 4-2</a></li>
+                        <li><a href="#siphoning_state">Siphoning State 4-3</a></li>
+                        <li><a href="#reflexive_state">Reflexive State 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Luminary -->
-                <li><a href="#luminary">Luminary</a></li>
-                <li><a href="#perception_projectors">Perception Projectors 1-1</a></li>
-                <li><a href="#blurred_image">Blurred Image 2-1</a></li>
-                <li><a href="#memory_wipe">Memory Wipe 2-2</a></li>
-                <li><a href="#stunt_double">Stunt Double 3-1</a></li>
-                <li><a href="#labyrinth">Labyrinth 3-2</a></li>
-                <li><a href="#phantasmagoria">Phantasmagoria 3-3</a></li>
-                <li><a href="#clandestine_interchange">Clandestine Interchange 4-1</a></li>
-                <li><a href="#avatar">Avatar 4-2</a></li>
-                <li><a href="#luminous_execution">Luminous Execution 4-3</a></li>
-                <li><a href="#projected_magnification">Projected Magnification 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#luminary" class="dropdownToggle">
+                        <span class="nowrapSpan">Luminary
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#perception_projectors">Perception Projectors 1-1</a></li>
+                        <li><a href="#blurred_image">Blurred Image 2-1</a></li>
+                        <li><a href="#memory_wipe">Memory Wipe 2-2</a></li>
+                        <li><a href="#stunt_double">Stunt Double 3-1</a></li>
+                        <li><a href="#labyrinth">Labyrinth 3-2</a></li>
+                        <li><a href="#phantasmagoria">Phantasmagoria 3-3</a></li>
+                        <li><a href="#clandestine_interchange">Clandestine Interchange 4-1</a></li>
+                        <li><a href="#avatar">Avatar 4-2</a></li>
+                        <li><a href="#luminous_execution">Luminous Execution 4-3</a></li>
+                        <li><a href="#projected_magnification">Projected Magnification 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Operative -->
-                <li><a href="#operative">Operative</a></li>
-                <li><a href="#the_swarm">The Swarm 1-1</a></li>
-                <li><a href="#pulse">Pulse 2-1</a></li>
-                <li><a href="#jolt">Jolt 2-2</a></li>
-                <li><a href="#tempest">Tempest 3-1</a></li>
-                <li><a href="#turrets">Turrets 3-2</a></li>
-                <li><a href="#stasis_field">Stasis Field 3-3</a></li>
-                <li><a href="#swarm_animation">Swarm Animation 4-1</a></li>
-                <li><a href="#barrage">Barrage 4-2</a></li>
-                <li><a href="#rapid_deployment">Rapid Deployment 4-3</a></li>
-                <li><a href="#torpor">Torpor 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#operative" class="dropdownToggle">
+                        <span class="nowrapSpan">Operative
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#the_swarm">The Swarm 1-1</a></li>
+                        <li><a href="#pulse">Pulse 2-1</a></li>
+                        <li><a href="#jolt">Jolt 2-2</a></li>
+                        <li><a href="#tempest">Tempest 3-1</a></li>
+                        <li><a href="#turrets">Turrets 3-2</a></li>
+                        <li><a href="#stasis_field">Stasis Field 3-3</a></li>
+                        <li><a href="#swarm_animation">Swarm Animation 4-1</a></li>
+                        <li><a href="#barrage">Barrage 4-2</a></li>
+                        <li><a href="#rapid_deployment">Rapid Deployment 4-3</a></li>
+                        <li><a href="#torpor">Torpor 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Phantom -->
-                <li><a href="#phantom">Phantom</a></li>
-                <li><a href="#spatial_anomaly">Spatial Anomaly 1-1</a></li>
-                <li><a href="#entanglement">Entanglement 2-1</a></li>
-                <li><a href="#charge">Charge 2-2</a></li>
-                <li><a href="#shuffle">Shuffle 3-1</a></li>
-                <li><a href="#flurry">Flurry 3-2</a></li>
-                <li><a href="#impel">Impel 3-3</a></li>
-                <li><a href="#sanctuary_recall">Sanctuary Recall 4-1</a></li>
-                <li><a href="#mindfulness">Mindfulness 4-2</a></li>
-                <li><a href="#spatial_presence">Spatial Presence 4-3</a></li>
-                <li><a href="#impact">Impact 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#phantom" class="dropdownToggle">
+                        <span class="nowrapSpan">Phantom
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#spatial_anomaly">Spatial Anomaly 1-1</a></li>
+                        <li><a href="#entanglement">Entanglement 2-1</a></li>
+                        <li><a href="#charge">Charge 2-2</a></li>
+                        <li><a href="#shuffle">Shuffle 3-1</a></li>
+                        <li><a href="#flurry">Flurry 3-2</a></li>
+                        <li><a href="#impel">Impel 3-3</a></li>
+                        <li><a href="#sanctuary_recall">Sanctuary Recall 4-1</a></li>
+                        <li><a href="#mindfulness">Mindfulness 4-2</a></li>
+                        <li><a href="#spatial_presence">Spatial Presence 4-3</a></li>
+                        <li><a href="#impact">Impact 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Sage -->
-                <li><a href="#sage">Sage</a></li>
-                <li><a href="#auspicious_personage">Auspicious Personage 1-1</a></li>
-                <li><a href="#threads_of_fate">Threads of Fate 2-1</a></li>
-                <li><a href="#charted_course">Charted Course 2-2</a></li>
-                <li><a href="#empowerment">Empowerment 3-1</a></li>
-                <li><a href="#portents_foreseen">Portents Foreseen 3-2</a></li>
-                <li><a href="#altered_probability">Altered Probability 3-3</a></li>
-                <li><a href="#interject">Interject 4-1</a></li>
-                <li><a href="#cyclic_insight">Cyclic Insight 4-2</a></li>
-                <li><a href="#opportunistic_foresight">Opportunistic Foresight 4-3</a></li>
-                <li><a href="#oracular_marker">Oracular Marker 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#sage" class="dropdownToggle">
+                        <span class="nowrapSpan">Sage
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#auspicious_personage">Auspicious Personage 1-1</a></li>
+                        <li><a href="#threads_of_fate">Threads of Fate 2-1</a></li>
+                        <li><a href="#charted_course">Charted Course 2-2</a></li>
+                        <li><a href="#empowerment">Empowerment 3-1</a></li>
+                        <li><a href="#portents_foreseen">Portents Foreseen 3-2</a></li>
+                        <li><a href="#altered_probability">Altered Probability 3-3</a></li>
+                        <li><a href="#interject">Interject 4-1</a></li>
+                        <li><a href="#cyclic_insight">Cyclic Insight 4-2</a></li>
+                        <li><a href="#opportunistic_foresight">Opportunistic Foresight 4-3</a></li>
+                        <li><a href="#oracular_marker">Oracular Marker 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Sentinel -->
-                <li><a href="#sentinel">Sentinel</a></li>
-                <li><a href="#runic_magic">Runic Magic 1-1</a></li>
-                <li><a href="#surge">Surge 2-1</a></li>
-                <li><a href="#tether">Tether 2-2</a></li>
-                <li><a href="#aftershock">Aftershock 3-1</a></li>
-                <li><a href="#shifting_currents">Shifting Currents 3-2</a></li>
-                <li><a href="#dive">Dive 3-3</a></li>
-                <li><a href="#accelerant">Accelerant 4-1</a></li>
-                <li><a href="#surging_tides">Surging Tides 4-2</a></li>
-                <li><a href="#runic_sigil">Runic Sigil 4-3</a></li>
-                <li><a href="#aerial_bonds">Aerial Bonds 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#sentinel" class="dropdownToggle">
+                        <span class="nowrapSpan">Sentinel
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#runic_magic">Runic Magic 1-1</a></li>
+                        <li><a href="#surge">Surge 2-1</a></li>
+                        <li><a href="#tether">Tether 2-2</a></li>
+                        <li><a href="#aftershock">Aftershock 3-1</a></li>
+                        <li><a href="#shifting_currents">Shifting Currents 3-2</a></li>
+                        <li><a href="#dive">Dive 3-3</a></li>
+                        <li><a href="#accelerant">Accelerant 4-1</a></li>
+                        <li><a href="#surging_tides">Surging Tides 4-2</a></li>
+                        <li><a href="#runic_sigil">Runic Sigil 4-3</a></li>
+                        <li><a href="#aerial_bonds">Aerial Bonds 4-4</a></li>
+                    </ul>
+                </li>
+                
                 <!-- Spiritist -->
-                <li><a href="#spiritist">Spiritist</a></li>
-                <li><a href="#spiritbond">Spiritbond 1-1</a></li>
-                <li><a href="#predatory_instinct">Predatory Instinct 2-1</a></li>
-                <li><a href="#forceful_motion">Forceful Motion 2-2</a></li>
-                <li><a href="#replenish">Replenish 3-1</a></li>
-                <li><a href="#amplified_bond">Amplified Bond 3-2</a></li>
-                <li><a href="#reciprocal_motion">Reciprocal Motion 3-3</a></li>
-                <li><a href="#warders_call">Warder's Call 4-1</a></li>
-                <li><a href="#vital_motion">Vital Motion 4-2</a></li>
-                <li><a href="#harmonic_motion">Harmonic Motion 4-3</a></li>
-                <li><a href="#warding_motion">Warding Motion 4-4</a></li>
+                <li class="dropdownContainer">
+                    <a href="#spiritist" class="dropdownToggle">
+                        <span class="nowrapSpan">Spiritist
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#spiritbond">Spiritbond 1-1</a></li>
+                        <li><a href="#predatory_instinct">Predatory Instinct 2-1</a></li>
+                        <li><a href="#forceful_motion">Forceful Motion 2-2</a></li>
+                        <li><a href="#replenish">Replenish 3-1</a></li>
+                        <li><a href="#amplified_bond">Amplified Bond 3-2</a></li>
+                        <li><a href="#reciprocal_motion">Reciprocal Motion 3-3</a></li>
+                        <li><a href="#warders_call">Warder's Call 4-1</a></li>
+                        <li><a href="#vital_motion">Vital Motion 4-2</a></li>
+                        <li><a href="#harmonic_motion">Harmonic Motion 4-3</a></li>
+                        <li><a href="#warding_motion">Warding Motion 4-4</a></li>
+                    </ul>
+                </li>
+                
             </ul>
         </div>
 
         <!-- Rightnav Intrasection Navigation -->
         <div class="rightnav">
-            <h3 class="rightnavHead">Codex Links</h3>
+
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <ul class="rightnavLinks">
+                <li class="rightnavHead">Codex Links</li>
                 <li><a href="gameland.html">Codex Base</a></li>
                 <li><a href="character-generator.html">Character Generator</a></li>
                 <li><a href="degrees-of-success.html">Degrees of Success</a></li>
