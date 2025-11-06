@@ -6,15 +6,19 @@
 }
 
 :root {
+    interpolate-size: allow-keywords;
+
     /* Colors */
     --thymora-jade: #B7E1CD;
     --link-gold: #E1CDB7;
+    --link-hover: #B7CBE1;
 
 
     --primary-600: hsl(252, 9%, 22%);
     --primary-500: hsl(259, 13%, 28%);
 
 
+    /* Notched Corner Background for Sections */
     --corner-notch: polygon(
             /* top-left 1 */
             0 1.3rem,
@@ -53,6 +57,8 @@ body {
         linear-gradient(hsl(0 0 0 / 0.65)),
         /* Actual background image */
         url("/img/aurora-background2.jpg");
+
+    overflow-x: hidden;
 }
 
 /* Grid layout */
@@ -76,6 +82,7 @@ body {
     clip-path: var(--corner-notch);
 }
 
+
 /* Topnav Settings */
 .topnav {
     grid-area: tn;
@@ -85,26 +92,20 @@ body {
     align-items: center;
     top: 0;
     padding: 0 0.3rem;
+    height: 3rem;
     z-index: 2;  
 
     background-color: hsl(from #6C757D h s l / 0.2);
     backdrop-filter: blur(15px);
 }
 
-.topnavMenuButton {
+/* I believe this is all deprecated.
+    Leaving in while updating rest of menus / media queries to be sure before removing */
+/* .topnavMenuButton {
     cursor: pointer;
     margin-right: 1rem;
     flex-grow: 1;
     flex-basis: 0;
-}
-
-/* Should also be deprecated, check before removing */
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #6C757D;
-    margin: 6px 0;
-    transition: 0.4s;
 }
 
 .topnavMenuContent {
@@ -123,11 +124,15 @@ body {
 
 .topnavMenuContent li {
     margin: 1rem 0;
-}
+} */
 
 .topnavLinks {   
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     margin-left: 1rem;
+}
+
+.topnavIcon {
+    vertical-align: middle;
 }
 
 .topnavTitle {
@@ -139,38 +144,9 @@ body {
     text-align: right;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-  transform: translate(0, 11px) rotate(45deg);
-}
-
-/* Fade out the second bar */
-.change .bar2 {opacity: 0;}
-
-/* Rotate last bar */
-.change .bar3 {
-  transform: translate(0, -11px) rotate(-45deg);
-}
-
-/* Display menu */
-.change .topnavMenuContent {
-    display: block;
-}
-
 
 /* Body Settings */
 
-/* localBody currently deprecated / will need to remove once finalizing new layout */
-.localBody{
-    grid-area: lb;
-    z-index: 0;
-    overflow: auto;
-    /* margin-bottom: 4rem; */
-    /* grid-row: 2/-1;
-    grid-column: 1/-1; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(7, 1fr); */
-}
 
 /* sidenav */
 .sidenav {
@@ -190,14 +166,31 @@ body {
     clip-path: var(--corner-notch);
 }
 
+.sidenavToggle {
+    display: none;
+    aspect-ratio: 1;
+    background: transparent;
+    border: 0;
+    color: var(--link-gold);
+
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.sidenavToggle:hover, .sidenavtoggle:focus {
+    color: var(--link-hover);
+}
+
 .sidenavHead {
-    margin: 1.5rem 1.5rem 0.5rem;
-    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .sidenavLinks {
     margin: 0 1.5rem 1.5rem;
     list-style-type: none;
+
+    /* transition: height 0.5s ease, visibility 0.2s ease; */
 }
 
 .sidenavLinks li {
@@ -205,7 +198,7 @@ body {
 }
 
 
-/* dropdown menus */
+/* sidenav dropdown menus */
 .dropdownIcon {
     vertical-align: middle;
     color: var(--link-gold);
@@ -399,6 +392,73 @@ a:active {
     color: #E1B7CB;
 }
 
+/* Media Queries for Size changes will go here */
+/* Gridbox is fine, update clip paths for sidenav/rightnav to be rectangular for full bottom coverage to mirror topnav */
+/* Sidenav/rightnav backgrounds will need to adjust to match topnav blur for things passing behind */
+/* Set text size for topnav smaller (topnavLinks / topnavTitle) */
+/* Add in margins for Local body passing beneath? */
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-rows: 3rem auto 3rem;
+        grid-template-areas: 
+            "tn tn tn tn tn tn tn"
+            "lc lc lc lc lc lc lc"
+            "sn sn sn sn rn rn rn";
+    }
+
+    .topnav {
+        padding: 1rem 0.3rem;
+    }
+
+    .topnavLinks {
+        font-size: 0.9rem;
+    }
+
+    .topnavTitle {
+        font-size: 1.1rem;
+    }
+
+    .topnavIconText {
+        display: none;
+    }
+
+    .sidenav {
+        bottom: 0;
+        margin: 0;
+        min-height: 3rem;
+        z-index: 2;
+
+        transition: height 0.5s ease;
+
+        overflow-y: hidden;
+
+        backdrop-filter: blur(15px);
+        clip-path: none;
+    }
+
+    .sidenavToggle {
+        display: block;
+    }
+
+    .sidenavLinks {
+        /* height: 0; */
+        overflow: hidden;
+        /* visibility: hidden; */
+        /* display: none; */
+    }
+
+    .rightnav {
+        bottom: 0;
+        margin: 0;
+        height: 3rem;
+        z-index: 2;
+
+        overflow-y: hidden;
+        
+        backdrop-filter: blur(15px);
+        clip-path: none;
+    }
+}
 
 /* Home */
 /* Styles for the entire home menu body container */
