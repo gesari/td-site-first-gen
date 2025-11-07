@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,30 @@
         <div class="topnav">
             <!-- Links to Other Site Sections -->
             <span class="topnavLinks">
-                <a href="/td-primer/gameland.html">Game</a> | <a href="../index.html">Home</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M80-80v-440h80v80h80l119-395v-85h80v80h81v-80h80v80l120 400h80v-80h80v440H520v-200h-80v200H80Zm268-440h264l-24-80H372l-24 80Zm48-160h168l-24-80H420l-24 80ZM160-160h200v-200h240v200h200v-200H660l-24-80H324l-24 80H160v200Zm320-300Z"/>
+                    </svg>
+                    <span class="topnavIconText">Home</span>
+                </a> | 
+                <a href="/td-primer/primer.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6q47 0 91.5 10.5T440-278Zm40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q74 0 126 17t112 52q11 6 16.5 14t5.5 21v418q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-481q15 5 29.5 11t28.5 14q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm140-240v-440l120-40v440l-120 40Zm-340-99Z"/>
+                    </svg>
+                    <span class="topnavIconText">Primer</span>
+                </a> | 
+                <a href="/td-game/gameland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M838-393q5-23 0-46t-15-45q-17 16-30 35.5T775-406q-5 23 .5 45.5T790-316q17-16 30-35t18-42ZM207-626q19 19 43.5 25t47.5-2l-19-19q-18-18-43-24.5t-48 1.5l19 19Zm73-180-79 78q36-3 71.5 9t63.5 40l19 19q8-23 3-48t-25-44l-53-54ZM823-80 357-544q-49 30-107 23.5T150-569L40-680l240-239 110 110q43 43 48.5 101T414-601l289 289q-8-26-10-54t3-56q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 51-42.5 91T797-218l82 82-56 56ZM310-650Zm334 166-56-57 212-212v-47h-47L541-588l-57-56 236-236h160v160L644-484ZM142-92l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 48-48 57 56-48 48 47 47 48-48 56 57-48 48 5 4q23 23 23 57t-23 57l-28 28-88-88L198-92q-12 12-28 12t-28-12Z"/>
+                    </svg>
+                    <span class="topnavIconText">Game</span>
+                </a> | 
+                <a href="/td-setting/dreamland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+                    </svg>
+                    <span class="topnavIconText">Setting</span>
+                </a>
             </span>
 
             <!-- Section Title -->
@@ -27,39 +50,82 @@
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
-            <h3 class="sidenavHead">Table of Contents</h3>
+            
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
+                <li class="sidenavHead">Table of Contents</li>
                 <li><a href="#system_basics">Myriad Paths</a></li>
                 <li><a href="#premise">Premise</a></li>
                 <li><a href="#preconceived_notions">Preconceived Notions</a></li>
                 <li><a href="#getting_started">Getting Started</a></li>
-                <li><a href="#attributes">Attributes</a></li>
-                <li><a href="#attunement">Attunement</a></li>
-                <li><a href="#touchstone">Touchstone</a></li>
-                <li><a href="#quirk">Quirk</a></li>
-                <li><a href="#traits">Traits</a></li>
-                <li><a href="#concrete_features">Concrete Features</a></li>
-                <li><a href="#specializations">Specializations</a></li>
-                <li><a href="#style">Style</a></li>
-                <li><a href="#stat_allocation">Stat Allocation</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
+
+                <!-- Attributes -->
+                <li class="dropdownContainer">
+                    <a href="#attributes" class="dropdownToggle">
+                        <span class="nowrapSpan">Attributes
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#attunement">Attunement</a></li>
+                        <li><a href="#touchstone">Touchstone</a></li>
+                        <li><a href="#quirk">Quirk</a></li>
+                        <li><a href="#traits">Traits</a></li>
+                    </ul>
+                </li>                
+
+                <!-- Concrete Features -->
+                <li class="dropdownContainer">
+                    <a href="#concrete_features" class="dropdownToggle">Concrete 
+                        <span class="nowrapSpan">Features
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#specializations">Specializations</a></li>
+                        <li><a href="#style">Style</a></li>
+                        <li><a href="#stat_allocation">Stat Allocation</a></li>
+                    </ul>
+                </li>
+
+                <!-- Conclusion -->
+                <li><a href="#conclusion">Conclusion</a></li>                
             </ul>
         </div>
 
         <!-- Rightnav Intrasection Navigation -->
         <div class="rightnav">
-            <h3 class="rightnavHead"><a href="Primer.html">Primer Base</a></h3>
-            <h3 class="rightnavHead">Game Primers</h3>
-                <ul class="rightnavLinks">
-                    <li><a href="system-basics.html">System Basics</a></li>
-                    <li><a href="entity-basics.html">Entity Basics</a></li>
-                </ul>
-            <h3 class="rightnavHead">Setting Primers</h3>
-                <ul class="rightnavLinks">
-                    <li><a href="key-points.html">Key Points</a></li>
-                    <li><a href="fitting-in.html">Fitting In</a></li>
-                </ul>
+            
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+
+            <!-- Intrasection Directory -->
+            <ul class="rightnavLinks">
+                <li class="rightnavHead"><a href="primer.html">Primer Base</a></li>
+            </ul>
+
+            <ul class="rightnavLinks">
+                
+                <li class="rightnavHead">Game Primers</li>
+                <li><a href="system-basics.html">System Basics</a></li>
+                <li><a href="entity-basics.html">Entity Basics</a></li>
+                <li><a href="character-creation.html">Character Creation</a></li>
+                
+            </ul>
+            
+            <ul class="rightnavLinks">                
+                <li class="rightnavHead">Setting Primers</li>
+                <li><a href="key-points.html">Key Points</a></li>
+                <li><a href="fitting-in.html">Fitting In</a></li>
+            </ul>
         </div>
 
         <div class="localContent">
@@ -148,16 +214,15 @@
             <div class="gridbox">
                 <h4 class="sectionHead" id="attributes">Attributes</h4>
                 <p class="sectionBody">The next step of character creation will involve the PC's attributes, intending to build them out in a way that will allow Players to use their Lucidity Tokens to confirm these beliefs.</p>
-            </div>
+            
 
             <!-- Attunement -->
-            <div class="gridbox">
+            
                 <h4 class="sectionHead" id="attunement">Attunement</h4>
                 <p class="sectionBody">In this exercise, the Players arrived with their Attunements already selected, so they'll skip over this consideration here. However, that may not be the case in all situations, and in others a Player may get together with their group for a Session 0 to begin discussing their party only to find that the preconceived notions about their character need to be amended.</p>
-            </div>
+            
 
-            <!-- Touchstone -->
-            <div class="gridbox">
+                <!-- Touchstone -->            
                 <h4 class="sectionHead" id="touchstone">Touchstone</a></h4>
                 <p class="sectionBody">Based on what they've already come up with for their characters and their discussions with their fellow Players after sharing their preconceived notions with each other, each PC will come up with a Touchstone for their character. This can be anything the PC feels is applicable, and is meant to provide a ready prompt for how a character might engage with the game space.</p>
 
@@ -174,10 +239,9 @@
                             Player 3 views Kelorin as a bit of a loner, but not the type to brood: from a young age he taught himself to use his telepathy to speak to the other creatures around the arcology, and he has simply grown to prefer their company. As such, Player 3 chooses I Get Along Better With Animals Than People for Kelorin's Touchstone. The Player decides that Kelorin probably doesn't have any issues with people in general, but that his relatively straightforward communication style and dry wit, which works so well when communicating with the ravens (his favorite), has a tendency to come off as rude at best or, due to his size, threatening at worst. His interactions with the ravens and other creatures of the arcology and its environs are usually just easier, that's all.
                         </div>
                 </div>
-            </div>
+            
 
-            <!-- Quirk -->
-            <div class="gridbox">
+                <!-- Quirk -->            
                 <h4 class="sectionHead" id="quirk">Quirk</h4>
                 <p class="sectionBody">Now that they've come up with a Touchstone for each of their characters, the Players will have the opportunity to develop that idea further. Their Quirk should serve to accentuate their chosen Touchstone to create something unique and exciting for the Player. To reference Player 1's Touchstone for Suul above: there are a lot of method actors, so what is it about Suul that sets them apart from others? Quirks can sometimes prove problematic for the PC, depending on their choice, but it's not something that should happen often and it is not meant to be debilitating (unless the Player explicitly chooses to make it so). We're just trying to get a grasp on the character prior to play.</p>
 
@@ -193,10 +257,9 @@
                             Having spent so much time with the ravens who nest about Katahven's heights from the time he was a young boy, many of Kelorin's mannerisms have been influenced by his bond with them. These effects were accelerated in the past decade since he became bonded to one of the ravens, Alfred. The pair are remarkably discerning when hyperfixated on something, but also very excitable. To demonstrate this, Player 3 chose Bird Brained as Kelorin's Quirk.
                         </div>
                     </div>
-            </div>
+            
 
-            <!-- Traits -->
-            <div class="gridbox">
+                <!-- Traits -->            
                 <h4 class="sectionHead" id="traits">Traits</a></h4>
                 <p class="sectionBody">There are plenty of ways to go about generating Traits, depending on what works best for each group. For the purposes of this example, the GM will have brought a few extra sheets of paper to their Session 0. They hand each Player a piece of paper, and ask them to write down their first Trait on it while explaining the rest of the process. After they've done that, each Player will pass their paper to the Player to their right. Players will review the new sheet of paper and write down a second trait for their own character, but in relation to the trait already written on the page before them. This will continue until every player has written at least three Traits out, though more could be done to give Players options to choose from. Ultimately, though, characters will only have three active Traits at a time.</p>
                 <p class="sectionBody">Unlike the more personal choices made for their Touchstone and Quirk, a character's Traits should uncover ways in which the characters relate to specific parts of the game space in order to create a sense of interconnectedness between the characters and the game space itself. They are the ways in which a character's Touchstone and Quirk manifest through their actions.</p>
@@ -252,10 +315,9 @@
                 <h4 class="sectionHead" id="concrete_features">Concrete Features</h4>
                 <p class="sectionBody">At this point, the party is beginning to come together nicely. The PCs have bonds formed between each of their characters, which should make early roleplay easier, and give the players things to build off of as they go throughout the game space. Even though Dalyny is not directly involved with either Kelorin or Suul, they've discovered enough overlap through their Trait selection process that they'll have a basis from which to begin their interaction regardless of what situation they find themselves in when they meet for the first time in game. Plus, they’ve already set up an amusing reveal for the first time Dalyny realizes that they recognize one of Suul’s usual personas.</p>
                 <p class="sectionBody">From here on out, the choices made by the PCs will be informed by the people they now know their characters to be. They will be able to choose the Specialization, Style, and Stat allocation they feel will best achieve that.</p>
-            </div>
+            
 
-            <!-- Specializations -->
-            <div class="gridbox">
+                <!-- Specializations -->            
                 <h4 class="sectionHead" id="specializations">Specializations</h4>
                 <p class="sectionBody">Based on the way things are set up with Suul's ability to change form on the fly, Dalyny's physical prowess, and Kelorin's penchant for mischief with Alfred, the Players feel like their group would be especially good at things like infiltration and covert operations. They decide to tailor their choices going forward to that end.</p>
 
@@ -274,11 +336,10 @@
                             <p class="triColText">Player 3 discovered via the course of character creation that Kelorin was perhaps not so isolated as they had previously envisioned, but they still want to continue to highlight the bond that Kelorin has with Alfred as each other's primary companion. Spiritist easily facilitates this by choosing Alfred as his Avatar.</p>
                         </div>
                     </div>
-            </div>
+            
 
 
-            <!-- Style -->
-            <div class="gridbox">
+                <!-- Style -->            
                 <h4 class="sectionHead" id="style">Style</a></h4>
                 <p class="sectionBody">There is always variance between two practitioners of the same art form, much in the same way that two players of the same sport can have very different experiences based on the position they play.</p>
 
@@ -297,10 +358,9 @@
                             <p class="triColText">As a big guy who likes to facilitate pranks, Player 3 figures Kelorin would have learned how to wield his size to draw attention to him, or at least divert attention from his more inconspicuous comrades. Player 3 chooses Assertive Style to supplement this.</p>
                         </div>
                     </div>
-            </div>
+            
 
-            <!-- Stat Allocation -->
-            <div class="gridbox">
+                <!-- Stat Allocation -->            
                 <h4 class="sectionHead" id="stat_allocation">Stat Allocation</h4>
                 <p class="sectionBody">Players are given 5 skill points to invest as they see fit at level 1. Since all three Players will eventually want to train in Magical Adept to enhance their Free-Casting abilities, they decide to each invest at least 1 point into Substat training to begin to cover one of the two Schools of magic not covered by their Specialization. Suul’s PC opts to invest two points in substat training now, and put one point in each of their three statistics, but Dalyny and Kelorin’s PC choose instead to secure a +2 boost in a stat of their choice instead.</p>
 
@@ -345,7 +405,7 @@
                             <p class="triColText">1 Insight</p>
                         </div>
                     </div>
-            </div>
+                </div>
 
             <!-- Conclusion -->
             <div class="gridbox">
