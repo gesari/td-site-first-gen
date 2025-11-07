@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/menu.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,30 @@
         <div class="topnav">
             <!-- Links to Other Site Sections -->
             <span class="topnavLinks">
-                <a href="/td-primer/gameland.html">Game</a> | <a href="../index.html">Home</a> | <a href="/td-setting/dreamland.html">Setting</a>
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M80-80v-440h80v80h80l119-395v-85h80v80h81v-80h80v80l120 400h80v-80h80v440H520v-200h-80v200H80Zm268-440h264l-24-80H372l-24 80Zm48-160h168l-24-80H420l-24 80ZM160-160h200v-200h240v200h200v-200H660l-24-80H324l-24 80H160v200Zm320-300Z"/>
+                    </svg>
+                    <span class="topnavIconText">Home</span>
+                </a> | 
+                <a href="/td-primer/primer.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6q47 0 91.5 10.5T440-278Zm40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q74 0 126 17t112 52q11 6 16.5 14t5.5 21v418q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-481q15 5 29.5 11t28.5 14q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59Zm140-240v-440l120-40v440l-120 40Zm-340-99Z"/>
+                    </svg>
+                    <span class="topnavIconText">Primer</span>
+                </a> | 
+                <a href="/td-game/gameland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M838-393q5-23 0-46t-15-45q-17 16-30 35.5T775-406q-5 23 .5 45.5T790-316q17-16 30-35t18-42ZM207-626q19 19 43.5 25t47.5-2l-19-19q-18-18-43-24.5t-48 1.5l19 19Zm73-180-79 78q36-3 71.5 9t63.5 40l19 19q8-23 3-48t-25-44l-53-54ZM823-80 357-544q-49 30-107 23.5T150-569L40-680l240-239 110 110q43 43 48.5 101T414-601l289 289q-8-26-10-54t3-56q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 51-42.5 91T797-218l82 82-56 56ZM310-650Zm334 166-56-57 212-212v-47h-47L541-588l-57-56 236-236h160v160L644-484ZM142-92l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 48-48 57 56-48 48 47 47 48-48 56 57-48 48 5 4q23 23 23 57t-23 57l-28 28-88-88L198-92q-12 12-28 12t-28-12Z"/>
+                    </svg>
+                    <span class="topnavIconText">Game</span>
+                </a> | 
+                <a href="/td-setting/dreamland.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="topnavIcon">
+                        <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+                    </svg>
+                    <span class="topnavIconText">Setting</span>
+                </a>
             </span>
 
             <!-- Section Title -->
@@ -27,53 +50,172 @@
         <!-- Table of Contents Area-->
         <div class="sidenav">
             <!-- Intradocument Directory -->
-            <h3 class="sidenavHead">Table of Contents</h3>
+
+            <!-- Button to toggle sidenav display on small screens -->
+            <button class="sidenavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+            
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
+                <li class="sidenavHead">Table of Contents</li>
+                <!-- Entities -->
                 <li><a href="#entities">Entities</a></li>
-                <li><a href="#specializations">Specializations</a></li>
-                <li><a href="#alchemist">Alchemist</a></li>
-                <li><a href="#arcanist">Arcanist</a></li>
-                <li><a href="#conduit">Conduit</a></li>
-                <li><a href="#luminary">Luminary</a></li>
-                <li><a href="#operative">Operative</a></li>
-                <li><a href="#phantom">Phantom</a></li>
-                <li><a href="#sage">Sage</a></li>
-                <li><a href="#sentinel">Sentinel</a></li>
-                <li><a href="#spiritist">Spiritist</a></li>
-                <li><a href="#statistics">Statistics</a></li>
-                <li><a href="#primary_stats">Primary Stats</a></li>
-                <li><a href="#substats">Substats</a></li>
-                <li><a href="#style">Style</a></li>
-                <li><a href="#potency">Potency</a></li>
-                <li><a href="#attributes">Attributes</a></li>
-                <li><a href="#attunement">Attunement</a></li>
-                <li><a href="#touchstone">Touchstone</a></li>
-                <li><a href="#quirk">Quirk</a></li>
-                <li><a href="#traits">Traits</a></li>
-                <li><a href="#invoking_attributes">Invoking Attributes</a></li>
-                <li><a href="#changing_traits">Changing Traits</a></li>
-                <li><a href="#items_equipment">Items and Equipment</a></li>
-                <li><a href="#focus">Focus</a></li>
-                <li><a href="#unitool">System Basics</a></li>
-                <li><a href="#talismans_arcanetics">Talismans and Arcanetics</a></li>
-                <li><a href="#acquiring_items">Acquiring New Items</a></li>
+
+                <!-- Attunements -->
+                <li class="dropdownContainer">
+                    <a href="#attunement" class="dropdownToggle">
+                        <span class="nowrapSpan">Attunement
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#airheart">Airheart</a></li>
+                        <li><a href="#dreamheart">Dreamheart</a></li>
+                        <li><a href="#fireheart">Fireheart</a></li>
+                        <li><a href="#lightheart">Lightheart</a></li>
+                        <li><a href="#stoneheart">Stoneheart</a></li>
+                        <li><a href="#sylvanheart">Sylvanheart</a></li>
+                        <li><a href="#waterheart">Waterheart</a></li>
+                    </ul>
+                </li>
+
+                <!-- Specializations -->
+                <li class="dropdownContainer">
+                    <a href="#specializations" class="dropdownToggle">
+                        <span class="nowrapSpan">Specializations
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#alchemist">Alchemist</a></li>
+                        <li><a href="#arcanist">Arcanist</a></li>
+                        <li><a href="#conduit">Conduit</a></li>
+                        <li><a href="#luminary">Luminary</a></li>
+                        <li><a href="#operative">Operative</a></li>
+                        <li><a href="#phantom">Phantom</a></li>
+                        <li><a href="#sage">Sage</a></li>
+                        <li><a href="#sentinel">Sentinel</a></li>
+                        <li><a href="#spiritist">Spiritist</a></li>
+                    </ul>
+                </li>
+
+                <!-- Style -->
+                <li class="dropdownContainer">
+                    <a href="#style" class="dropdownToggle">
+                        <span class="nowrapSpan">Style
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#assertive">Assertive Style</a></li>
+                        <li><a href="#astral">Astral Style</a></li>
+                        <li><a href="#fluid">Fluid Style</a></li>
+                        <li><a href="#lightning">Lightning Style</a></li>
+                        <li><a href="#precision">Precision Style</a></li>
+                        <li><a href="#potency">Potency</a></li>
+                    </ul>
+                </li>                
+
+                <!-- Attributes -->
+                <li class="dropdownContainer">
+                    <a href="#attributes" class="dropdownToggle">
+                        <span class="nowrapSpan">Attributes
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#touchstone">Touchstone</a></li>
+                        <li><a href="#quirk">Quirk</a></li>
+                        <li><a href="#traits">Traits</a></li>
+                        <li><a href="#invoking_attributes">Invoking Attributes</a></li>
+                        <li><a href="#changing_traits">Changing Traits</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Statistics -->
+                <li class="dropdownContainer">
+                    <a href="#statistics" class="dropdownToggle">
+                        <span class="nowrapSpan">Statistics
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <!-- Primary Stats -->
+                        <li><a href="#primary_stats">Primary Stats</a></li>
+                        <li><a href="#vitality">Vitality</a></li>
+                        <li><a href="#cognition">Cognition</a></li>
+                        <li><a href="#force">Force</a></li>
+                        <li><a href="#insight">Insight</a></li>
+                        <!-- Substats -->
+                        <li><a href="#substats">Substats</a></li> 
+                    </ul>
+                </li>
+
+                
+               
+
+                <!-- Items -->
+                <li class="dropdownContainer">
+                    <a href="#items_equipment" class="dropdownToggle">Items and 
+                        <span class="nowrapSpan">Equipment
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#focus">Focus</a></li>
+                        <li><a href="#unitool">Unitool</a></li>
+                        <li><a href="#talismans_arcanetics">Talismans and Arcanetics</a></li>
+                        <li><a href="#acquiring_items">Acquiring New Items</a></li>
+                    </ul>
+                </li>
+                
             </ul>
         </div>
 
         <!-- Rightnav Intrasection Navigation -->
         <div class="rightnav">
-            <h3 class="rightnavHead"><a href="primer.html">Primer Base</a></h3>
-            <h3 class="rightnavHead">Game Primers</h3>
-                <ul class="rightnavLinks">
-                    <li><a href="system-basics.html">System Basics</a></li>
-                    <li><a href="character-creation.html">Character Creation</a></li>
-                </ul>
-            <h3 class="rightnavHead">Setting Primers</h3>
-                <ul class="rightnavLinks">
-                    <li><a href="key-points.html">Key Points</a></li>
-                    <li><a href="fitting-in.html">Fitting In</a></li>
-                </ul>
+            
+            <!-- Button to toggle rightnav display on small screens -->
+            <button class="rightnavToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.3rem" viewBox="0 -960 960 960" width="2.3rem" fill="currentcolor">
+                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                </svg>
+            </button>
+
+            <!-- Intrasection Directory -->
+            <ul class="rightnavLinks">
+                <li class="rightnavHead"><a href="primer.html">Primer Base</a></li>
+            </ul>
+
+            <ul class="rightnavLinks">
+                
+                <li class="rightnavHead">Game Primers</li>
+                <li><a href="system-basics.html">System Basics</a></li>
+                <li><a href="entity-basics.html">Entity Basics</a></li>
+                <li><a href="character-creation.html">Character Creation</a></li>
+                
+            </ul>
+            
+            <ul class="rightnavLinks">                
+                <li class="rightnavHead">Setting Primers</li>
+                <li><a href="key-points.html">Key Points</a></li>
+                <li><a href="fitting-in.html">Fitting In</a></li>
+            </ul>
         </div>
 
         <div class="localContent">
@@ -85,6 +227,40 @@
             <div class="gridbox">
                 <h4 class="sectionHead" id="entities">Entities</h4>
                 <p class="sectionBody">Entities are the operators within the game space whose actions the GM and PCs will be role-playing. While every entity has access to the same general actions, the bonuses they have towards succeeding in those actions will all be different based on several variables: their Statistics, Style, Attributes, Items, and their personal area of expertise denoted by their choice of Specialization. Players will have almost complete control over the customization of these variables.</p>
+            </div>
+
+            <!-- Attunement -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="attunement">Attunement</h4>
+                <p class="sectionBody">Dreamers, regardless of their parents' origins, undergo physical changes in accordance with their individual attunement as they reach maturity: a process which continues as they grow over the course of their lives. A character's Attunement affects not only how they appear, but also how their magic manifests: a Fireheart's spells might naturally take on a fiery quality unless purposefully altered, whereas an Airheart's energy may represent the lightning discharged in storm clouds.</p>
+
+                <!-- Airheart -->
+                <p class="sectionHead" id="airheart">Airheart Attunement</p>
+                <p class="sectionBody">Airheart dreamers are specifically in tune with the air and empty spaces of the dream, giving them proficiency in spells relating to these areas. They have an innate ability to fly, and can hold their breath for as long as they choose.</p>
+
+                <!-- Dreamheart -->
+                <p class="sectionHead" id="dreamheart">Dreamheart Attunement</p>
+                <p class="sectionBody">Dreamheart dreamers are especially aligned with the dimension of possibilities: the Oracle. They are proficient with spells that augment an object's existing physical properties, and have the ability to shapeshift.</p>
+
+                <!-- Fireheart -->
+                <p class="sectionHead" id="fireheart">Fireheart Attunement</p>
+                <p class="sectionBody">Fireheart dreamers have specific acumen with spells that deal with fire or the concentration and release of energy. They are able to withstand and safely conduct large amounts of energy through their body without being harmed.</p>
+
+                <!-- Lightheart -->
+                <p class="sectionHead" id="lightheart">Lightheart Attunement</p>
+                <p class="sectionBody">Lightheart dreamers have a relationship with light and its presence and absence within the Dream; they have a bonus to spells interacting with these forces. They may use these powers to comfort and mesmerise others.</p>
+
+                <!-- Stoneheart -->
+                <p class="sectionHead" id="stoneheart">Stoneheart Attunement</p>
+                <p class="sectionBody">Stoneheart dreamers have specific acumen with spells regarding solid matter and the physical world. They have the ability to move through unwarded walls and other solid surfaces.</p>
+
+                <!-- Sylvanheart -->
+                <p class="sectionHead" id="sylvanheart">Sylvanheart Attunement</p>
+                <p class="sectionBody">Sylvanheart dreamers are especially proficient with spells involving life and other emergent processes. They have enhanced natural regeneration and the ability to use their telepathy to commune with all living beings rather than just dreamers.</p>
+
+                <!-- Waterheart -->
+                <p class="sectionHead" id="waterheart">Waterheart Attunement</p>
+                <p class="sectionBody">Waterheart dreamers have specific acumen with spells controlling matter in its liquid state. They have an innate ability to tread upon or traverse any liquid.</p>
             </div>
 
             <!-- Specializations -->
@@ -139,72 +315,32 @@
                 <p class="sectionBody">Through their study of the natural world and the forces that bind the disparate phenomena of the Dream together, Spiritists form a strong bond to the natural world, and especially the beings that inhabit it. Every Spiritist eventually finds companionship in an Avatar: an entity with whom they have soul bonded through loyalty, love, and magic. The pair operate as two bodies sharing a mind, amplifying each others' strength and that of those around them.</p>
             </div>
 
-            <!-- Statistics -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="statistics">Statistics</h4>
-                <p class="sectionBody">All characters start with a base 6 Vitality, 0 in all other statistics, and 5 points to invest as they choose into either primary stats or substat training. Each level after the first will grant a character 2 additional points to invest as they see fit to reflect the growth they’ve achieved during their journey. Investment into primary stats will increase a character’s acumen: they will become more potent, intelligent, and intuitive. Training in substats reflects time taken to learn new skills, and increases the number of tools at a character’s disposal via new spell architectures and free-casting bonuses.</p>
-                <p class="sectionBody">Secondary Stats derive their base value from their associated Primary statistic. Each Primary statistic has two associated secondary stats: one which affects their physical capabilities, and one which affects their magic. Items, enchantments, and other effects will generally provide increases to Secondary statistics rather than Primary stats, however, so players may expect to see them with higher bonuses than their Primary counterparts.</p>
-            </div>
-
-            <!-- Primary Stats -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="primary_stats">Primary Stats</h4>
-
-                <!-- Vitality -->
-                <p class="sectionHead">Vitality</p>
-                <p class="sectionBody">A relatively straightforward statistic. A character's max Vitality is equal to their Vitality stat value. Unlike other Primary statistics, Vitality has no Secondary stats associated with it and increases by 1 per level regardless of stat investment.</p>
-
-                <!-- Cognition -->
-                <p class="sectionHead">Cognition</p>
-                <p class="sectionBody">A character's mental acumen. A marker of how well they employ reason and assimilate knowledge.</p>
-                <p class="sectionBody">Associated Secondary Stats: Recovery, Adaptation</p>
-
-                <!-- Force -->
-                <p class="sectionHead">Force</p>
-                <p class="sectionBody">A character's physical prowess. A representation of how in tune they are to their own physical movements, and their ability to affect the Dream around them.</p>
-                <p class="sectionBody">Associated Secondary Stats: Attack, Projection</p>
-
-                <!-- Insight -->
-                <p class="sectionHead">Insight</p>
-                <p class="sectionBody">A character's ability to perceive the world around them, intuit the actions of others, and synergize the actions of their mind and body.</p>
-                <p class="sectionBody">Associated Secondary Stats: Defense, Unification</p>
-            </div>
-
-            <!-- Substats -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="substats">Substats</h4>
-                <p class="sectionBody">There are nine substats which correlate to the nine subschool of magic. There are a finite amount of training points a character can invest in any substat at any point in time: each substat bonus caps at 4, and each point allocated beyond the first requires a character to have attained a certain level before they may be trained.</p>
-                <p class="sectionBody">Training in a substat gives a character access to their d6 pool to augment affected checks, as well as knowledge of 2 spell architectures from within that school per point of investment. By default, a character is granted free training in the substat relating to their chosen class, conferred automatically upon meeting the level threshold requirements for the training.</p>
-            </div>
-
             <!-- Style -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="style">Style</h4>
                 <p class="sectionBody">A character's choice of style will govern the ways in which they employ magic: the Potency of their spells, the range at which they are effective, the status effects they can inflict, and unique traits and abilities.</p>
 
                 <!-- Assertive Style -->
-                <p class="sectionHead">Assertive Style</p>
+                <p class="sectionHead" id="assertive">Assertive Style</p>
                 <p class="sectionBody">A close range, methodical style centered around precise, high Potency executions that build upon each other.</p>
 
                 <!-- Astral Style -->
-                <p class="sectionHead">Astral Style</p>
+                <p class="sectionHead" id="astral">Astral Style</p>
                 <p class="sectionBody">A unique style that involves wielding one's focus with their astral limbs, allowing them to act from two positions simultaneously.</p>
 
                 <!-- Fluid Style -->
-                <p class="sectionHead">Fluid Style</p>
+                <p class="sectionHead" id="fluid">Fluid Style</p>
                 <p class="sectionBody">A versatile mid-range style that focuses on patient, fluid techniques.</p>
 
                 <!-- Lightning Style -->
-                <p class="sectionHead">Lightning Style</p>
+                <p class="sectionHead" id="lightning">Lightning Style</p>
                 <p class="sectionBody">A fast paced mid-range style that focuses on approaching solutions from multiple avenues.</p>
 
                 <!-- Precision Style -->
-                <p class="sectionHead">Precision Style</p>
+                <p class="sectionHead" id="precision">Precision Style</p>
                 <p class="sectionBody">A long range style focused around careful observation and calculated applications of force.</p>
-            </div>
 
-            <!-- Potency -->
-            <div class="gridbox">
+                <!-- Potency -->
                 <h4 class="sectionHead" id="potency">Potency</h4>
                 <p class="sectionBody">A character's base Potency is derived from their choice of Style. Every other ability they use or spell they cast is subject to, and scales with, their Potency. Potency values apply fully on a Full Success, and are halved on a Partial Success; for this reason, base Potency values are always even numbers.</p>
             </div>
@@ -213,77 +349,74 @@
             <div class="gridbox">
                 <h4 class="sectionHead" id="attributes">Attributes</h4>
                 <p class="sectionBody">Unlike Statistics, a character's Attributes confer bonuses that are generally not numerical. Most of them are very open-ended, as their purpose is primarily to provide mechanics which confirm the story a Player is trying to roleplay with a character.</p>
-            </div>
+            
 
-            <!-- Attunement -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="attunement">Attunement</h4>
-                <p class="sectionBody">Dreamers, regardless of their parents' origins, undergo physical changes in accordance with their individual attunement as they reach maturity: a process which continues as they grow over the course of their lives. A character's Attunement affects not only how they appear, but also how their magic manifests: a Fireheart's spells might naturally take on a fiery quality unless purposefully altered, whereas an Airheart's energy may represent the lightning discharged in storm clouds.</p>
-
-                <!-- Airheart -->
-                <p class="sectionSubHead">Airheart Attunement</p>
-                <p class="sectionBody">Airheart dreamers are specifically in tune with the air and empty spaces of the dream, giving them proficiency in spells relating to these areas. They have an innate ability to fly, and can hold their breath for as long as they choose.</p>
-
-                <!-- Dreamheart -->
-                <p class="sectionSubHead">Dreamheart Attunement</p>
-                <p class="sectionBody">Dreamheart dreamers are especially aligned with the dimension of possibilities: the Oracle. They are proficient with spells that augment an object's existing physical properties, and have the ability to shapeshift.</p>
-
-                <!-- Fireheart -->
-                <p class="sectionSubHead">Fireheart Attunement</p>
-                <p class="sectionBody">Fireheart dreamers have specific acumen with spells that deal with fire or the concentration and release of energy. They are able to withstand and safely conduct large amounts of energy through their body without being harmed.</p>
-
-                <!-- Lightheart -->
-                <p class="sectionSubHead">Lightheart Attunement</p>
-                <p class="sectionBody">Lightheart dreamers have a relationship with light and its presence and absence within the Dream; they have a bonus to spells interacting with these forces. They may use these powers to comfort and mesmerise others.</p>
-
-                <!-- Stoneheart -->
-                <p class="sectionSubHead">Stoneheart Attunement</p>
-                <p class="sectionBody">Stoneheart dreamers have specific acumen with spells regarding solid matter and the physical world. They have the ability to move through unwarded walls and other solid surfaces.</p>
-
-                <!-- Sylvanheart -->
-                <p class="sectionSubHead">Sylvanheart Attunement</p>
-                <p class="sectionBody">Sylvanheart dreamers are especially proficient with spells involving life and other emergent processes. They have enhanced natural regeneration and the ability to use their telepathy to commune with all living beings rather than just dreamers.</p>
-
-                <!-- Waterheart -->
-                <p class="sectionSubHead">Waterheart Attunement</p>
-                <p class="sectionBody">Waterheart dreamers have specific acumen with spells controlling matter in its liquid state. They have an innate ability to tread upon or traverse any liquid.</p>
-            </div>
-
-            <!-- Touchstone -->
-            <div class="gridbox">
+                <!-- Touchstone -->            
                 <h4 class="sectionHead" id="touchstone">Touchstone</h4>
                 <p class="sectionBody">This is the fundamental idea that either defines or drives a character. Whether this is something they consciously know, or if it is simply something to inform their PC’s own understanding of them is an individual determination each PC can make for themself. This is not a choice that is restricted to a finite list, and is not tied to any statistical benefits for the character. However, when used creatively, they can be used to give PCs an edge when invoked via a Lucidity token.</p>
 
                     <!-- Example Text -->
                     <p class="exampleText">Dalyny’s Player determines she is a very physically active individual who, due to her minute stature, would never be able to be the strongest or fastest of her peers. Instead, she has sought to become the most capable, and has spent years training as a performing artist with members of her community. Her dynamic training has developed strength through excessive ranges of motion, rendering Dalyny capable of feats many others lack the core strength, coordination, or are simply too big to accomplish, and is especially versed in being vaulted into the air by a strong partner. With a solid idea for their character in mind, Dalyny’s Player chooses Acrobat as her Touchstone.</p>
-            </div>
+            
 
-            <!-- Quirk -->
-            <div class="gridbox">
+                <!-- Quirk -->            
                 <h4 class="sectionHead" id="quirk">Quirk</h4>
                 <p class="sectionBody">As with a character's Touchstone, their quirk is an open-ended, non-statistical determination, but they should be something that can cause complications for the character in the right circumstances, and afford them unique insight in others. These aren't meant to be debilitating, but to further contextualize the character in the minds of both their Player and the rest of the group. A Quirk like “Social Smoker” could definitely be a problem if they’re planning for some serious physical exertion, but in others it could be a definitive benefit for easing social tension.</p>
 
                     <!-- Example Text -->
                     <p class="exampleText">Because much of Dalyny's training involved coordinated, choreographed performances with a team, most of her goals for training have been derived from the needs of a group: if a performance involved fitting into smaller spaces, she might train contortion; if it involved being vaulted through the air, she might practice landing smoothly from a fall. Even though she would pursue her goals with a single-minded determination once she had one, she always had trouble picking a direction of her own. Dalyny's Player chooses Team Reliant as her Quirk to represent her strong preference for interdependence within a group to individual self-sufficiency.</p>
-            </div>
+            
 
-            <!-- Traits -->
-            <div class="gridbox">
+                <!-- Traits -->            
                 <h4 class="sectionHead" id="traits">Traits</h4>
                 <p class="sectionBody">A character's traits are similar to their Touchstone and Quirk, in that they are beyond the scope of choosing from a list of options. Unlike a character's Touchstone or Quirk, which serve to illuminate an inner truth about how a character experiences the world, their Traits are meant to symbolize their ties to it. More specifically (and practically), this will allow Players to begin to tie their character's stories both to the game space and each other. </p>
                 <p class="sectionBody">Traits are generated as part of a group activity during character creation as a way for Players to begin to intertwine the stories of their PCs within the game space prior to play.</p>
-            </div>
+            
 
-            <!-- Invoking Attributes -->
-            <div class="gridbox">
+                <!-- Invoking Attributes -->            
                 <h4 class="sectionHead" id="invoking_attributes">Invoking Attributes</h4>
                 <p class="sectionBody">During play, Players will invariably come upon situations where their attributes come into play. In these instances, a Player may spend a Lucidity Token to automatically receive a Full Success degree on a related check, or receive a situational bonus as determined by the GM.</p>
-            </div>
+            
 
-            <!-- Changing Traits -->
-            <div class="gridbox">
+                <!-- Changing Traits -->            
                 <h4 class="sectionHead" id="changing_traits">Changing Traits</h4>
                 <p class="sectionBody">Attributes are meant to expose only *some* of the facets of a character, and sometimes it can be best to focus on others. They can be changed at any time, so long as all Players involved are on the same page with the terms of the change.</p>
+            </div>
+
+            <!-- Statistics -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="statistics">Statistics</h4>
+                <p class="sectionBody">All characters start with a base 6 Vitality, 0 in all other statistics, and 5 points to invest as they choose into either primary stats or substat training. Each level after the first will grant a character 2 additional points to invest as they see fit to reflect the growth they’ve achieved during their journey. Investment into primary stats will increase a character’s acumen: they will become more potent, intelligent, and intuitive. Training in substats reflects time taken to learn new skills, and increases the number of tools at a character’s disposal via new spell architectures and free-casting bonuses.</p>
+                <p class="sectionBody">Secondary Stats derive their base value from their associated Primary statistic. Each Primary statistic has two associated secondary stats: one which affects their physical capabilities, and one which affects their magic. Items, enchantments, and other effects will generally provide increases to Secondary statistics rather than Primary stats, however, so players may expect to see them with higher bonuses than their Primary counterparts.</p>
+            
+
+                <!-- Primary Stats -->            
+                <h4 class="sectionHead" id="primary_stats">Primary Stats</h4>
+
+                <!-- Vitality -->
+                <p class="sectionHead" id="vitality">Vitality</p>
+                <p class="sectionBody">A relatively straightforward statistic. A character's max Vitality is equal to their Vitality stat value. Unlike other Primary statistics, Vitality has no Secondary stats associated with it and increases by 1 per level regardless of stat investment.</p>
+
+                <!-- Cognition -->
+                <p class="sectionHead" id="cognition">Cognition</p>
+                <p class="sectionBody">A character's mental acumen. A marker of how well they employ reason and assimilate knowledge.</p>
+                <p class="sectionBody">Associated Secondary Stats: Recovery, Adaptation</p>
+
+                <!-- Force -->
+                <p class="sectionHead" id="force">Force</p>
+                <p class="sectionBody">A character's physical prowess. A representation of how in tune they are to their own physical movements, and their ability to affect the Dream around them.</p>
+                <p class="sectionBody">Associated Secondary Stats: Attack, Projection</p>
+
+                <!-- Insight -->
+                <p class="sectionHead" id="insight">Insight</p>
+                <p class="sectionBody">A character's ability to perceive the world around them, intuit the actions of others, and synergize the actions of their mind and body.</p>
+                <p class="sectionBody">Associated Secondary Stats: Defense, Unification</p>
+            
+
+                <!-- Substats -->            
+                <h4 class="sectionHead" id="substats">Substats</h4>
+                <p class="sectionBody">There are nine substats which correlate to the nine subschool of magic. There are a finite amount of training points a character can invest in any substat at any point in time: each substat bonus caps at 4, and each point allocated beyond the first requires a character to have attained a certain level before they may be trained.</p>
+                <p class="sectionBody">Training in a substat gives a character access to their d6 pool to augment affected checks, as well as knowledge of 2 spell architectures from within that school per point of investment. By default, a character is granted free training in the substat relating to their chosen class, conferred automatically upon meeting the level threshold requirements for the training.</p>
             </div>
 
             <!-- Items and Equipment -->
