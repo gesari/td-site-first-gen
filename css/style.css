@@ -270,8 +270,8 @@ body {
 }
 
 .sectionSubHead {
-    margin: 3rem 2rem 0;
-    font-style: oblique;
+    margin: 0 1.5rem 0;
+    font-size: 1.1rem;
 }
 
 .sectionBody {
