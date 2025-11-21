@@ -299,6 +299,12 @@ body {
     font-size: 0.85rem;
 }
 
+.exampleTextMid {
+    margin: 0 11rem;
+    color: #CDB7E1;
+    font-size: 0.85rem;
+}
+
 .exampleTextCenter {
     margin: 0 11rem 1.5rem;
     color: #CDB7E1;
