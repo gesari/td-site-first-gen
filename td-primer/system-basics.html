@@ -99,7 +99,25 @@
                 </li>
                 
                 <!-- Actions -->
-                <li><a href="#actions">Actions</a></li>
+                <li class="dropdownContainer">
+                    <a href="#actions" class="dropdownToggle">
+                        <span class="nowrapSpan">Actions
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#boost">Boost</a></li>
+                        <li><a href="#counter">Counter</a></li>
+                        <li><a href="#free_cast">Free-Cast</a></li>
+                        <li><a href="#interaction">Interaction</a></li>
+                        <li><a href="#movement">Movement</a></li>
+                        <li><a href="#recharge">Recharge</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#stabilize">Stabilize</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -191,7 +209,7 @@
                     <p class="exampleTextCenter">d20 pool Polarity scale:</p>
                     <p class="exampleTextCenter">-5 (minimum) <-> -4 <-> -3 <-> -2 <-> 1 (default) <-> +2 <-> +3 <-> +4 <-> +5 (maximum)</p>
 
-                    <p class="sectionBody">Unlike the d20 pool, the d6 pool only comes into play in specific instances, such as if the Player has invested points into subschool training, or are under the effects of a spell, and the highest result will always be selected among the d6 they cast. If their d6 pool’s Polarity is negative, however, then their d6 result will be subtracted from their result rather than added.</p>
+                    <p class="sectionBody">Unlike the d20 pool, the d6 pool only comes into play in specific instances, such as if the Player has invested points into collegiate training, or are under the effects of a spell, and the highest result will always be selected among the d6 they cast. If their d6 pool’s Polarity is negative, however, then their d6 result will be subtracted from their result rather than added.</p>
 
                     <p class="exampleTextCenter">d6 pool Polarity scale:</p>
                     <p class="exampleTextCenter">-5 (minimum) <-> -4 <-> -3 <-> -2 <-> 0 (default) <-> 1 <-> +2 <-> +3 <-> +4 <-> +5 (maximum)</p>
@@ -267,35 +285,68 @@
 
                 <p class="sectionBody">In general, you can think of Actions as anything your character might do to interact with the game space. The eight General Actions listed below should cover anything you might think to come up with!</p>
 
-                <p class="sectionSubHead">Boost</p>
+                <!-- Boost -->
+                <p class="sectionHeadSm" id="boost">Boost</p>
                 <p class="sectionBody">Offer a helping hand. Roll your own dice pool for a check someone else is in the process of making. If they so choose, the person you’re helping can use the result of your dice pool instead of theirs. Their own modifiers still apply, though!</p>
 
-                <p class="sectionSubHead">Counter</p>
-                <p class="sectionBody">Modifiers: + Recovery | - Attack</p>
+                <p class="exampleText">While attempting to eavesdrop on a conversation between two dreamers within the aery, Dalyny achieves a 12, or Partial Success, on her check when she tries to sneak closer: they don’t see her, but she makes enough noise to raise suspicions. On the following check, when trying to obscure her location and intent, she rolls her d20 pool and gets a natural 1 as a result. This could be quite bad, but Dalyny’s friends, Kelorin and Alfred the Raven, are nearby and see her plight. Using the Boost action, Alfred flies into the aery and begins to create a distraction. Kelorin rolls his d20 pool and gets a 15 as a result. Much better. Because he used the Boost action, Dalyny can apply Kelorin’s 15 to her check, plus her own modifiers. Since she’s making a physical check, her Force modifier of +2 applies in this case and, because Alfred is doing his best to help, the GM chooses not to impose a difficulty penalty, giving her a result of 17. On a Full Success she is able to avoid detection; though all the commotion has interrupted the conversation she was trying to listen in on, at least she didn’t get caught!</p>
+
+                <!-- Counter -->
+                <p class="sectionHeadSm" id="counter">Counter</p>
+                <p class="sectionSubHead">Modifiers: + Recovery | - Attack</p>
                 <p class="sectionBody">Try to mitigate negative effects in the moment, or shake them off after they’ve been applied. This can apply to anything from resisting the effects of a spell to putting out a fire on your person.</p>
 
-                <p class="sectionSubHead">Free-Cast</p>
-                <p class="sectionBody">Modifiers: Casting Secondary and Substats</p>
+                <p class="exampleText">While disguised in one of their shapeshifted personae, Suul is casing the security of a local Guild archive when an arcanomaton disguised as a statue activates and begins pursuing them. Being noticed is not ideal, but so long as they are not identified it won’t be a huge issue: Suul has other forms they can assume, after all. When rolling to establish the Turn Order, Suul rolls lower than the arcanomaton: it acts first and, after closing the distance between them, scores a Plus result on its second action and inflicts Suul with the status effect Off-Balance, which nullifies their Defense modifier for the next check made against them. This could potentially be a big problem. Before making their getaway, Suul first uses the Counter ability to nullify the Off-Balance condition: on a Partial Success the Status Effect does not end until the end of Suul’s Faction Turn, but since they know the arcanomaton has used all of its Action Economy for this Round they are not concerned about a Reaction capitalizing on the effect before it ends. Suul uses their other action to begin making their escape.</p>
+
+
+                <!-- Free-Cast -->
+                <p class="sectionHeadSm" id="free_cast">Free-Cast</p>
+                <p class="sectionSubHead">Modifiers: Casting Secondary stats and Collegiate training</p>
                 <p class="sectionBody">Improvise a custom spell. There’s always a little risk when casting like this, moreso when trying to go beyond your limits, but how can you learn if you don’t push your boundaries?</p>
 
-                <p class="sectionSubHead">Interaction</p>
-                <p class="sectionBody">Modifiers: Applicable Primary Stat</p>
+                <p class="exampleText">Dalyny, Kelorin, and Suul are together in a training simulation of an underwater facility. When moving through a dilapidated access corridor, they come across a locked, inactive door. After a few minutes of trying to reactivate it, Kelorin notices a part of wall paneling that is slightly protruded; thinking there may be some distorted arcane circuitry beneath the panels, he attempts to dislodge it. Bad idea: the panel was buckling inwards because of a weak spot in the wall, and removing the panel caused a leak to spring which is rapidly turning into an actual deluge. </p>
+                <p class="exampleText">Though they’ve yet to learn the architectural techniques to safely implement a Barrier, Suul *has* been training their skills in Occlusion magic. They decide to try and free-cast a spell to reinforce the burst panel and stop the flow of water into the facility. This is not the typical use of the Barrier spell, but it is close enough to its implementation that the GM decides this spell would be cast at the Second Spell Tier. Since Suul and their comrades are still only level 1, none of them have actually advanced to the Second Spell Tier yet; this means the difficulty penalty set for this free-cast spell will be -10. </p>
+                <p class="exampleText">Suul rolls their d20 pool and, thankfully, receives a result of 19. This result is further augmented by their collegiate training in Occlusion, which, at the Practiced tier, gives them access to their d6 pool: they roll a d6, and get a 3. Since Occlusion magic falls under the purview of the Adaptation school, their static modifier of +1 also applies in this instance. Adding all of this together gives us 19 + 3 + 1 -10 = 13: a Partial Success on a very difficult check!</p>
+                <p class="exampleText">The GM determines that the spell instantiates an impermeable barrier as desired, but on a Partial Success, Suul is not able to fully attach it to the ruptured portion of the wall. Instead, it expands to fill the entirety of the corridor. The party is now relatively safe and dry, but the rupture is quickly filling up the hallway between the barrier and the door they were trying to pass through. They have just enough time to fall back to another room with a door that seals reliably before Suul’s barrier fails, but the trio will now need to find another way to their destination.</p>
+
+
+                <!-- Interaction -->
+                <p class="sectionHeadSm" id="interaction">Interaction</p>
+                <p class="sectionSubHead">Modifiers: Applicable Primary Stat</p>
                 <p class="sectionBody">This is a general catch-all action meant to account for all the different ways in which you might engage with the environment. Lie convincingly, parse information from arcane material, or even break down a door!</p>
 
-                <p class="sectionSubHead">Movement</p>
+                <p class="exampleText">Interactions are by far the most common action to take, though most of them are so mundane that we skip past them in narration: we do not need to narrate when our characters go to the bathroom, prepare their meals, or even that they would flip a light switch when entering a dark room. These things all happen, and we assume they do so whether we narrate them or not. Even though the effort involved in preparing a meal far exceeds what is required to light a room, they still fall under the same Interaction purview. Thus, unlike the other General Actions, when a player attempts an Interaction during Turn Order, the GM may decide it has no effect on the character’s Action Economy based on what seems reasonable to them: if a light switch is readily accessible on the wall, turning on the lights is probably a trivial matter, whereas attempting to persuade a hostile entity to stop fighting may be a more involved process.</p>
+
+
+                <!-- Movement -->
+                <p class="sectionHeadSm" id="movement">Movement</p>
                 <p class="sectionBody">Spend some time moving through space. Pretty straightforward: we’ve all taken walks before, and run on occasion.</p>
 
-                <p class="sectionSubHead">Recharge</p>
-                <p class="sectionBody">Modifiers: + Recovery</p>
+                <p class="exampleText">When a Movement action is executed, the player is allowed to move up to their maximum Movement speed at any point during their Faction Turn. As an example, Dalyny has a Movement Speed of 5 units. If they wanted to pickpocket an entity 2 units away from them during Turn Order, Dalyny could use their Movement action, close the distance, spend their second action to swipe the item, and then use their remaining 3 units of Movement to begin their getaway.</p>
+
+
+                <!-- Recharge -->
+                <p class="sectionHeadSm" id="recharge">Recharge</p>
+                <p class="sectionSubHead">Modifiers: + Recovery</p>
                 <p class="sectionBody">Much like breathing, dreamers are capable of drawing in ambient magic from the environment. This can be used to refresh your shields, and potentially free-cast more frequently.</p>
 
-                <p class="sectionSubHead">Skills</p>
-                <p class="sectionBody">Modifiers: Secondary, Substats</p>
+                <p class="exampleText">Though not all dreamers are versed in Harmonic or Transmutation magics for the purpose of healing, everyone knows how to pull ambient azai from the surrounding environment to power their skills. This means that even though replenishment of Vitality is outside the realm of possibility for many, anyone can supplement their own Shields, which can greatly enhance their durability or ability to free-cast spells.</p>
+
+
+                <!-- Recharge -->
+                <p class="sectionHeadSm" id="skills">Skills</p>
+                <p class="sectionSubHead">Modifiers: Secondary stats, Collegiate training</p>
                 <p class="sectionBody">Skills are things your character has learned to do, trained over time to such efficiency that you might execute them as naturally as walking. Your class features and any spells you learn will fall under this category.</p>
 
-                <p class="sectionSubHead">Stabilize</p>
-                <p class="sectionBody">Modifiers: + Recovery, Harmonics/Transmutation</p>
+                <p class="exampleText">Most differences between characters come down to stat investment and the Skills they have access to. While it is possible for PCs of different Specializations to assemble a similar arsenal of spell architectures they are able to implement, the Abilities granted by advancement in each Spec are unique. Every Skill has a listed set of effects for each Degree of Success within the System Codex.</p>
+
+
+                <!-- Stabilize -->
+                <p class="sectionHeadSm" id="stabilize">Stabilize</p>
+                <p class="sectionSubHead">Modifiers: + Recovery, Harmonics/Transmutation training</p>
                 <p class="sectionBody">Not everyone is trained as a medical professional, but anyone can attempt to render first aid to those in need.</p>
+
+                <p class="exampleText">During a combat engagement, Dalyny overextends her position and is pinned down. An easy target, her opponents are able to reduce her Vitality to 0 before their Faction Turn ends. Because one of Kelorin’s traits is in reference to him and Alfred being petty thieves, Kelorin’s Player argues that he would at least be passable at first aid just from patching up his and Alfred’s bruises from their mishaps, and asks the GM if they would be able to invoke their last Lucidity Token to guarantee a Full Success on a Stabilize action. The connection is a bit tenuous, but the GM decides if Kelorin’s Player would like to spend their finite resources in a creative narrative way there’s no reason to say no, especially since the other Players think it’s a great idea. The GM narrates that Kelorin, practiced at pulling themself and bonded life companion from all sorts of scraps, leans on that experience to staunch Dalyny’s bleeding and infuse her with enough energy to get back to her feet: for the cost of a single action, Kelorin has restored Dalyny to the fight. Since she didn’t have to expend an action to attempt to Stabilize herself, Dalyny now has access to her full Action Economy. She is able to restore herself further with a Harmonic spell before running, and Kelorin still has some movement left over to cover her escape.</p>
 
                 <p class="sectionBody">That’s it! That’s everything you really need to know about the game in order to begin playing. There’s obviously much more to cover about how your character will work, but all of those things will function as a supplement to the topics we’ve begun to cover here. For more in-depth detail on anything mentioned, please check the corresponding section in the System Codex.</p>
             </div>
