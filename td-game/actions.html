@@ -128,7 +128,6 @@
                         <li><a href="#rounds">Rounds</a></li>
                         <li><a href="#establishing_turn_order">Establishing Turn Order</a></li>
                         <li><a href="#action_economy">Action Economy</a></li>
-                        <li><a href="#time_of_each_round">Time of Each Round</a></li>
                     </ul>
                 </li>
                 
@@ -167,87 +166,148 @@
 
         <div class="localContent">
             <h2 class="localHead">Actions</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">Almost everything the Players will do to interact with the game space will be an action of some sort. The four Types of Actions describe the rules which govern the use case of individual actions a Player may take, and the Eight General Actions account for everything a Player might choose to do.Sm</p>
 
             <!-- Types of Actions -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="types_of_actions">Types of Actions</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">The ways in which actions are used changes depending on circumstance. There are four Types which cover these different use cases. When the game is flowing narratively, these types are meant more as a prompt for roleplay within the context of the developing story. While operating in Turn Order, however, they are highly prescriptive.</p>
 
-                <p class="sectionHead" id="standard_actions">Standard Actions</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="standard_actions">Standard Actions</p>
+                <p class="sectionBody">Most Actions fall under the category of Standard Actions: they can be used at almost every time and in almost every situation. Whether proactive or reactive, their primary constraint is a character's Action Economy.</p>
 
-                <p class="sectionHead" id="reactive_actions">Reactive Actions</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="reactive_actions">Reactive Actions</p>
+                <p class="sectionBody">Reactions are similar to Standard Actions, but their use-case is specific to actions taken directly in response to another entity's Action. While operating in Turn Order, Reactions may be used during any Faction's Turn.</p>
 
-                <p class="sectionHead" id="channeled_actions">Channeled Actions</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="channeled_actions">Channeled Actions</p>
+                <p class="sectionBody">Certain actions will last longer than others: some spells must be actively maintained, for example. Entities may maintain a single Channeled Action at any time by default. Any time a hostile action is successfully taken against an entity that is actively maintaining a Channel, they must make a check to see if they are able to sustain the effect. Unless otherwise stated, Channeled effects may last until the caster chooses to stop channeling the effect, or if their Channel is interrupted.</p>
+                <p class="sectionBody">Channeling checks are made using the modifiers of the skill being Channeled, and have a negative modifier imposed by the Attack stat of the entity which triggered the check. The check's Degree of Success will determine the result, as detailed below:</p>
 
-                <p class="sectionHead" id="recharge_actions">Recharge Actions</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">Falter</p>
+                <p class="sectionBody">The entity that triggered the Channeling check may take a free Retaliatory Strike against the interrupted target.</p>
 
-                <p class="sectionHead" id="unique_actions">Unique Actions</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">Fail</p>
+                <p class="sectionBody">The effect is interrupted and ends.</p>
+
+                <p class="sectionSubHead">Partial</p>
+                <p class="sectionBody">The effect stays active, but additional Channeling checks made this Round incur a -1 d20 Polarity penalty (stacking).</p>
+
+                <p class="sectionSubHead">Full</p>
+                <p class="sectionBody">The effect stays active.</p>
+
+                <p class="sectionSubHead">Plus</p>
+                <p class="sectionBody">The effect stays active, and additional Channeling checks made this Round incur a +1 d20 Polarity bonus (stacking).</p>
+
+                <p class="sectionHeadSm" id="recharge_actions">Recharge Actions</p>
+                <p class="sectionBody">Action with a cooldown. Entities roll a d12 at the beginning of every Round for each rechargeable ability against that ability's specific target range (default 10-12) to see if their ability to use the Skill recharges.</p>
+
+                <p class="sectionHeadSm" id="unique_actions">Unique Actions</p>
+                <p class="sectionBody">Certain Skills have very specific use cases which govern their implementation. They are accounted for under this Type.Sm</p>
             </div>
 
             <!-- General Actions -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="general_actions">General Actions</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">The eight General Actions account for the different ways a character may interact with the game space.</p>
 
-                <p class="sectionHead" id="boost">Boost</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Boost -->
+                <p class="sectionHeadSm" id="boost">Boost</p>
+                <p class="sectionBody">Assist a target with a check they are attempting to make. The character rolls their d20 pool at the time the target makes their check, using their own Polarity for the check. If they so choose, the target may take the result of the character's d20 pool instead of the result of their d20 pool; their own bonuses still apply when determining the outcome of the check.</p>
 
-                <p class="sectionHead" id="counter">Counter</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Counter -->
+                <p class="sectionHeadSm" id="counter">Counter</p>
+                <p class="sectionSubHead">Modifiers: + Recovery | - Attack</p>
+                <p class="sectionBody">Seek to prevent an effect from being applied (Reactive), or to shrug off the effects of a status effect currently afflicting the entity (Standard).</p>
 
-                <p class="sectionHead" id="free_cast">Free-Cast</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">Partial Success: </p>
+                <p class="sectionBody">Remove 1 status effect, or 1 stack of a status effect, at the end of current Faction Turn. A second Partial Degree applied to the same effect during the same Faction Turn will end the effect immediately.</p>
 
-                <p class="sectionHead" id="interaction">Interaction</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">Full Success</p>
+                <p class="sectionBody">Remove 1 status effect, or 1 stack of a status effect, immediately.</p>
 
-                <p class="sectionHead" id="movement">Movement</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">Plus</p>
+                <p class="sectionBody">Remove a number of status effects, or stacks thereof, equal to half Potency immediately.</p>
 
-                <p class="sectionHead" id="recharge">Recharge</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Free-Cast -->
+                <p class="sectionHeadSm" id="free_cast">Free-Cast</p>
+                <p class="sectionBody">Attempt to craft a custom spell effect. Roll your d20 pool and add any applicable bonuses available to you based on your skill in that spell's school, determined by GM and Player collaboratively. On a Falter, the dreamer rolls on the Vortex table. On a Partial Success, they roll on the Surge table. On a Plus, they may select an effect of their choosing from the Surge table. Specific details regarding both tables are covered in the Azaian Magic section.</p>
 
-                <p class="sectionHead" id="skills">Skills</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Interaction -->
+                <p class="sectionHeadSm" id="interaction">Interaction</p>
+                <p class="sectionSubHead">Modifiers: Applicable Primary Stats</p>
+                <p class="sectionBody">This is a general catch-all action meant to account for all the different ways in which you might engage with the environment. Lie convincingly, parse information from arcane material, or even break down a door! Success and fail results set by the GM on a case-by-case basis.</p>
 
-                <p class="sectionHead" id="stabilize">Stabilize</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Movement -->
+                <p class="sectionHeadSm" id="movement">Movement</p>
+                <p class="sectionBody">Move up to the character's maximum Movement speed before the end of the Round. If a character moves without using up all of the Movement speed granted by a Movement action, they may choose to use up any remaining amount for the rest of the Round in between actions taken by other entities without spending additional actions.</p>
+                <p class="sectionBody">Jumping is not a separate action, but considered part of a Movement action. Base jump distance equal to 1 + half Force bonus (rounded down), up to remaining movement speed. Jump distance increases to full Force bonus, up to remaining movement speed, if the entity moves 2 units prior.</p>
+
+                <!-- Recharge -->
+                <p class="sectionHeadSm" id="recharge">Recharge</p>
+                <p class="sectionSubHead">Modifiers: + Recovery</p>
+                <p class="sectionBody">Draw in ambient azai from the surrounding environment, refilling Shield and Free-Cast capabilities.</p>
+                <p class="sectionSubHead">Partial Success</p>
+                <p class="sectionBody">Shield restored equal to half Potency.</p>
+                <p class="sectionSubHead">Full Success</p>
+                <p class="sectionBody">Shield restored equal to full Potency.</p>
+                <p class="sectionSubHead">Plus</p>
+                <p class="sectionBody">+2 Potency</p>
+
+                <!-- Skills -->
+                <p class="sectionHeadSm" id="skills">Skills</p>
+                <p class="sectionBody">Characters will have many abilities and spells available to them based on their style, specialization, and collegiate training. While much will differ due to the inherent nature of each individual dreamer, some talents, like telepathy and telekinesis, are shared by all. Success and fail results are specific to each ability, and are enumerated in the relevant Spell Architecture and Specialization sections.</p>
+
+                <!-- Stabilize -->
+                <p class="sectionHeadSm" id="stabilize">Stabilize</p>
+                <p class="sectionSubHead">Modifiers: + Recovery, Harmonics/Transmutation</p>
+                <p class="sectionBody">Assist an Unconscious entity.</p>
+                <p class="sectionSubHead">Falter / Fail</p>
+                <p class="sectionBody">No effect on target.</p>
+                <p class="sectionSubHead">Partial Success</p>
+                <p class="sectionBody">Target entity regains 1 Vitality</p>
+                <p class="sectionSubHead">Full Success</p>
+                <p class="sectionBody">Target entity regains 2 Vitality, to a maximum of 1.</p>
+                <p class="sectionSubHead">Plus</p>
+                <p class="sectionBody">Target entity regains 4 Vitality.</p>
             </div>
 
             <!-- Hostile Actions -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="hostile_actions">Hostile Actions</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Disagreements aren't always friendly, especially in their resolution. While there are many different Skills/Spells which have martial applications, the damage they deal will generally follow a basic formula based on the entity's base Potency and the ability's Degree of Success. Potency is determined by a dreamer's Style, and sometimes augmented by the ability being executed. The ability's Degree of Success determines how much of the Potency is converted into damage.</p>
+                <p class="sectionBody">This formula is not universal, and many Skills will deviate from it, but it is still worth keeping in mind when trying to determine the effects of abstract actions such as Free-Casting.</p>
+                <p class="sectionSubHead">Falter / Fail</p>
+                <p class="sectionBody">The ability deals no damage.</p>
+                <p class="sectionSubHead">Partial Success</p>
+                <p class="sectionBody">The ability deals damage equal to half Potency.</p>
+                <p class="sectionSubHead">Full Success</p>
+                <p class="sectionBody">The ability deals damage equal to full Potency.</p>
+                <p class="sectionSubHead">Plus</p>
+                <p class="sectionBody">The ability inflicts a status effect and/or receives a +2 bonus to Potency.</p>
+                <p class="exampleText">Note: base Potency values will always be an even number in order to simplify damage calculations for Partial Successes.</p>
 
                 <p class="sectionHead" id="retaliatory_strikes">Retaliatory Strikes</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">When a hostile action is taken against an entity and the result of the check is negative, that entity may make a Retaliatory Strike free of charge. Retaliatory Strikes cannot inflict status effects, and only receive a +2 Potency bonus on a Plus.</p>
             </div>
 
             <!-- Turn Order -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="turn_order">Turn Order</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Most of the time, the game can be played freeform, where PCs take actions when and in a manner that feels natural to them based on the GM's narration. However, in situations where multiple checks will be required to determine the outcome of a given sequence of events, and/or the specific order of those events is of great consequence (e.g. in combat), the GM may initiate a Turn Order. PCs may also request for the GM to initiate a Turn Order whenever they feel it appropriate.</p>
 
                 <p class="sectionHead" id="faction_turns">Faction Turns</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">While operating within the Turn Order, the game progresses in Rounds. One Round is measured as the sum of every Faction's Turn, taken once. In the basic example of the Players having one Faction and the Environment another, one Round would involve each Faction taking their Turn once. After both Factions have gone, the Round turns over, and all entities have their Action Economy restored.</p>
 
                 <p class="sectionHead" id="rounds">Rounds</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">While operating within the Turn Order, the game progresses in Rounds. One Round is measured as the sum of every Faction's Turn, taken once. In the basic example of the Players having one Faction and the Environment another, one Round would involve each Faction taking their Turn once. After both Factions have gone, the Round turns over, and all entities have their Action Economy restored.</p>
 
                 <p class="sectionHead" id="establishing_turn_order">Establishing Turn Order</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">While operating within the Turn Order, the game progresses in Rounds. One Round is measured as the sum of every Faction's Turn, taken once. In the basic example of the Players having one Faction and the Environment another, one Round would involve each Faction taking their Turn once. After both Factions have gone, the Round turns over, and all entities have their Action Economy restored.</p> 
+                <p class="sectionBody">A character determines their Initiative score by making a check with their d20 Pool, modified by their highest Primary stat.</p>
 
                 <p class="sectionHead" id="action_economy">Action Economy</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-
-                <p class="sectionHead" id="time_of_each_round">Time of Each Round</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">For every Round of the Turn Order, entities may execute 2 Actions by default, 1 of which may be a Reaction executed outside of its Faction's Turn. These Actions may be selected from any available to the entity.</p>
+                <p class="sectionBody">Unless stated otherwise, entities may execute the same Action multiple times per round. Successive uses of skills beyond the first, however, cost shield as though the entity had Free-Cast the ability. This cost is nullified if the entity is acting against a target within physical range (1 unit) of them.</p>
             </div>
         </div>  
     </div>  
