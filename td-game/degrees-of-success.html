@@ -61,6 +61,27 @@
             <!-- Links to topics within localContent -->
             <ul class="sidenavLinks">
                 <li class="sidenavHead">Table of Contents</li>
+                
+                <!-- Degree Results -->
+                <li class="dropdownContainer">
+                    <a href="#degree_results" class="dropdownToggle">Degree 
+                        <span class="nowrapSpan">Results
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
+                                <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#natural_1">Natural 1</a></li>
+                        <li><a href="#falter">Falter</a></li>
+                        <li><a href="#failure">Failure</a></li>
+                        <li><a href="#partial_success">Partial Success</a></li>
+                        <li><a href="#full_success">Full Success</a></li>
+                        <li><a href="#plus_success">Plus</a></li>
+                        <li><a href="#natural_20">Natural 20</a></li>
+                    </ul>
+                </li>
+
                 <!-- Making Checks -->
                 <li class="dropdownContainer">
                     <a href="#making_checks" class="dropdownToggle">Making 
@@ -133,42 +154,82 @@
 
         <div class="localContent">
             <h2 class="localHead">Degrees of Success</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">There are five general Degrees of Success, and thus five possible outcomes of any check: Falter, Failure, Partial Success, Success, and Plus. These degrees correspond to specific values, generally from 1 to 20, and are meant to be used as a guideline to determine the result of a check.</p>
+
+            <!-- Degrees of Success -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="#degree_results">Degree Results</h4>
+                <p class="sectionBody">Once an entity's dice have been rolled and any relevant modifiers have been applied, the result is compared against the degrees of success to determine the effect of their actions.</p>
+
+                <p class="sectionHeadSm" id="#natural_1">Natural 1</p>
+                <p class="sectionBody">If the result of an entity's d20 pool is a 1, the check's degree is Falter regardless of modifiers. If a PC's d20 pool generates this result, they gain a Lucidity Token.</p>
+
+                <p class="sectionHeadSm" id="#falter">Falter | > 0</p>
+                <p class="sectionBody">A negative result means the action goes about as poorly as possible. If the action is an attack, the target is granted a free Retaliatory Strike: a quick attack which can inflict damage, but not any status effects.</p>
+
+                <p class="sectionHeadSm" id="#failure">Failure | 1 - 4</p>
+                <p class="sectionBody">The action is unsuccessful, along with any potential penalties and/or consequences that result.</p>
+
+                <p class="sectionHeadSm" id="#partial_success">Partial Success | 5 - 13</p>
+                <p class="sectionBody">The action succeeds only partially, generally by introducing a complication of some kind.</p>
+
+                <p class="sectionHeadSm" id="#full_success">Full Success | 14 - 19</p>
+                <p class="sectionBody">The action occurs as intended, or as much as possible, given present circumstances.</p>
+
+                <p class="sectionHeadSm" id="#plus_success">Plus | 20 +</p>
+                <p class="sectionBody">The action succeeds in a way that surpasses expectations.</p>
+
+                <p class="sectionHeadSm" id="#natural_20">Natural 20</p>
+                <p class="sectionBody">If the result of an entity's d20 pool is a 20, the check's degree is a Plus regardless of modifiers. If a PC's d20 pool generates this result, they gain a Lucidity Token.</p>
+            </div>
 
             <!-- Making Checks -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="making_checks">Making Checks</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">The player rolls their d20 pool (default 1d20) and selects the appropriate result. In the most basic case of rolling 1d20, the player simply chooses that result. In practice, however, Players will be piloting characters with unique statistics and modifiers, which are added to the chosen result. If this is a contested check, or if it otherwise has any difficulty modifiers, they will be subtracted from the total at the same time. For example, if a player makes an attack against a target, they would take the result of their die roll, add any attack modifiers they have for the skill they have executed, and subtract any Defense modifiers their target may have as a penalty. The result of this basic mathematical formula (dice pool result + bonuses - penalties = final result) will yield a number which, when compared against the Degrees of Success table, can be used to determine the result of the player's action.</p>
 
-                <p class="sectionHead" id="modifiers">Modifiers</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="modifiers">Modifiers</p>
+                <p class="sectionBody">Most checks made during play will be subjected to modifiers, which either add to, or subtract from, the result of a character's dice pools. Modifiers are applied after the results of each dice pool are selected in order to determine a check's final result, which is then compared against the Degrees of Success.</p>
 
-                <p class="sectionHead" id="bonuses">Bonuses</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead" id="bonuses">Bonuses</p>
+                <p class="sectionBody">For characters, the most common sources of bonuses will be their chosen statistic distribution, any training they have undergone, magical items they bear, and spell effects. For PCs, most of these sources are completely within their control to allow a fully customizable experience.</p>
 
-                <p class="sectionHead" id="penalties">Penalties</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>            
+                <p class="sectionSubHead" id="penalties">Penalties</p>
+                <p class="sectionBody">Typical subtractive modifiers will involve standard difficulty penalties applied to an action based on the circumstance. These may arise from attempting an action that is genuinely challenging in its own right (like attempting to hack a magical device or improvise a spell), or when an entity actively opposes an action a character is attempting to make (such as a target's Defense stat, which applies as a penalty to all contested actions against them).</p>            
 
-                <p class="sectionHead" id="standard_difficulty_penalties">Standard Difficulty Penalties</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="standard_difficulty_penalties">Standard Difficulty Penalties</p>
+                <p class="sectionBody">Many actions do not have standard penalties which apply to them, such as the Recharge and Stabilize actions. Even so, circumstances within the game space may warrant some type of penalty to the action, which may be accounted for by application of a Standard Difficulty Penalty. The penalty's magnitude can be determined by the GM on a case by case basis, and can apply to any action.</p>
 
-                <p class="sectionHead" id="area_checks">Area Checks</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="area_checks">Area Checks</p>
+                <p class="sectionBody">When an entity executes an action which targets an area, they roll a single check with their dice pools. To calculate the result for each individual entity within the area, every target's stats are compared against the result of the dice pool to determine the ability's Degree of Success specifically in relation to them.</p>
             </div>
 
             <!-- Dice Pools -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="dice_pools">Dice Pools</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Players have two separate dice pools which they may draw upon to determine the outcome of a Check: a d20 pool, and a d6 pool. Players will always roll at least 1d20 for the purposes of the Check, but the specific configuration of dice, and which result is selected, can vary between specific checks.</p>
 
-                <p class="sectionHead" id="polarity">Polarity</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead" id="d20_pool">d20 Pool</p>
+                <p class="sectionBody">This pool will always apply to checks, as a check requires, at a minimum, the result of 1d20 to determine the outcome of an event.</p>
+
+                <p class="sectionSubHead" id="d6_pool">d6 Pool</p>
+                <p class="sectionBody">This pool is circumstantial, based on whether or not a player is Practiced in a certain check, or if they have any other benefits acting on them to increase their chances of success.</p>
+
+                <p class="sectionHeadSm" id="polarity">Polarity</p>
+                <p class="sectionBody">When a character is more or less likely to accomplish a specific action, their Polarity will reflect that. The Polarity of each dice pool will determine how many of each die you cast in a given check, and which result you select among them. Both dice pools have a maximum Polarity of +/-5, but slightly different rules governing them.</p>
+                <p class="sectionBody">The d20 pool has a default Polarity of 1, and cannot have values of 0 or -1, as indicated by the scale below. The number of the pool’s polarity indicates how many die will be cast, and its sign will determine which result is selected among them. A d20 Polarity of +4 means the player would roll 4d20 and select the highest result among them; meanwhile, a Polarity of -3 means the player would roll 3d20 and select the lowest result.</p>
+                <p class="exampleTitleCenter">d20 pool Polarity scale:</p>
+                <p class="exampleTextCenter">-5 (minimum) \ -4 \ -3 \ -2 \ 1 (default) / +2 / +3 / +4 / +5 (maximum)</p>
+                <p class="sectionBody">Unlike the d20 pool, the d6 pool only comes into play in specific instances, such as if the Player has invested points into collegiate training, or are under the effects of a spell, and the highest result will always be selected among the d6 they cast. If their d6 pool’s Polarity is negative, however, then their d6 result will be subtracted from their result rather than added.</p>
+                <p class="exampleTitleCenter">d6 pool Polarity scale:</p>
+                <p class="exampleTextCenter">-5 (minimum) \ -4 \ -3 \ -2 \ 0 (default) / 1 / +2 / +3 / +4 / +5 (maximum)</p>
             </div>
 
             <!-- Lucidity Tokens -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="lucidity_tokens">Lucidity Tokens</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">At any time during play, a player may use a Lucidity token to invoke their Touchstone or one of their Traits, allowing them to automatically succeed at a check so long as the GM and other players agree that it applies to the situation. Lucidity tokens may also be invoked to re-roll any check a player makes; they may elect to do this after they have already rolled the check, and may select either result. When using a Lucidity Token to re-roll a check, Players may spend additional Tokens to roll the check as many times as they have Tokens to spend.</p>
+                <p class="sectionBody">PCs generate Lucidity Tokens in a few ways, and may store a number equal to their level. Lucidity Tokens are generated automatically when the result of a PCs d20 pool is either a 1 or a 20, but they may also be awarded by the GM to PCs at any time and for any reason. It is intended that GMs may award Lucidity Tokens to players for particularly fun/creative choices, or in exchange for allowing the GM to use a PCs Quirk to complicate a situation. This second method is completely optional, however: the generation of Lucidity Tokens via the d20 pool is intended to alleviate any mental strain induced by having to remember to actively award them.</p>
             </div>
         </div>  
     </div>
