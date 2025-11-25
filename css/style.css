@@ -381,6 +381,32 @@ body {
 }
 
 
+/* Skill Tables */
+.skillTable {
+    margin: 1.5rem;
+    border-collapse: collapse;
+    text-align: left;
+    
+}
+
+.skillTable caption, th, td {
+    padding: 0.3rem 0;
+}
+
+.skillTable caption {
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.skillTable th {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    width: 10rem;
+}
+
+
 /* Links */
 a {
     text-decoration: none;
