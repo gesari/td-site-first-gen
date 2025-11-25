@@ -132,81 +132,547 @@
 
         <div class="localContent">
             <h2 class="localHead">Status Effects</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">Many, if not most, Skills in the game apply status effects as a component of their usage, typically as a result of a Plus. There are 21 unique status effects in the game, and every entity can suffer the consequences of two distinct effects at a time. If a new status effect is successfully applied to an entity already afflicted with two other effects, one of the old effects may be overwritten, or application of the new status effect may be sacrificed for a +2 Potency boost on their action. Characters will often select abilities based specifically on which status effects they will hopefully inflict.</p>
 
             <!-- Removing Effects -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="removing_effects">Removing Effects</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Every status effect in the game may be removed via a Counter action, and effects being maintained via an active Channel may sometimes also be mitigated by interrupting the channeling entity. Additionally, stacking effects lose a single stack of their effect when its penalty is applied to an action: a stack of Entangled is removed when an affected entity executes a Movement action, for instance.</p>
             </div>
 
             <!-- Types of Effects -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="types_of_effects">Types of Effects</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Generally, if a character has access to a Skill which allows them the ability to inflict a specific Status Effect, the dreamer is thought of as understanding how to achieve such an effect. They may reproduce such Status Effects as they have access to via Free-Casting or other actions as they see fit.</p>
             
-                <p class="sectionHead" id="addled">Addled</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Addled -->
+                <table class="skillTable">
+                    <caption id="addled">Addled</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Actions executed by the target which benefit from collegiate training modifiers all behave as though they were Free-Cast.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Addle</th>
+                            <td>Hollowform Style</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Jolt</th>
+                            <td>Conduction College, First Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lash</th>
+                            <td>Spirit Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="assailed">Assailed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Assailed -->
+                <table class="skillTable">
+                    <caption id="assailed">Assailed</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity's dice pools both suffer a -1 Polarity penalty.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Assail</th>
+                            <td>Legionnaire Style</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Impact</th>
+                            <td>Phantom 4-4 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lens Cannon</th>
+                            <td>Arcanomaton Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="confused">Confused</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Confused -->
+                <table class="skillTable">
+                    <caption id="confused">Confused</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target must succeed against a Cognition check (opposed by the offensive stat of the entity which applied the effect) before being able to take any action.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mesmerise</th>
+                            <td>Luminal Attunement</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Confusion</th>
+                            <td>Animism College, First Tier</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Cognition Check Results</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Falter / Fail</th>
+                            <td>The action is not taken, but still expended.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>The action may be taken, but requires an extra action to do so; if the entity does not have the Action Economy to support this, the action is delayed until their next Faction Turn, at which point they are charged for the second action.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>The action occurs as intended.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>The effect ends; if this check preceded a Counter action, the entity may elect to take a new action so long as they have no other Counterable effects upon them.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="dazed">Dazed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Dazed -->
+                <table class="skillTable">
+                    <caption id="dazed">Dazed</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity is unable to take reactions, and loses one turn from Action Economy per Round.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Daze</th>
+                            <td>Echomind Style</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="disrupted">Disrupted</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Disrupted -->
+                <table class="skillTable">
+                    <caption id="disrupted">Disrupted</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target is unable to recover Vitality or Shield from any source.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Disrupt</th>
+                            <td>Hollowform Style</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="engaged">Engaged</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Engaged -->
+                <table class="skillTable">
+                    <caption id="engaged">Engaged</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target has -1 Polarity on all checks made against anything except the entity with whom they are Engaged, and all hostile actions targeting the entity receive a +1 d20 Polarity bonus.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Engage</th>
+                            <td>Legionnaire Style</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="engulfed">Engulfed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Engulfed -->
+                <table class="skillTable">
+                    <caption id="engulfed">Engulfed</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target suffers half Potency damage for every action taken.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Engulf</th>
+                            <td>Farseer Style</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <p class="sectionHead" id="entangled">Entangled</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Entangled -->
+                <table class="skillTable">
+                    <caption id="entangled">Entangled</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Stacking effect. Target entity's Movement action has a maximum distance of 1 unit while stacks remain; one stack removed per Movement action.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aerial Bonds</th>
+                            <td>Sentinel 4-4 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Arc Vortex</th>
+                            <td>Conduction College, Third Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Azonian Anchor</th>
+                            <td>Arcanist 3-1 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Entomb</th>
+                            <td>Alchemist 4-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kinetic State</th>
+                            <td>Conduit 3-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Predatory Instinct</th>
+                            <td>Spiritist 2-1 Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="flaring">Flaring</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consecteur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Flaring -->
+                <table class="skillTable">
+                    <caption id="flaring">Flaring</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Checks initiated against target benefit from a +1 d20 Polarity bonus.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dragonflame</th>
+                            <td>Alchemist 3-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Exposure</th>
+                            <td>Avatar Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pulse</th>
+                            <td>Operative Swarm Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="illuminated">Illuminated</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Illuminated -->
+                <table class="skillTable">
+                    <caption id="illuminated">Illuminated</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target glows with a faint luminescence and cannot be subject to any effects which alters another entity's perception of them.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lightburst</th>
+                            <td>Wisp Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Spotlight</th>
+                            <td>Perception College, Second Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Stage Lighting</th>
+                            <td>Perception College, Third Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="immobilized">Immobilized</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Immobilized -->
+                <table class="skillTable">
+                    <caption id="immobilized">Immobilized</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target's next Movement action has a move speed of 0. Stacking.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aerial Bonds</th>
+                            <td>Sentinel 4-4 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Entomb</th>
+                            <td>Alchemist 4-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Singularity</th>
+                            <td>Arcanist 4-1 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Stasis Field</th>
+                            <td>Operative 3-3 Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="impaired">Impaired</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Impaired -->
+                <table class="skillTable">
+                    <caption id="impaired">Impaired</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Stacking effect; each stack represents a different sense that has been impaired. Target's d20 Polarity is set to a max of -2 for all checks involving an Impaired sense. This bonus increases in severity by 1 per additional Impaired sense. Application of Counter actions to this effect will allow the entity to specify which sensory impairment is being nullified.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flare</th>
+                            <td>Luminary Projector Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Harvest</th>
+                            <td>Harmonics College, Third Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Phantasmagoria</th>
+                            <td>Luminary 3-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sensory Deprivation</th>
+                            <td>Perception College, First Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="obscured">Obscured</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Obscured -->
+                <table class="skillTable">
+                    <caption id="obscured">Obscured</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Harvest</th>
+                            <td>Harmonics College, Third Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Veil</th>
+                            <td>Spirit Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="off_balance">Off-Balance</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Off-Balance -->
+                <table class="skillTable">
+                    <caption id="off_balance">Off-Balance</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target's Defense bonus does not apply to the next check made against them. In addition to being Countered, this effect is cleared after a hostile action is made against the target, or they are able to use a Movement action to move at least 2 units in order to regain their balance.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aftershock</th>
+                            <td>Sentinel 3-1 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Charge</th>
+                            <td>Phantom 2-2 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pressure</th>
+                            <td>Arcanomaton Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sculpt</th>
+                            <td>Transmutation College, Third Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <p class="sectionHead" id="polymorphed">Polymorphed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Polymorphed -->
+                <table class="skillTable">
+                    <caption id="polymorphed">Polymorphed</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity's form is altered: by default, they may only execute Counter and Movement actions, with limited ability to Interact based on form.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Polymorph</th>
+                            <td>Transmutation College, Second Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="projected">Projected</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Projected -->
+                <table class="skillTable">
+                    <caption id="projected">Projected</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Stacking effect, max 2 stacks. Indicative of when an entity is astral projecting: one stack indicates that a target's consciousness is projected elsewhere, but they still retain a connection to their physical body which would allow them to feel physical sensations (such as someone trying to wake them up); two stacks indicates a target has been severed from their physical form and are unaware of anything happening to their body. Removing the first/final stack of Projected (where the character is still projecting but maintains awareness of their physical body) requires an action, but does not require a check; characters in this state may also have the effect removed if they are targeted by a hostile action, or if another entity actively attempts to rouse them. Characters suffering from two stacks of Projected must first succeed on a successful Counter check before being able to awaken, which costs an additional Action unless the Counter achieves a Plus Degree.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Assisted Projection</th>
+                            <td>Augury College, Third Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Astral Projection</th>
+                            <td>Augury College, First Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Invest Spirit</th>
+                            <td>Animism College, Third Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="rent">Rent</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Rent -->
+                <table class="skillTable">
+                    <caption id="rent">Rent</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target suffers 1 Potency of damage per unit of Movement they travel.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dive</th>
+                            <td>Sentinel 3-3 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rend</th>
+                            <td>Echomind Style</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="restrained">Restrained</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Restrained -->
+                <table class="skillTable">
+                    <caption id="restrained">Restrained</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity suffers a defense penalty equal to Potency, and their Movement distance is halved.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Restrain</th>
+                            <td>Spellmark Style</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="sundered">Sundered</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Sundered -->
+                <table class="skillTable">
+                    <caption id="sundered">Sundered</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity's Defense bonus is reduced by 1 per stack.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Arc</th>
+                            <td>Wisp Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Arc Lance</th>
+                            <td>Arcanist 2-2 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Forceful Motion</th>
+                            <td>Spiritist 2-2 Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Projected Magnification</th>
+                            <td>Luminary 4-4 Ability</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="suppressed">Suppressed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Suppressed -->
+                <table class="skillTable">
+                    <caption id="suppressed">Suppressed</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity is unable to execute actions which benefit from collegiate training modifiers.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dispel</th>
+                            <td>Enchantment College, Third Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Disrupt</th>
+                            <td>Enchantment College, Second Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nullification Field</th>
+                            <td>Occlusion College, Third Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="suspended">Suspended</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Suspended -->
+                <table class="skillTable">
+                    <caption id="suspended">Suspended</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Target entity is encapsulated in a magical stasis and may not take actions unless otherwise specified. Any hostile actions or harmful complications can break their stasis.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Sources</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Banish</th>
+                            <td>Translocation College, Second Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Stasis</th>
+                            <td>Occlusion College, Second Tier</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>    
     </div>
