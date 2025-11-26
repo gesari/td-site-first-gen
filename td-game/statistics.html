@@ -63,6 +63,7 @@
                 <li class="sidenavHead">Table of Contents</li>
                 <!-- Stat Allocation -->
                 <li><a href="#stat_allocation">Stat Allocation</a></li>
+                <li><a href="#embody_stats">Embodying Stats</a></li>
 
                 <!-- Primary Stats -->
                 <li class="dropdownContainer">
@@ -129,9 +130,9 @@
                     </ul>
                 </li>                
 
-                <!-- Substat Training -->
+                <!-- Collegiate Training -->
                 <li class="dropdownContainer">
-                    <a href="#substat_training" class="dropdownToggle">Substat 
+                    <a href="#collegiate_training" class="dropdownToggle">Collegiate 
                         <span class="nowrapSpan">Training
                             <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="currentcolor" class="dropdownIcon">
                                 <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/>
@@ -183,93 +184,116 @@
 
         <div class="localContent">
             <h2 class="localHead">Statistics</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">There are four Primary statistics, six Secondary statistics, and nine avenues of Collegiate Training. Of these, only two will passively increase as a character levels up: their Vitality, at a rate of 1 per level, and the Collegiate Training that relates to their Specialization, which advances automatically when all prerequisites have been met. The rest of a character's stat allocation is determined solely by the Player via a Point-Buy system: during character creation a Player will receive 5 stat points to allocate as they so choose, and an additional 2 points every level thereafter. Points can be spent to increase one of the character's four Primary stats, or for training in a College if its prerequisites have been met. Secondary stats derive their base value from their associated Primary stat, but cannot be directly allocated in this way.</p>
 
             <!-- Stat Allocation -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="stat_allocation">Stat Allocation</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Allocating a stat point into a Primary stat provides a static +1 bonus to that stat. In the case of Vitality, this directly increases a character's maximum Vitality. For other Primary stats, this bonus applies to all checks directly involving that stat, and also increases their associated Secondary stats at a 1:1 ratio. There are no caps on Vitality allocation, but other Primary stats can only ever have a maximum value of the character’s level + 2.</p>
+                <p class="sectionBody">Allocation of a stat point into Collegiate Training signifies training in a particular College of magic, which provides a bonus to d6 Polarity for affected checks rather than a static bonus and knowledge of 2 spell architectures specific to that College. Unlike Primary stats, however, each instance of Collegiate Training has a maximum value of 4, and can only be allocated when other prerequisites (relating to level/Spell Tier) have been met. The unique Training, Magical Adept, has a maximum of 1 point and requires substantial training in other Colleges to unlock.</p>
+            </div>
+
+            <!-- Stat Embodiment -->
+            <div class="gridbox">
+                <h4 class="sectionHead" id="embody_stats">How Dreamers Embody Their Stats</h4>
+                <p class="sectionBody">Many of these stats are somewhat generic when it comes to a character's appearance or soft skills, and this has been done primarily to allow them to be prompts for character design without being overly prescriptive. </p>
+                <p class="sectionBody">A character that is attractive may be so because of a high Cognition score, which arms them with the proper education to manage their nutrition and health. If they have a high Force stat, perhaps they are attractive because of how they have honed their physique. Likewise, a high Intuition stat may be a sign of inner peace and acceptance, which affords the dreamer an alluring air of serene confidence.</p>
             </div>
 
             <!-- Primary Stats -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="primary_stats">Primary Stats</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Primary stats are an indicator of a character's base acumen in a particular area. They are particularly useful in checks relating to a character's Interaction with the game space. With the exception of Vitality, which is uncapped, Primary stats have a cap of 2 + a character’s level.</p>
 
-                <p class="sectionHead" id="vitality">Vitality</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="vitality">Vitality</p>
+                <p class="sectionBody">A character's max Vitality is equal to their Vitality stat value. Unlike other Primary statistics, Vitality has no Secondary stats associated with it and increases by 1 per level regardless of stat investment. A character with high Vitality might be viewed as particularly indomitable.</p>
+                <p class="sectionBody">A character's current Vitality will differ from their maximum if they have suffered damage from any source, and is an indicator of how they may be feeling at any given moment. If their current Vitality drops to 0, they become Unconscious and cannot act except in an attempt to Stabilize themselves. A dreamer's Vitality can be restored either through healing items and magics, or via a Long Rest.</p>
 
-                <p class="sectionHead" id="cognition">Cognition</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="cognition">Cognition</p>
+                <p class="sectionBody">A character's mental acumen; a marker of how well they employ reason and assimilate knowledge. </p>
+                <p class="sectionBody">Cognition checks relate to the parsing of information, the ability to apply logic to a situation, pick someone out of a crowd, present a well-reasoned argument, or to see and understand the currents of azai between and among dreamers.</p>
+                <p class="sectionBody">Characters with high Cognition could be especially clever, or simply a savant. It might reflect a high level of education, street smarts, or both. They may affect an air of sophistication, or be particularly persuasive due to their well-reasoned arguments.</p>
+                <p class="sectionBody">Associated Secondary Stats: Recovery, Adaptation</p>
 
-                <p class="sectionHead" id="force">Force</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="force">Force</p>
+                <p class="sectionBody">A character's physical prowess; a representation of how in tune they are to their own physical movements, and their ability to affect the Dream around them.</p>
+                <p class="sectionBody">Force checks relate to a character's physical fitness and ability to accomplish feats of strength and endurance, sleight of hand, to act reflexively, or to their capacity to conduct azai.</p>
+                <p class="sectionBody">Characters with high Force might be particularly muscular, or they could be trained in more acrobatic movements; others still could be completely unassuming, consumed as they are with expanding their astral strength. They could be large and imposing, or fatally alluring.</p>
+                <p class="sectionBody">Associated Secondary Stats: Attack, Projection</p>
 
-                <p class="sectionHead" id="insight">Insight</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="insight">Insight</p>
+                <p class="sectionBody">A character's ability to perceive the world around them and synergize the actions of their mind and body.</p>
+                <p class="sectionBody">Insight checks relate to a character's ability to acquire intuitive knowledge, deduce patterns, maintain focus, connect with others emotionally, or to feel the Flow of azai and convert azai and azon interchangeably.</p>
+                <p class="sectionBody">Dreamers with high Insight might often experience intuitive leaps of knowledge spontaneously, or arrive at it through thoughtful and purposeful meditation. As they feel the currents and will of the Flow, they may seek to honor and harmonize with it or impose their will upon it.</p>
+                <p class="sectionBody">Associated Secondary Stats: Defense, Unification</p>
             </div>
 
             <!-- Secondary Stats -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="secondary_stats">Secondary Stats</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Secondary stats diversify their associated Primary stats into more specific roles. They derive their base value from their associated Primary stat at a 1:1 ratio and are more readily enhanced via training, items, enchantments, and other effects than their Primary counterparts. Secondary stats apply to checks made regarding a dreamer's magical acumen and the skills they acquire.</p>
             </div>
 
             <!-- Cognition Secondaries -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="cognition_secondaries">Cognition Secondaries</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
 
-                <p class="sectionHead" id="recovery">Recovery</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="recovery">Recovery</p>
+                <p class="sectionBody">Dreamers generally cast spells using internal reserves of azai; similar to breathing, they replenish their reserves naturally via ambient azai in the environment. The Recovery stat is an indicator of a dreamer's capacity to store azai, as well as tap into local currents to replenish their reserves via a Recharge action. It is also used in conjunction with their unitool to determine their maximum Shield value.</p>
 
-                <p class="sectionHead" id="adaptation">Adaptation</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="adaptation">Adaptation</p>
+                <p class="sectionBody">The Adaptation stat is indicative of a dreamer's skill at wielding Adaptation magics and its associated Colleges. It provides a flat bonus to all spells cast using this type.</p>
             </div>
 
             <!-- Force Secondaries -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="force_secondaries">Force Secondaries</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
 
-                <p class="sectionHead" id="attack">Attack</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="attack">Attack</p>
+                <p class="sectionBody">When executing offensive or otherwise contested actions, a dreamer's Attack stat is added as a static bonus to the result of all related checks.</p>
 
-                <p class="sectionHead" id="projection">Projection</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="projection">Projection</p>
+                <p class="sectionBody">The Projection stat is indicative of a dreamer's skill at wielding Projection magics and its associated Colleges. It provides a flat bonus to all spells cast using this type.</p>
             </div>
 
             <!-- Insight Secondaries -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="insight_secondaries">Insight Secondaries</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
 
-                <p class="sectionHead" id="defense">Defense</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="defense">Defense</p>
+                <p class="sectionBody">When targeted by hostile actions, a dreamer's Defense stat is subtracted as a penalty from the result of all related checks.</p>
 
-                <p class="sectionHead" id="unification">Unification</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="unification">Unification</p>
+                <p class="sectionBody">The Unification stat is indicative of a dreamer's skill at wielding Unification magics and its associated Colleges. It provides a flat bonus to all spells cast using this type.</p>
             </div>
 
-            <!-- Substat Training -->
+            <!-- Collegiate Training -->
             <div class="gridbox">
-                <h4 class="sectionHead" id="substat_training">Substat Training</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <h4 class="sectionHead" id="collegiate_training">Collegiate Training</h4>
+                <p class="sectionBody">There are nine avenues of Collegiate Training, which correlate to the nine Colleges of magic. There are a finite amount of training points a character can invest in any Collegiate at any point in time: each Collegiate bonus caps at 4, and each point allocated beyond the first requires a character to have attained a certain level before they may be trained.</p>
+                <p class="sectionBody">Allocation of points into a Collegiate is indicative of a character's intentional training of a skill, and each point corresponds to a specific stage of mastery.  Mechanically, training in a college gives a character access to their d6 Practice pool to augment affected checks, as well as knowledge of 2 spell architectures from within that school per point of investment. Even though their bonuses are not as universally applicable as Primary stats, investment in Collegiates gives a character access to a wider variety of tools at their disposal.</p>
+                <p class="sectionBody">By default, a character is granted free training in the Collegiate relating to their chosen specialization. These benefits are conferred automatically upon meeting the prerequisites for the training. The four stages of training are detailed below.</p>
 
-                <p class="sectionHead" id="practiced">Practiced</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="practiced">Practiced | First Stage</p>
+                <p class="sectionSubHead">Required: Level 1</p>
+                <p class="sectionBody">The dreamer's d6 pool has a base Polarity of 1 for all affected checks, and they learn two spells from the college that are available to them.</p>
 
-                <p class="sectionHead" id="honed">Honed</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="honed">Honed | Second Stage</p>
+                <p class="sectionSubHead">Required: Level 3</p>
+                <p class="sectionBody">The dreamer's d6 pool has a base Polarity of +2 for all affected checks, and they learn two spells from the college that are available to them.</p>
 
-                <p class="sectionHead" id="specialized">Specialized</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="specialized">Specialized | Third Stage</p>
+                <p class="sectionSubHead">Required: Level 5</p>
+                <p class="sectionBody">The dreamer's d6 pool has a base Polarity of +3 for all affected checks, and their Free-Cast spells become much more reliable. Free-Cast spells of this college trigger rolls on the Surge table rather than the Vortex table on a Falter, and no longer trigger rolls on the Surge table for Partial Successes. They also learn two spells from the college that are available to them.</p>
 
-                <p class="sectionHead" id="expert">Expert</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="expert">Expert | Fourth Stage</p>
+                <p class="sectionSubHead">Required: Level 6, investment in Tier 4 Talent</p>
+                <p class="sectionBody">The dreamer's d6 pool has a base Polarity of +4 for all affected checks, and the result of their d6 pool becomes 2d6 when its Polarity is +2 or higher; the two highest results are added together to determine the bonus. Again, the dreamer learns two spells from the college that are available to them.</p>
 
-                <p class="sectionHead" id="magical_adept">Magical Adept</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionHeadSm" id="magical_adept">Magical Adept</p>
+                <p class="sectionSubHead">Required: Expert in at least one Collegiate, and Specialized in at least one Collegiate per School of Magic</p>
+                <p class="sectionBody">Dreamers who achieve this level of control over their magic receive the Free-Cast benefits of Specializing in a Collegiate for all Free-Cast checks. Additionally, the Collegiate with the highest bonuses within each School apply to all checks regarding that School of Magic.</p>
+                <p class="sectionBody">When using the Boost Action to assist another dreamer's spellcraft, the character may roll and apply the results of their corresponding d6 pool to the check regardless of whether or not their d20 result was chosen.</p>
             </div>
         </div>    
     </div>
