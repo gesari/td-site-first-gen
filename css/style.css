@@ -318,6 +318,17 @@ body {
     text-align: center;
 }
 
+/* Lists */
+.sectionList {
+    margin: 0.2rem 1.5rem 1.5rem;
+    list-style-type: none;
+}
+
+.sectionListHead {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
 /* DUOCOL/TRICOL MAY BE BETTER SERVED SWAPPING TO GRID TEMPLATES */
 
 /* Settings for duo column display in primer 
@@ -395,7 +406,7 @@ body {
 
 .skillTable caption {
     text-align: left;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -403,7 +414,7 @@ body {
     font-size: 1rem;
     font-weight: normal;
     font-style: italic;
-    width: 10rem;
+    width: 11rem;
 }
 
 
