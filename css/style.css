@@ -402,6 +402,7 @@ body {
 
 .skillTable caption, th, td {
     padding: 0.3rem 0;
+    min-width: 2.5rem;
 }
 
 .skillTable caption {
