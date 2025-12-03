@@ -64,12 +64,6 @@
                 <!-- Specialization Tree -->
                 <li><a href="#specialization_tree">Specialization Tree</a></li>
 
-                <!-- Node Notation -->
-                <li><a href="#node_notation">Node Notation</a></li>
-
-                <!-- The 3-2 Talent -->
-                <li><a href="#3_2_talent">The 3-2 Talent</a></li>
-
                 <!-- Alchemist -->
                 <li class="dropdownContainer">
                     <a href="#alchemist" class="dropdownToggle">
@@ -311,350 +305,3515 @@
             </ul>
         </div>
 
+
+        <!-- 
+            WILL NEED GRID FOR NODE NOTATION
+            8 SECTIONS
+            1-1 1-1 1-1 1-1 1-1 1-1 1-1 1-1
+            2-1 2-1 2-1  X   X  2-2 2-2 2-2
+            3-1 3-1  X  3-2 3-2  X  3-3 3-3
+            4-1  X  4-2  X   X  4-3  X  4-4
+         
+        -->
+
+
+
         <div class="localContent">
             <h2 class="localHead">Specializations</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">There are 9 specializations in the game, each associated with a particular college of magic. A specialization is not meant to be a total encapsulation of the college they are based upon, but rather a single interpretation of its potential.</p>
 
             <!-- Specialization Tree -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="specialization_tree">Specialization Tree</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-            </div>
+                <p class="sectionBody">Every specialization's progression tree will look identical: a 10-node triangle, which can be traversed in a manner of the Player's choosing. Choosing one's specialization will immediately unlock the tree's top node (1-1), conferring immediate benefits. Future nodes will be unlocked as part of the leveling process, with one available node of the Player's choice being unlocked every time their character levels up. Since there are 10 levels corresponding to 10 nodes, a maximum-level character will have unlocked the entire tree.</p>
+                <p class="sectionBody">Each node on the Specialization Tree has a numerical notation for determining its place in the tree, listed in a Tier-Number format: the first number denotes the ability’s tier, and the second denotes its number within the tier. Thus, the top node of each tree would be notated as 1-1, because it is in the first tier and it is the first (and, in this case, only) node within that tier. Down and left from that is node 2-1: the first node in the second tier. To its right is node 2-2, and so on. It is intended that every Spec’s 3-2 ability is meant to greatly enhance that specialization’s capabilities, generally by enhancing the benefits of its 1-1 node.</p>
+                <p class="sectionBody">Every progression node will have some sort of prerequisite, but requirements are consistent across specializations: in order to unlock a node in the tree, all connecting nodes above it will need to be unlocked. Thus, both second-tier nodes are immediately available at level 2, since the only higher node either is connected to is the initial node unlocked during Character Creation. The middle node of the third tier, however, is connected to both second-tier nodes, meaning a Player would need to unlock both before they could unlock it.</p>
 
-            <!-- Node Notation -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="node_notation">Node Notation</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
-            </div>
-
-            <!-- The 3-2 Talent -->
-            <div class="gridbox">
-                <h4 class="sectionHead" id="3_2_talent">The 3-2 Talent</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Node Grid -->
+                <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Alchemist -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="alchemist">Alchemist</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Transmutation Specialist</p>
+                <p class="sectionBody">Alchemists are uniquely capable at seeing the Dream for seeing the dream as it fundamentally is: all phenomena arise directly from the azonai via the interplay of azai and azon. Deep understanding of these mechanics allow Alchemists to reshape themselves and the Dream around them on a fundamental level.</p>
 
-                <p class="sectionHead" id="internal_alchemy">Internal Alchemy 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Internal Alchemy | 1-1 -->
+                <table class="skillTable">
+                    <caption id="internal_alchemy">Internal Alchemy | 1-1</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Passive Benefit | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Alchemist</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>Similar to dreamers bearing a Visionary attunement, the Alchemist has come to understand transmutation magics on a deeply personal level. Though not all Alchemists are Visionaries, they, too, can change any of their physical characteristics. Uniquely, Alchemists experiment with altering their astral body along with their physical one, allowing them to fully embody each form they take.</td>
+                        </tr>
+                        <tr>
+                            <td>The Alchemist has a bonus to Transmutation magic equal to their level, in addition to the benefits of their d6 pool. When they change forms, they may choose to apply any amount of this bonus to another Secondary Stat or Collegiate Training instead; this does not confer the Polarity of their d6 pool, only the flat bonus.</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <p class="sectionHead" id="vital_technique">Vital Technique 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Vital Technique | 2-1 -->
+                <table class="skillTable">
+                    <caption id="vital_technique">Vital Technique | 2-1</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Channeled Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Recovery, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Internal Alchemy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Alchemist executes a Recharge action for free immediately and again at the beginning of their Faction's turn while this effect is being Channeled. If their Shields are full, the result of the action can be applied to the Alchemist's Vitality.</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <p class="sectionHead" id="stalwart_technique">Stalwart Technique 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Stalwart Technique | 2-2 -->
+                <table class="skillTable">
+                    <caption id="stalwart_technique">Stalwart Technique | 2-2</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Channeled Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Unification, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Internal Alchemy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>While channeling, the Alchemist fortifies their body, allowing them to absorb an amount of damage each Round depending on the ability's Degree of Success.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Absorb an amount of incoming damage equal to half Potency per Round.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Absorb an amount of incoming damage equal to full Potency per Round.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>+2 Potency Bonus</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <p class="sectionHead" id="mend">Mend 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Mend | 3-1 -->
+                <table class="skillTable">
+                    <caption id="mend">Mend | 3-1</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Standard Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Unification, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Vital Technique</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Alchemist instantiates a reactionary ward to prevent harm from coming to a target. The ward reacts to any incoming damage, restoring Shield and/or Vitality at half Potency per trigger. Only one instance of this ability's effect can be present on a target at a time. This ability can also be used on complex inorganic objects to prevent their destruction / preserve their functionality.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>The ward’s heal triggers once.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>The ward’s heal triggers a number of times equal to half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>The ward’s heal triggers a number of times equal to full Potency.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="ascended_form">Ascended Form 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Ascended Form | 3-2 -->
+                <table class="skillTable">
+                    <caption id="ascended_form">Ascended Form | 3-2</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Channeled Recharge Action (12) | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Alchemist transforms into a unique form. While in this form, the Alchemist's Transmutation bonus from Internal Alchemy is doubled, and may be distributed among as many applicable stats as they choose. All checks made by the Alchemist while this form is maintained may apply the d6 Polarity of their Transmutation Collegiate if it is higher than the one being checked. Recharge 12, post termination.</td>
+                        </tr>
+                        <tr>
+                            <td>While Channeling their Ascended Form, the Alchemist can maintain either their Vital or Stalwart Techniques for free, and may swap between which is active with an Action. If the Alchemist is Channeling either Technique when they cast Ascended Form, that effect is maintained.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="dragonflame">Dragonflame 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                    <!-- 3-2 Passive -->
+                    <p class="sectionSubHead">Adept Shifter - Passive</p>
+                    <p class="sectionBody">The Alchemist has become especially adept at altering their own form and transmuting ambient azai into living tissue. When shapeshifting, they may now displace or accrete mass, altering their size anywhere in between a tenth and triple their normal form.</p>
 
-                <p class="sectionHead" id="bolster">Bolster 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                
+                <!-- Dragonflame | 3-3 -->
+                <table class="skillTable">
+                    <caption id="dragonflame">Dragonflame | 3-3</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Standard Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Attack / Unification, Transmutation | - Defense, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Stalwart Technique</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Alchemist approximates a dragon's ability to transmute space with their breath, affecting a conal area before them: 90 degree angle, 5 units long.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Damage target entity at half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Damage target entity at full Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Afflict target entity with Status Effect: Flaring. The ability receives a +2 Potency bonus.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="fusion">Fusion 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Bolster | 4-1 -->
+                <table class="skillTable">
+                    <caption id="bolster">Bolster | 4-1</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Standard Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Unification, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Mend</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Alchemist augments an entity's strength, temporarily increasing their Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Target entity’s next action benefits from a Potency bonus equal to half the caster’s Potency, rounded down to an even value (minimum: 2).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Target entity’s next two actions benefit from a Potency bonus equal to half the caster’s Potency, rounded down to an even value (minimum: 2).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Target entity’s next three actions benefit from a Potency bonus equal to the caster’s Potency.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="entomb">Entomb 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Fusion | 4-2 -->
+                <table class="skillTable">
+                    <caption id="fusion">Fusion | 4-2</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Unique Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Unification, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Mend, Ascended Form</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>When the Alchemist chooses to Ascend, they can spend an additional Action to enhance that ability with this one. Any willing entities within range of the Alchemist may choose to fuse with them as part of their unique Ascended Form. While fused, entities share the same physical space, though they retain their individual Action Economy. When any fused entity makes a check, they may use the Statistic values of any other fused entity if theirs is higher; the defense rating of the fused form is equal to the highest individual defense rating among the fused entities; and damage may be split amongst the fused entities in any manner they choose. Fused entities maintaining Channeled effects only make Channel checks when they choose to split damage. Ending the Fusion also ends the Alchemist's Ascended Form.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Fuse with a single willing entity within range.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Fuse with a number of entities equal to half Potency within range.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Fuse with a number of entities equal to full Potency within range.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p class="sectionHead" id="caustic_environment">Caustic Environment 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Entomb | 4-3 -->
+                <table class="skillTable">
+                    <caption id="entomb">Entomb | 4-3</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Standard Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Attack / Unification, Transmutation | - Defense, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Ascended Form, Dragonflame</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>Transmute the space around an entity into a static prison from which they cannot escape.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Afflict target entity with stacks of Status Effect: Entangled equal to half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Afflict target entity with stacks of Status Effect: Immobilized equal to half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Afflict target entity with stacks of Status Effect: Immobilized equal to full Potency.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Caustic Environment | 4-4`                                                                                  -->
+                <table class="skillTable">
+                    <caption id="caustic_environment">Caustic Environment | 4-4</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Channeled Action | Alchemist Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Attack / Unification, Transmutation | - Defense, Transmutation</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Dragonflame</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Alchemist transmutes the area within a 5 unit radius of a point they choose, making the environment caustic to entities in order to replenish nearby allies.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Damage target entity at half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Damage target entity at full Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Damage dealt is siphoned to the nearest friendly entity.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Arcanist -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="arcanist">Arcanist</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Conduction Specialist</p>
+                <p class="sectionBody">Arcanists train their astral bodies rigorously, focused on increasing the range of their spells and tapping directly into currents of the azaian Flow: thus empowered, they are able to conduct amounts of azai beyond what other dreamers could ever conceive. With enough training, they are able to use their own bodies as a point of confluence for multiple currents, effectively doubling their Potency and Secondary stats while they are able to maintain the effect.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="astral_empowerment">Astral Empowerment 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="loft">Loft 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="arc_lance">Arc Lance 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="azonian_anchor">Azonian Anchor 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="confluence">Confluence 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="replication_matrix">Replication Matrix 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="singularity">Singularity 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="counterspell">Counterspell 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="azaian_density">Azaian Density 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="heavens_reach">Heaven's Reach 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Conduit -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="conduit">Conduit</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Harmonics Specialist</p>
+                <p class="sectionBody">Conduits study the ways of the generative cycles of the Dream. In a manner similar to the Ascendants who uphold the Pact, the Conduit has attuned themselves to currents of azai between and within the dimensions of the Dream, ensuring its balance: acting as an intermediary for these forces manifests an Aura which permeates the space around them.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="aura">Aura 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="synergism">Synergism 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="replenishing_state">Replenishing State 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="intercede">Intercede 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="convection">Convection 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="kinetic_state">Kinetic State 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="paean">Paean 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="cleanse">Cleanse 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="siphoning_state">Siphoning State 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="reflexive_state">Reflexive State 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Luminary -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="luminary">Luminary</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Perception Specialist</p>
+                <p class="sectionBody">Luminaries are masters of manipulating one's experience of the Dream, a talent which is only enhanced by their Perception Projectors: custom-built devices capable of generating illusory effects in tandem with each other. They are just as likely to be sought out to provide entertainment as they are for infiltration.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="perception_projectors">Perception Projectors 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="blurred_image">Blurred Image 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="memory_wipe">Memory Wipe 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="stunt_double">Stunt Double 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="labyrinth">Labyrinth 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="phantasmagoria">Phantasmagoria 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="clandestine_interchange">Clandestine Interchange 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="avatar">Avatar 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="luminous_execution">Luminous Execution 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="projected_magnification">Projected Magnification 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Operative -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="operative">Operative</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Enchantment Specialist</p>
+                <p class="sectionBody">Operatives are adept at crafting enchanted items and are often credited with the advancement of magical technologies. Their natural penchant for both tinkering and general resourcefulness allows them to quickly improvise custom enchantments and arcanomata in relatively little time.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="the_swarm">The Swarm 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="pulse">Pulse 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="jolt">Jolt 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="tempest">Tempest 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="turrets">Turrets 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="stasis_field">Stasis Field 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="swarm_animation">Swarm Animation 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="barrage">Barrage 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="rapid_deployment">Rapid Deployment 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="torpor">Torpor 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Phantom -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="phantom">Phantom</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Translocation Specialist</p>
+                <p class="sectionBody">Phantoms are so named for their ability to seemingly be everywhere and nowhere: present and dangerous, yet ephemeral and untouchable. Their ability to warp space allows them to strike in rapid succession before a target ever has a chance to react.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="spatial_anomaly">Spatial Anomaly 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="entanglement">Entanglement 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="charge">Charge 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="shuffle">Shuffle 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="flurry">Flurry 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="impel">Impel 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="sanctuary_recall">Sanctuary Recall 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="mindfulness">Mindfulness 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="spatial_presence">Spatial Presence 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="impact">Impact 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Sage -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="sage">Sage</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Augury Specialist</p>
+                <p class="sectionBody">Through meditation and effort, the Sage has begun to experience the Dreamscape in a manner similar to how the Oracle is often depicted: a dimension of swirling possibilities, in which all that has ever been, and all that might be, can be glimpsed through its churning mists. The present moment seems to unfurl before the Sage, affording them opportunities to steer the course of events.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="auspicious_personage">Auspicious Personage 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="threads_of_fate">Threads of Fate 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="charted_course">Charted Course 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="empowerment">Empowerment 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="portents_foreseen">Portents Foreseen 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="altered_probability">Altered Probability 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="interject">Interject 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="cyclic_insight">Cyclic Insight 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="opportunistic_foresight">Opportunistic Foresight 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="oracular_marker">Oracular Marker 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Sentinel -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="sentinel">Sentinel</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Occlusion Specialist</p>
+                <p class="sectionBody">Sentinels employ ancient techniques, first developed before the discovery of imbuing aurion and onai with permanent enchantments and the advent of azaian foci. Employing their own body as a magical item capable of storing enchantments, Sentinels manifest Runes upon their flesh: unique sigils capable of storing and transmitting quantities of azai with just a thought.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                    <div class="node1_1">
+                        <div>Node 1-1</div>
+                        <div>Prerequisite: Specialization</div>
+                    </div>
+                    <div class="node2_1">
+                        <div>Node 2-1</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node2_2">
+                        <div>Node 2-2</div>
+                        <div>Prerequisite: 1-1</div>
+                    </div>
+                    <div class="node3_1">
+                        <div>Node 3-1</div>
+                        <div>Prerequisite: 2-1</div>
+                    </div>
+                    <div class="node3_2">
+                        <div>Node 3-2</div>
+                        <div>Prerequisites: 2-1, 2-2</div>
+                    </div>
+                    <div class="node3_3">
+                        <div>Node 3-3</div>
+                        <div>Prerequisite: 2-3</div>
+                    </div>
+                    <div class="node4_1">
+                        <div>Node 4-1</div>
+                        <div>Prerequisite: 3-1</div>
+                    </div>
+                    <div class="node4_2">
+                        <div>Node 4-2</div>
+                        <div>Prerequisites: 3-1, 3-2</div>
+                    </div>
+                    <div class="node4_3">
+                        <div>Node 4-3</div>
+                        <div>Prerequisites: 3-2, 3-3</div>
+                    </div>
+                    <div class="node4_4">
+                        <div>Node 4-4</div>
+                        <div>Prerequisite: 3-3</div>
+                    </div>
+                </div>
 
                 <p class="sectionHead" id="runic_magic">Runic Magic 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="surge">Surge 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="tether">Tether 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="aftershock">Aftershock 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="shifting_currents">Shifting Currents 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="dive">Dive 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="accelerant">Accelerant 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="surging_tides">Surging Tides 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="runic_sigil">Runic Sigil 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="aerial_bonds">Aerial Bonds 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Spiritist -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="spiritist">Spiritist</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionSubHead">College of Animism Specialist</p>
+                <p class="sectionBody">All students of Animism learn that all phenomena within the Dream are connected, including entities. Few, however, are so adept as Spiritists at manipulating these bonds. Known everywhere as guardians of nature, especially on account of their Avatar: an entity whose soul has become joined with theirs.</p>
+
+                    <!-- Node Grid -->
+                    <div class="nodeGrid">
+                        <div class="node1_1">
+                            <div>Internal Alchemy | 1-1</div>
+                            <div>Prerequisite: Specialization</div>
+                        </div>
+                        <div class="node2_1">
+                            <div>Vital Technique | 2-1</div>
+                            <div>Prerequisite: 1-1</div>
+                        </div>
+                        <div class="node2_2">
+                            <div>Stalwart Technique | 2-2</div>
+                            <div>Prerequisite: 1-1</div>
+                        </div>
+                        <div class="node3_1">
+                            <div>Mend | 3-1</div>
+                            <div>Prerequisite: 2-1</div>
+                        </div>
+                        <div class="node3_2">
+                            <div>Ascended Form | 3-2</div>
+                            <div>Prerequisites: 2-1, 2-2</div>
+                        </div>
+                        <div class="node3_3">
+                            <div>Dragonflame | 3-3</div>
+                            <div>Prerequisite: 2-3</div>
+                        </div>
+                        <div class="node4_1">
+                            <div>Bolster | 4-1</div>
+                            <div>Prerequisite: 3-1</div>
+                        </div>
+                        <div class="node4_2">
+                            <div>Fusion | 4-2</div>
+                            <div>Prerequisites: 3-1, 3-2</div>
+                        </div>
+                        <div class="node4_3">
+                            <div>Entomb | 4-3</div>
+                            <div>Prerequisites: 3-2, 3-3</div>
+                        </div>
+                        <div class="node4_4">
+                            <div>Caustic Environment | 4-4</div>
+                            <div>Prerequisite: 3-3</div>
+                        </div>
+                    </div>
 
                 <p class="sectionHead" id="spiritbond">Spiritbond 1-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="predatory_instinct">Predatory Instinct 2-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="forceful_motion">Forceful Motion 2-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="replenish">Replenish 3-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="amplified_bond">Amplified Bond 3-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="reciprocal_motion">Reciprocal Motion 3-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="warders_call">Warder's Call 4-1</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="vital_motion">Vital Motion 4-2</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="harmonic_motion">Harmonic Motion 4-3</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <p class="sectionHead" id="warding_motion">Warding Motion 4-4</p>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <caption id=""></caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2"> Action | Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>    
     </div>
