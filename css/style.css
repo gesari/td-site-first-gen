@@ -305,6 +305,11 @@ body {
     font-size: 0.85rem;
 }
 
+div.exampleText * {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .exampleTextMid {
     margin: 0 11rem;
     color: #CDB7E1;
@@ -416,6 +421,64 @@ body {
     font-weight: normal;
     font-style: italic;
     width: 11rem;
+}
+
+
+/* Node Notation Grid */
+.nodeGrid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "n11 n11 n11 n11 n11 n11 n11 n11"
+        "n21 n21 n21  .   .  n22 n22 n22"
+        "n31 n31  .  n32 n32  .  n33 n33"
+        "n41  .  n42  .   .  n43  .  n44";
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.node1_1, .node2_1, .node2_2, .node3_1, .node3_2, .node3_3, .node4_1, .node4_2, .node4_3, .node4_4 {
+    margin-bottom: 1.5rem;
+}
+
+.node1_1 {
+    grid-area: n11;
+}
+
+.node2_1 {
+    grid-area: n21;
+}
+
+.node2_2 {
+    grid-area: n22;
+}
+
+.node3_1 {
+    grid-area: n31;
+}
+
+.node3_2 {
+    grid-area: n32;
+}
+
+.node3_3 {
+    grid-area: n33;
+}
+
+.node4_1 {
+    grid-area: n41;
+}
+
+.node4_2 {
+    grid-area: n42;
+}
+
+.node4_3 {
+    grid-area: n43;
+}
+
+.node4_4 {
+    grid-area: n44;
 }
 
 

@@ -973,7 +973,7 @@
 
                 <!-- Azaian Density | 4-3 -->
                 <table class="skillTable">
-                    <caption id=azaian_density"">Azaian Density | 4-3</caption>
+                    <caption id="azaian_density">Azaian Density | 4-3</caption>
                     <tbody>
                         <tr>
                             <td scope="row" colspan="2">Unique Action | Arcanist Ability</td>
@@ -1352,224 +1352,411 @@
 
                     
 
-                <p class="sectionHead" id="perception_projectors">Perception Projectors 1-1</p>
+                <!-- Perception Projectors | 1-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="perception_projectors">Perception Projectors | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Luminary</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Luminary has been trained in the use of Perception Projectors: self-enchanted items that are bound inextricably to them in the process. Through their Projectors, Luminaries are able to focus their natural magical senses to manipulate light similar to how they can innately manipulate space. They start with 2 at level 1, and gain an additional Projector at levels 3, 5, 7, 9, and 10. </td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Each Projector is bound to the Luminary's Bandolier, which is considered their default storage location when not in use. As with the Projectors themselves, the appearance of the Luminary's Bandolier is personal and based on their own unique designs. Each Projector is enchanted to automatically be recalled to the Luminary's Bandolier when they would otherwise be rendered non-functional. While within the Bandolier, or otherwise not affixed to a target, each Projector is relatively inert unless the Luminary chooses to use an action involving them. Once Affixed, each Projector has a base Potency of 2, a range equal to the Luminary's, and an Action Economy of 1, but the Luminary may spend actions of their own to manually trigger one of the Projector's abilities, or use it as the point of origin for one of their own abilities. When making checks, the Projector may use the Luminary’s stats if theirs have not been otherwise specified.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="blurred_image">Blurred Image 2-1</p>
+                
+                    <!-- Projector Abilities -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Projector Abilities</p>
+                        <p class="sectionBody">In addition to serving as the point of origin for any of the Luminary's abilities, their Projectors have several other actions specific to them.</p>
+
+                        <!-- Projector: Affix -->
+                        <table class="skillTable">
+                            <caption id="projector_affix">Affix</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Luminary Projector Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack / Projection | - Defense, Perception</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Luminary attempts to affix a Projector to a surface. If the check is contested, this ability is considered an attack and may deal damage if the Luminary desires. Entities with a Projector affixed to them may remove it with a successful Counter check, at which point the Projector is Recalled to the Luminary's Bandolier for free.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>The Projector is unable to be affixed and returns to the Luminary’s Bandolier; damage target at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>The Projector is affixed; damage target at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>The Projector may execute a free Obfuscation action.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Projector: Flare -->
+                        <table class="skillTable">
+                            <caption id="projector_flare">Flare</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Luminary Projector Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack / Projection, Perception | - Defense, Perception</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>Affixed Projectors can discharge a targeted burst of light at any target within range.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Damage target at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Damage target at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>Afflict target with a stack of Status Effect: Impaired.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Projector: Obfuscation -->
+                        <table class="skillTable">
+                            <caption id="projector_obfuscation">Obfuscation</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Luminary Projector Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Projection, Perception | - Defense, Perception</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>Once Affixed, the Luminary's Projector can envelop itself and the target it is affixed to in an illusion. This ability may also be used to block other entity's ability to perceive the target with specific senses (e.g. Invisibility). This illusion does not need to be Channeled, and will persist until it is dispelled, the Projector executes this ability again, or is Recalled.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>The Projector creates a single sensory illusion.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>The Projector creates three simultaneous sensory illusions.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>The Projector creates a complete sensory illusion.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Projector: Pulse -->
+                        <table class="skillTable">
+                            <caption id="projector_pulse">Pulse</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Luminary Projector Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack / Projection, Perception | - Defense, Perception</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Luminary attempts to access a device their Projector is affixed to.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>The Luminary gains access, but the process is very conspicuous.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>The Luminary gains access in a relatively inconspicuous manner.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>The Luminary is granted administrator access and/or complete control over the device.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Projector: Recall -->
+                        <table class="skillTable">
+                            <caption id="projector_recall">Recall</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Unique Action | Luminary Projector Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Prerequisite</th>
+                                    <td>Spiritist</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Luminary summons a Projector back to their Bandolier from any distance. If the Luminary chooses to execute this ability while the Projector is within their ability range, they may choose to deal 2 Potency of unresistable damage to whatever object it was affixed to. Projectors have also been engineered to automatically Recall themselves if they are subjected to forces that would otherwise damage their functionality; Projectors recalled in this way do not impact the Luminary's Action Economy, but neither can they deal damage regardless of their position relative to the Luminary.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <!-- Blurred Image | 2-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="blurred_image">Blurred Image | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Reactive Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception | - Defense, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Perception Projectors</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Luminary is able to passively distort light that touches them, making them harder to perceive. As a Reaction, the Luminary can harness this ability to impose penalties on checks made against them. </td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Reduce incoming check’s Degree of Success by 1.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Reduce incoming check’s Degree of Success by 2.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Trigger a Retaliatory Strike regardless of incoming check’s Degree of Success; increase the Retaliatory Strike's Degree of Success by 1.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="memory_wipe">Memory Wipe 2-2</p>
+                <!-- Memory Wipe | 2-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="memory_wipe">Memory Wipe | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception | - Defense, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Perception Projectors</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Luminary alters an entity's perception of recent events, causing them to forget or misremember a recent encounter.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Wipe target entity’s memory of the encounter, but their mood becomes more irate and suspicious.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Wipe target entity’s memory of the encounter, rendering them somewhat bewildered and confused.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Luminary replaces the memory with another of their choosing.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="stunt_double">Stunt Double 3-1</p>
+                <!-- Stunt Double | 3-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="stunt_double">Stunt Double | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Blurred Image</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Luminary uses one of their Projectors to instantiate and sustain an illusory simulacrum. This Stunt Double appears in every way real, but has no Vitality; if they take damage for any reason, the Stunt Double is deactivated, and the Projector Recalled to the Luminary's Bandolier. While active, the Stunt Double has access to all of the Luminary's abilities, but it cannot Free-Cast. When playing in Turn Order, the Stunt Double may take one free Movement action per Round (using the Luminary's move speed), but otherwise its Action Economy functions like that of an affixed Projector. Only one Stunt Double may be active at a time.</td>
+                        </tr>
+                        <tr>
+                            <td>While the Stunt Double must be instantiated within range of the Luminary, it is otherwise free to move about and operate at any distance within the same realm as the Luminary. Depending on the ability's Degree of Success, the Stunt Double can look like any dreamer the Luminary desires, and its enchantment is such that viewers will perceive the persona adopted by the Stunt Double regardless of most innocuous differences in mannerism and behavior.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The Stunt Double looks exactly like the Luminary.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>The Stunt Double may look like any non-specific dreamer; they may take any form, but cannot impersonate a specific individual.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Stunt Double may affect a convincing form of any dreamer whose mannerisms the Luminary has had time to observe.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="labyrinth">Labyrinth 3-2</p>
+                <!-- Labyrinth | 3-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="labyrinth">Labyrinth | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Channeled Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception | - Defense, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Blurred Image, Memory Wipe</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Luminary deploys a minimum of 3 Projectors (but up to their maximum) to any locations they choose within their ability range, so long as their Projected Fields overlap. The resultant overlap is covered in a perception field that is virtually undetectable from the outside. When an entity enters the field it triggers a check against them by the Luminary to determine its effects upon them. This ability is empowered for every Projector beyond the third employed in its maintenance: the Luminary receives a +1 Polarity bonus to both dice pools for all checks involving the Labyrinth, and entities seeking to escape receive a -1 Polarity penalty to both dice pools, for each additional Projector used. When the Luminary stops Channeling this ability, all Projectors used to maintain it are Recalled.</td>
+                        </tr>
+                        <tr>
+                            <td>Allied entities may enter the Labyrinth as a shelter without triggering a check against them by the Luminary. Entities and objects inside the Labyrinth are effectively imperceptible and untargetable from the outside.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Falter</th>
+                            <td>Target entity triggers a Channel check and moves to a nearby location outside the Labyrinth.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fail</th>
+                            <td>Move target entity to a nearby location outside the Labyrinth.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Trap target entity within the Labyrinth.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Trap target entity within the Labyrinth, and afflict them with a Memory Wipe at a Full Degree.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Labyrinth instills a sense of peace and belonging within the target entity, who feels an active desire to stay within.</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="2">Escape</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>To escape the Labyrinth, entities must make a check against the Luminary's Perception as an action. Entities aware of their situation may use their entire Action Economy this way if they so choose; entities lost within the Labyrinth may use a single action per turn as part of a subconscious desire to escape.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Falter</th>
+                            <td>Afflict target entity with a Memory Wipe at a Plus Degree; the Luminary may also elect to move the target entity to any unoccupied location within the Labyrinth.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fail</th>
+                            <td>Afflict target entity with a Memory Wipe at a Full Degree, and they become lost in the Labyrinth.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Target entity does not escape, but remains conscious of their situation.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Target entity escapes, but they emerge at a location of the Luminary's choosing. </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Target entity escapes at a location of their choosing.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="phantasmagoria">Phantasmagoria 3-3</p>
+                    <!-- Labyrinth Passives -->
+                    <div class="exampleText">
+                        <!-- Rapid Deployment - Passive Bonus -->
+                        <p class="sectionSubHead">Rapid Deployment - Passive Bonus</p>
+                        <p class="sectionBody">The Luminary may Affix or Recall as many applicable Projectors as are in range as part of a single action. Projectors cannot trigger contested checks in order to be affixed in this manner.</p>
+
+                        <!-- Projected Fields - Passive Bonus -->
+                        <p class="sectionSubHead">Projected Fields - Passive Bonus</p>
+                        <p class="sectionBody">The Luminary's Projectors have been upgraded, and are now capable of sustaining illusory fields with a radius equal to their Potency as part of their Obfuscation ability. Projectors whose Projected Fields overlap can be triggered by a single Obfuscation or Labyrinth ability, which will merge all overlapping fields into a single effect.</p>
+                    </div>
+
+                <!-- Phantasmagoria | 3-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="phantasmagoria">Phantasmagoria | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Projection, Perception | - Defense, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Memory Wipe</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Luminary throws a free Projector from their Bandolier towards a point within range. When it reaches that point, the Projector emits a burst of sensory energy, with the potential to overwhelm entities within a 2 unit radius. The Projector is Recalled in the process.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target entity at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target entity at Potency, and afflict them with a single stack of Status Effect: Impaired.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target entity with three stacks of Status Effect: Impaired.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="clandestine_interchange">Clandestine Interchange 4-1</p>
+                    <!-- Phantasmic Recall - Passive Bonus -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Phantasmic Recall - Passive Bonus</p>
+                        <p class="sectionBody">The core of the Phantasmagoria ability is a technique which allows the Luminary to modulate exactly how a Projector is Recalled, which is the actual source of the effect. When the Luminary executes a Recall ability on a Projector within their ability range, they may trigger a free use of Phantasmagoria from its location as part of the Recall action.</p>
+                    </div>
+
+                <!-- Clandestine Interchange | 4-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="clandestine_interchange">Clandestine Interchange | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Stunt Double</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -1577,117 +1764,104 @@
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The Luminary and Stunt Double Projector swap places, but the change is obvious.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>If the Stunt Double looks like the Luminary, the change is seamless.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>If the Stunt Double does not look like the Luminary, the Luminary may adopt an identical illusion to allow for a seamless transition.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="avatar">Avatar 4-2</p>
+                <!-- Avatar | 4-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="avatar">Avatar | 4-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Stunt Double, Labyrinth</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Luminary creates a Stunt Double within any illusory field in their ability range. The Avatar does not require a Projector to sustain it, and is instead tied to the Luminary’s illusory fields; when not contiguous, the Avatar may move from the edge of any illusory field to another created by either the Luminary or their Projectors for a single unit of movement.</td>
+                        </tr>
+                        <tr>
+                            <td>Any actions that would normally terminate a Stunt Double will still affect the Avatar, but its existence does not count against the Luminary's limit of 1 active Stunt Double. Avatars behave in every way like a Stunt Double, except that they cannot move beyond nor affect anything outside of the illusory fields they occupy.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The Avatar looks exactly like the Luminary.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>The Avatar may look like any non-specific dreamer; they may take any form, but cannot impersonate a specific individual.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Avatar may assume the form of any dreamer whose mannerisms the Luminary has had time to observe.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="luminous_execution">Luminous Execution 4-3</p>
+                <!-- Luminous Execution | 4-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="luminous_execution">Luminous Execution | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Recharge Action (10-12) | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Labyrinth, Phantasmagoria</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>When an entity is either unaware of the Luminary, distracted by one of their illusions, finds them non-threatening, or is otherwise engaged in hostile actions against another entity/target, the Luminary may choose to overload one of the Projectors in their Bandolier to guarantee their next action's Degree of Success against that entity is a Plus. The Projector is then inactive in the Luminary's Bandolier until it is able to recharge from ambient azai. Each Projector used for this ability incurs its own Recharge of 10-12.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="projected_magnification">Projected Magnification 4-4</p>
+                <!-- Projected Magnification | 4-4 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="projected_magnification">Projected Magnification | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Luminary Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Projection, Perception | - Defense, Perception</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Phantasmagoria</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Luminary manifests an azonian magnification lens, through which they direct an attack at a target. Any affixed Projectors within range may participate in this attack for free, magnifying its effect; each Projector activated by this effect provides either a static bonus equal to their Potency to either the result of the ability's check, or the ability's Potency. This election must be determined by the Luminary before the check is made.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target entity at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target entity at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Any Projectors which applied their Potency bonus to the result of this ability's check also apply half their Potency to its damage. Afflict target entity with stacks of Status Effect: Sundered equal to the ability's damage.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1701,342 +1875,522 @@
 
                     
 
-                <p class="sectionHead" id="the_swarm">The Swarm 1-1</p>
+                <!-- The Swarm | 1-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="the_swarm">The Swarm | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2"> Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Operative</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Operative has learned how to modify their unitool to continually manufacture a swarm of imperceptibly small constructs that may permeate their ability range. Through their swarm, the Operative can interact with any physical or magical objects within their ability range as though they were standing next to it. The Swarm has a base Potency of 2 and an Action Economy of 1, and the Architect may spend their own Action Economy to manually trigger additional actions each Round.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="pulse">Pulse 2-1</p>
+                    <!-- Swarm Features -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Swarm Features</p>
+                        <p class="sectionBody">The Operative's Swarm may execute the following General Actions: Boost, Interaction, Movement, Skill. The Swarm has access to two Abilities by default, in addition to an Ability granted to the Operative.</p>
+
+                        <!-- Detonate Shards -->
+                        <table class="skillTable">
+                            <caption id="swarm_detonate_shards">Detonate Shards</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Swarm Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack / Projection, Enchantment | - Defense, Enchantment</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Operative detonates all embedded Shards in range. A separate check is triggered for this ability per entity embedded with Shards, but each detonation is considered a part of the same, single action. Every check rolled is indicative of a single detonation, which affects a 1 unit radius around the embedded target and has a Potency equal to the number of Shards embedded within the target. </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Damage target entity at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Damage target entity at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>This ability receives a +2 bonus to Potency.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Embed - Swarm Passive -->
+                        <p class="sectionHeadSm">Embed - Swarm Passive</p>
+                        <p class="sectionBody">When the Swarm achieves a Plus Degree against a target, it embeds a number of Shards equal to the damage dealt.</p>
+
+                        <!-- Remote Access -->
+                        <table class="skillTable">
+                            <caption id="swarm_remote_access">Remote Access</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Swarm Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Projection, Enchantment | - Defense, Enchantment</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Operative uses their Swarm to inconspicuously assume control of a magical device (e.g. an access plinth).</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Access is achieved, but in conspicuous a relatively conspicuous manner: any possible alarms are triggered.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Access is granted without setting off any alarms.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>Obtain administrator access to the device, and leave no trace of activity.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Swarm Attack -->
+                        <table class="skillTable">
+                            <caption id="swarm_attack">Swarm Attack</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Swarm Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack | - Defense</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Swarm executes a hostile attack against an entity within the Operative's ability range. The Operative's stat modifiers may be applied to this check, but the Swarm's Potency is applied to the result. </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Damage target at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Damage target at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>This ability receives a +2 bonus to Potency, and embeds Shards equal to damage dealt.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+
+                <!-- Pulse | 2-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="pulse">Pulse | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack | - Defense</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>The Swarm</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative upgrades their Swarm, granting them the capability of executing a new attack which inflicts Flaring instead of gaining Potency on a Plus. The Operative's stat modifiers may be applied to this check, but the Swarm's Potency is applied to the result.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target with Status Effect: Flaring status effect, and embeds Shards equal to damage dealt.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="jolt">Jolt 2-2</p>
+                <!-- Jolt | 2-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="jolt">Jolt | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Reactive Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Projection, Enchantment | - Defense, Enchantment</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>The Swarm</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative reacts to an action and attempts to sabotage it.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Apply a penalty modifier to check at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Apply a penalty modifier to check at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>This ability receives a +2 bonus to Potency.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="tempest">Tempest 3-1</p>
+                <!-- Tempest | 3-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="tempest">Tempest | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Channeled Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Projection, Enchantment | - Defense, Enchantment</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Pulse</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative's Swarm channels an effect that permeates their entire ability range, damaging all targets whom the Operative views as hostile. Damage is dealt initially, the first time a hostile target enters the area each Round, or when a target begins a new Round within the area while the effect is maintained. The Swarm's Channel cannot be interrupted via attacks made against the Operative, but they must sacrifice their Action Economy each Round and cannot enact other orders from the Operative in order to maintain the effect. The Operative's stat modifiers may be applied to this check, but the Swarm's Potency is applied to the result. </td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Embed target with a number of Shards equal to Potency.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="turrets">Turrets 3-2</p>
+                <!-- Turrets | 3-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="turrets">Turrets | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Action Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Pulse, Jolt</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="3" scope="row">Description</th>
+                            <td>The Operative has begun experimenting with crafting implements specifically meant for their Swarm to animate. Turrets afford the Operative the ability to interact with magical technologies remotely as though via a unitool in addition to being combat ready. One Turret may be constructed per Action, with a limit of 2 active Turrets at any time.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Turrets may be deployed anywhere within the Operative's ability range when constructed, and are initially considered Mobile. Mobile Turrets require the Operative's Swarm to power them, and will be dragged along with the Operative's Swarm if the Operative attempts to move out of range of them. If a Turret is Stationary, it may continue to function as normal regardless of the Operative's relative distance.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Turrets have a base Potency of 4, a Movement speed of 3 units, an ability range equal to the Operative, and an Action Economy of 1. As with their Swarm, the Operative may choose to expend an Action of their own in order to manually trigger a Turret.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="stasis_field">Stasis Field 3-3</p>
+                    <!-- Turret Abilities -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Turret Abilities</p>
+
+                        <!-- Beam Cannon -->
+                        <table class="skillTable">
+                            <caption id="turret_beam_cannon">Beam Cannon</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Turret Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack | - Defense</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Turret fires a beam 1 unit wide and 3 units long, affecting everything in its path.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Damage target at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Damage target at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>Embed target with a number of Shards equal to Potency.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Concussive Burst -->
+                        <table class="skillTable">
+                            <caption id="turret_concussive_burst">Concussive Burst</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Turret Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack | - Defense</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Turret emits a burst of energy at a single target within range.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Damage target at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Damage target at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>This ability receives a +2 bonus to Potency, and moves target a number of units equal to damage dealt.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Mobility -->
+                        <table class="skillTable">
+                            <caption id="turret_mobility">Mobility</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Turret Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>If the Turret is Mobile, it may execute this action to install itself on an open surface, rendering it Stationary. While Stationary, the Turret may continue operating outside of the Operative's Swarm, and its base Potency increases to 6.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Shield Battery -->
+                        <table class="skillTable">
+                            <caption id="turret_shield_battery">Shield Battery</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Standard Action | Operative Turret Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Recovery</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Turret executes a Recharge ability, which may target itself or any other entity within 2 units.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>Restore Shield at half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>Restore Shield at full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>This ability receives a +2 bonus to Potency.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <!-- Stasis Field | 3-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="stasis_field">Stasis Field | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Channeled Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Enchantment | - Defense, Enchantment</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Jolt</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative places an enchantment upon a point in space, which warps the area within 4 units around it. Movement costs are doubled within the area; entities within are targeted by a check immediately upon entering and at the start of every Round it is maintained.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target with a single stack of Status Effect: Immobilized.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="swarm_animation">Swarm Animation 4-1</p>
+                <!-- Swarm Animation | 4-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="swarm_animation">Swarm Animation | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Projection, Enchantment</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Tempest</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative invests its Swarm into a nearby object or otherwise condenses it into a physical form, enhancing its ability to act.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The Swarm condenses into a number of entities equal to half Potency which adopt the stats of Wisps.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>The Swarm condenses into a number of entities equal to half Potency which adopt the stats of Arcanomatons.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Empower one of the Arcanomatons as a Simulacra, able to copy any of the Operative's abilities.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                    <!-- Awakened Swarm - Passive Bonus -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Awakened Swarm - Passive Bonus</p>
+                        <p class="sectionBody">The Operative's Swarm is becoming semi-sentient. Its Action Economy increases to 2 when not Animated.</p>
+                    </div>
+
+                <!-- Barrage | 4-2 -->
+                <table class="skillTable">
+                    <caption id="barrage">Barrage | 4-2</caption>
+                    <tbody>
+                        <tr>
+                            <td scope="row" colspan="2">Recharge Action (10-12) | Operative Ability</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modifiers</th>
+                            <td>+ Attack, Enchantment | - Defense, Enchantment</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prerequisite</th>
+                            <td>Tempest, Turrets</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>The Operative makes a synchronous attack with their Turrets: they all fire at the same time at targets of their own choosing. The Operative's Turrets make this attack without expending an action, but they may elect to use their action to empower the Barrage. Every attack made as part of the Barrage receives a +1 d20 Polarity and +2 Potency bonus for each Turret that elects to spend their Action Economy in this way. Recharge 10-12.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Partial Success</th>
+                            <td>Damage target at half Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full Success</th>
+                            <td>Damage target at full Potency.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plus</th>
+                            <td>Embed Shards as though the ability had been executed by the Operative's Swarm.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="barrage">Barrage 4-2</p>
+                <!-- Rapid Deployment | 4-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="rapid_deployment">Rapid Deployment | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Recharge Action (10-12) | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Turrets, Stasis Field</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Operative may redeploy all active Turrets to new locations within their ability range. Stationary Turrets may be moved by this ability, but are considered Mobile once moved. If the Operative does not have the maximum number of Turrets active, they may summon any number of Turrets up to their cap as part of this action. Recharge 10-12.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="rapid_deployment">Rapid Deployment 4-3</p>
-                <table class="skillTable">
-                    <caption id=""></caption>
-                    <tbody>
-                        <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <!-- Amplified Signal - Passive Bonus -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Amplified Signal - Passive Bonus</p>
+                        <p class="sectionBody">The Operative has upgraded their Swarm's capacity to store and transmit azai. Their active Turret limit increases to 3.</p>
+                    </div>
 
-                <p class="sectionHead" id="torpor">Torpor 4-4</p>
+                <!-- Torpor | 4-4 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="torpor">Torpor | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Operative Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Projection, Enchantment | - Defense, Enchantment</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Stasis Field</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Operative manifests an enchantment which saps the energy of an entity.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>This ability receives a +2 bonus to Potency, and reduces the target’s Action Economy by 1 this Round (if they have already expended their Action Economy this Round, the effect applies to next Round instead).</td>
                         </tr>
                     </tbody>
                 </table>
