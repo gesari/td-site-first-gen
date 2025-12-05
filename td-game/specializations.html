@@ -718,7 +718,7 @@
                     <!-- Flow Current Connections -->
                     <div class="exampleText">
                         <p class="sectionSubHead">Flow Current Connections</p>
-                        <p class="sectionBody">In order to exceed their limitations, Arcanists learn to tap into Flow Currents as a way of bolstering their magic. While empowered by a Current, all of the Arcanist's ability and spellcasting checks gain a static bonus equal to their level. A Current connection lasts until expended, at which point the Arcanist must endeavor to re-establish the connection.</p>
+                        <p class="sectionBody">In order to exceed their limitations, Arcanists learn to tap into Flow Currents as a way of bolstering their magic. While empowered by a Current, all of the Arcanist's ability and spellcasting checks gain a static bonus equal to their Spell Tier. A Current connection lasts until expended, at which point the Arcanist must endeavor to re-establish the connection.</p>
                         <p class="sectionBody">Every time the Arcanist casts an ability or magical effect without an active Current connection, they can roll a d20 for free with no modifiers to passively attempt to re-establish a connection. The Arcanist must roll a natural 20 to succeed on their first attempt, with each successive attempt having its difficulty reduced by 1 until a successful connection is established. Once a current has been replenished, the difficulty resets to 20. A Current connection can be re-established without checks over the course of either a Short or Long Rest.</p>
                     </div>
 
@@ -2430,7 +2430,7 @@
                     <div class="exampleText">
                         <!-- Bounding Strides - Passive Bonus -->
                         <p class="sectionSubHead">Bounding Strides - Passive Bonus</p>
-                        <p class="sectionBody">The Phantom moves through space easier than other dreamers. Their base Movement speed is increased by an amount equal to their level.</p>
+                        <p class="sectionBody">The Phantom moves through space easier than other dreamers. Their base Movement speed is increased by an amount equal to their Spell Tier.</p>
 
                         <!-- Surging Blow -->
                         <table class="skillTable">
@@ -2799,342 +2799,326 @@
 
                     
 
-                <p class="sectionHead" id="auspicious_personage">Auspicious Personage 1-1</p>
+                <!-- Auspicious Personage | 1-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="auspicious_personage">Auspicious Personage | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Sage</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Sage's enhanced perception of the Dream affords them the ability to respond to evolving situations quicker than other dreamers. In addition to their Auspice Pool, Sages may elect to use any Action as a Reaction. Upon reaching the Fourth Spell Tier, the Sage's Action Economy increases by 1.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="threads_of_fate">Threads of Fate 2-1</p>
+                    <!-- Auspicious Personage Passives -->
+                    <div class="exampleText">
+                        <!-- Auspice Pool -->
+                        <p class="sectionSubHead" id="sage_auspice_pool">Auspice Pool</p>
+                        <p class="sectionBody">The Sage has access to an Auspice Pool, which stores pre-rolled d20 values. Upon completing a Long Rest, the Sage rolls a number of d20s equal to their Auspice Pool's maximum capacity, storing the result of each d20 within the Auspice Pool. Using their Sagacious Infusion, the Sage may expend one of the values in their Auspice Pool, applying it to an entity's action as the result of their d20 pool. The base capacity of a Sage's Auspice Pool is 2.</p>
+                        <!-- Sagacious Infusion -->
+                        <table class="skillTable">
+                            <caption id="sage_sagacious_infusion">Sagacious Infusion</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Reactive Action | Sage Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Sage expends and imposes a remaining result from their Auspice Pool on a check being made within their ability range. The target's d20 pool result is superseded by the Sage's Auspice Pool value.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <!-- Threads of Fate | 2-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="threads_of_fate">Threads of Fate | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Reactive Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Unification, Augury | - Defense, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Auspicious Personage</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sage attempts to foil the action of an entity within range. The target must reroll their d20 pool for the current check, with penalties applied based on this ability's Degree of Success, and select the lower result. The target of the foiled action receives bonuses proportional to the penalties imposed upon the actor.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The targeted check receives a -1 penalty to d20 Polarity; the secondary target receives a +1 bonus to d20 Polarity on their next check.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>The targeted check receives a penalty to d20 Polarity equal to half Potency; the secondary target receives a bonus to d20 Polarity equal to half Potency on their next check.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>This ability applies its Polarity modifiers to both dice pools.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="charted_course">Charted Course 2-2</p>
+                <!-- Charted Course | 2-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="charted_course">Charted Course | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Channeled Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Unification, Augury | - Defense, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Auspicious Personage</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sage infuses an entity with the power of possibility, either to help or hinder. For the duration of their Channel, the targeted entity's d6 Polarity is modified for all checks. If intending to hinder an entity, this ability is counted as an attack, and their Defense modifiers would apply.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The target receives a  +/- 1 modifier to d6 Polarity for all checks.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>The target receives a  modifier to d6 Polarity equal to +/- half the Sage's Potency for all checks.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The target receives a  modifier to d6 Polarity equal to +/- the Sage's Potency for all checks.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="empowerment">Empowerment 3-1</p>
+                <!-- Empowerment | 3-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="empowerment">Empowerment | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Unification, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Threads of Fate</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>Infuse an entity with oracular energies, granting them a flat bonus on a future check of their choice. The Sage may only bestow this benefit upon a single entity at a time; if they cast it again before its benefits from a previous use have been applied, they are lost.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Apply a bonus to the check equal to half Potency</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Apply a bonus to the check equal to full Potency</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>This ability receives a +2 bonus to Potency.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="portents_foreseen">Portents Foreseen 3-2</p>
+                <!-- Portents Foreseen | 3-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="portents_foreseen">Portents Foreseen | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Reactive Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Threads of Fate, Charted Course</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>This ability may only be used once the Sage has exhausted at least one of their Auspice dice.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Recognizing the ripples caused by the events they've affected, the Sage seizes an opportunity to again reshape things in their favor. The Sage may interrupt an action taken by any entity they can see to grant allies within range a fleeting vision of what is about to happen, and how to best respond. The Sage replenishes their Auspice Pool back to its maximum capacity, rolling a new value for each restored. For each Auspice die renewed in this fashion, the Sage may empower an entity (including themself) with the ability to move up to half their maximum movement speed and execute an Action for free. The interrupted action occurs after all movement and actions conferred by this ability have been expended exactly as it was intended; the Action is still expended regardless of the change in circumstance.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="altered_probability">Altered Probability 3-3</p>
+                    <!-- Auspicious Portents - Passive Bonus -->
+                    <div class="exampleText">
+                        <p class="sectionSubHead">Auspicious Portents - Passive Bonus</p>
+                        <p class="sectionBody">The capacity of the Sage's Auspice Pool increases by 2.</p>
+                    </div>
+
+                <!-- Altered Probability | 3-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="altered_probability">Altered Probability | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Unification, Augury | - Defense, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Charted Course</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>Bewilder a target, modifying the Polarity of the next check they make, or the next check made against them, in a positive or negative manner as elected by the Sage.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Apply a modifier of +/- 1 to d6 Polarity.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Apply a modifier to d6 Polarity equal to +/- half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Apply the modifier to both dice pools.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="interject">Interject 4-1</p>
+                <!-- Interject | 4-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="interject">Interject | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Reactive Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Unification, Augury | - Defense, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Empowerment</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sage attempts to augment an action taken by an entity as they move to act, either to help or hinder.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Apply a modifier to the check equal to +/- half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Alter the check's Degree of Success by +/- 1.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Alter the check's Degree of Success by +/- 2.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="cyclic_insight">Cyclic Insight 4-2</p>
+                <!-- Cyclic Insight | 4-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="cyclic_insight">Cyclic Insight | 4-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Unique Channeled Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Unification, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Empowerment, Portents Foreseen</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>As part of activating their Potents Foreseen, the Sage may choose to instantiate this ability for free. All targets affected by the Sage's Potents Foreseen receive a static bonus for any checks made for the duration of the Channel, based on the ability’s Degree of Success. This Channel terminates automatically if the Sage uses Portents Foreseen again, at which point it must be reapplied for the most recently selected targets.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Apply a bonus of +1 all checks.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Apply a bonus of +2 all checks.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Apply a bonus of +4 all checks.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="opportunistic_foresight">Opportunistic Foresight 4-3</p>
+                <!-- Opportunistic Foresight | 4-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="opportunistic_foresight">Opportunistic Foresight | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Portents Foreseen, Altered Probability</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>If one of the Sage's Actions this Round achieved a Plus Degree, or if an ability targeting them achieved a Falter Degree, they may use this ability.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Sage's relative success has granted them crucial insights into the situation unfolding before them. They expend an Action to channel this knowledge into two nearby entities, helping them to parse the information and guide their decisions. Each entity targeted by the Sage has their Action Economy increased by 1 next Round.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="oracular_marker">Oracular Marker 4-4</p>
+                <!-- Oracular Marker | 4-4 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="oracular_marker">Oracular Marker | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Sage Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Unification, Augury | - Defense, Augury</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Altered Probability</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Sage attempts to affix an imperceptible magical tracer to a target. While this ability normally applies damage on Partial/Full Degrees, the Sage may choose to forego any potential damage for a bonus to their check equal to their full Potency. This election must be made before any dice are cast; the magical tracer will still only be applied on a Plus Degree regardless of whether or not damage is meant to be inflicted.</td>
+                        </tr>
+                        <tr>
+                            <td>Targets affixed with a tracer broadcast a signal undetectable by anyone but the Sage. The Sage will maintain an unerring sense of a target's location while affixed with an active tracer, and any usage of the Seeing spell by the Sage against a traced target achieves a Plus Degree without need for a check to be made.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Affix a magical tracer to the target.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3148,12 +3132,12 @@
 
                     
 
-                <p class="sectionHead" id="runic_magic">Runic Magic 1-1</p>
+                <!-- Runic Magic | 1-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="runic_magic">Runic Magic | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3161,7 +3145,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Sentinel</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3182,12 +3166,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="surge">Surge 2-1</p>
+                <!-- Surge | 2-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="surge">Surge | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3195,7 +3179,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Runic Magic</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3216,12 +3200,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="tether">Tether 2-2</p>
+                <!-- Tether | 2-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="tether">Tether | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3229,7 +3213,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Runic Magic</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3250,12 +3234,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="aftershock">Aftershock 3-1</p>
+                <!-- <Aftershock | 3-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="aftershock">Aftershock | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3263,7 +3247,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Surge</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3284,12 +3268,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="shifting_currents">Shifting Currents 3-2</p>
+                <!-- Shifting Currents | 3-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="shifting_currents">Shifting Currents | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3297,7 +3281,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Surge, Tether</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3318,12 +3302,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="dive">Dive 3-3</p>
+                <!-- Dive | 3-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="dive">Dive | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3331,7 +3315,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Tether</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3352,12 +3336,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="accelerant">Accelerant 4-1</p>
+                <!-- Accelerant | 4-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="accelerant">Accelerant | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3365,7 +3349,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Aftershock</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3386,12 +3370,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="surging_tides">Surging Tides 4-2</p>
+                <!-- Surging Tides | 4-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="surging_tides">Surging Tides | 4-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3399,7 +3383,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Aftershock, Shifting Currents</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3420,12 +3404,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="runic_sigil">Runic Sigil 4-3</p>
+                <!-- Runic Sigil | 4-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="runic_sigil">Runic Sigil | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3433,7 +3417,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Shifting Currents, Dive</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3454,12 +3438,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="aerial_bonds">Aerial Bonds 4-4</p>
+                <!-- Aerial Bonds | 4-4 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="aerial_bonds">Aerial Bonds | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3467,7 +3451,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Dive</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3495,56 +3479,13 @@
                 <p class="sectionSubHead">College of Animism Specialist</p>
                 <p class="sectionBody">All students of Animism learn that all phenomena within the Dream are connected, including entities. Few, however, are so adept as Spiritists at manipulating these bonds. Known everywhere as guardians of nature, especially on account of their Avatar: an entity whose soul has become joined with theirs.</p>
 
-                    <!-- Node Grid -->
-                    <div class="nodeGrid">
-                        <div class="node1_1">
-                            <div>Internal Alchemy | 1-1</div>
-                            <div>Prerequisite: Specialization</div>
-                        </div>
-                        <div class="node2_1">
-                            <div>Vital Technique | 2-1</div>
-                            <div>Prerequisite: 1-1</div>
-                        </div>
-                        <div class="node2_2">
-                            <div>Stalwart Technique | 2-2</div>
-                            <div>Prerequisite: 1-1</div>
-                        </div>
-                        <div class="node3_1">
-                            <div>Mend | 3-1</div>
-                            <div>Prerequisite: 2-1</div>
-                        </div>
-                        <div class="node3_2">
-                            <div>Ascended Form | 3-2</div>
-                            <div>Prerequisites: 2-1, 2-2</div>
-                        </div>
-                        <div class="node3_3">
-                            <div>Dragonflame | 3-3</div>
-                            <div>Prerequisite: 2-3</div>
-                        </div>
-                        <div class="node4_1">
-                            <div>Bolster | 4-1</div>
-                            <div>Prerequisite: 3-1</div>
-                        </div>
-                        <div class="node4_2">
-                            <div>Fusion | 4-2</div>
-                            <div>Prerequisites: 3-1, 3-2</div>
-                        </div>
-                        <div class="node4_3">
-                            <div>Entomb | 4-3</div>
-                            <div>Prerequisites: 3-2, 3-3</div>
-                        </div>
-                        <div class="node4_4">
-                            <div>Caustic Environment | 4-4</div>
-                            <div>Prerequisite: 3-3</div>
-                        </div>
-                    </div>
 
-                <p class="sectionHead" id="spiritbond">Spiritbond 1-1</p>
+                <!-- Spiritbond | 1-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="spiritbond">Spiritbond | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3573,12 +3514,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="predatory_instinct">Predatory Instinct 2-1</p>
+                <!-- Predatory Instinct | 2-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="predatory_instinct">Predatory Instinct | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3586,7 +3527,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Spiritbond</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3607,12 +3548,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="forceful_motion">Forceful Motion 2-2</p>
+                <!-- Forceful Motion | 2-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="forceful_motion">Forceful Motion | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3620,7 +3561,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Spiritbond</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3641,12 +3582,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="replenish">Replenish 3-1</p>
+                <!-- Replenish | 3-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="replenish">Replenish | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3654,7 +3595,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Predatory Instinct</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3675,12 +3616,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="amplified_bond">Amplified Bond 3-2</p>
+                <!-- Amplified Bond | 3-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="amplified_bond">Amplified Bond | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3688,7 +3629,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Predatory Instinct, Forceful Motion</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3709,12 +3650,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="reciprocal_motion">Reciprocal Motion 3-3</p>
+                <!-- Reciprocal Motion | 3-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="reciprocal_motion">Reciprocal Motion | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3722,7 +3663,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Forceful Motion</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3743,12 +3684,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="warders_call">Warder's Call 4-1</p>
+                <!-- Warder's Call | 4-1 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="warders_call">Warder's Call | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3756,7 +3697,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Replenish</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3777,12 +3718,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="vital_motion">Vital Motion 4-2</p>
+                <!-- Vital Motion | 4-2 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="vital_motion">Vital Motion | 4-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3790,7 +3731,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Replenish, Amplified Bond</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3811,12 +3752,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="harmonic_motion">Harmonic Motion 4-3</p>
+                <!-- Harmonic Motion | 4-3 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="harmonic_motion">Harmonic Motion | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3824,7 +3765,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Amplified Bond, Reciprocal Motion</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
@@ -3845,12 +3786,12 @@
                     </tbody>
                 </table>
 
-                <p class="sectionHead" id="warding_motion">Warding Motion 4-4</p>
+                <!-- Warding Motion | 4-4 -->
                 <table class="skillTable">
-                    <caption id=""></caption>
+                    <caption id="warding_motion">Warding Motion | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Ability</td>
+                            <td scope="row" colspan="2"> Action | Spiritist Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3858,7 +3799,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
-                            <td>Spiritist</td>
+                            <td>Reciprocal Motion</td>
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
