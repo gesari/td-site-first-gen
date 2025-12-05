@@ -430,7 +430,7 @@ div.exampleText * {
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
         "n11 n11 n11 n11 n11 n11 n11 n11"
-        "n21 n21 n21  .   .  n22 n22 n22"
+        " .  n21 n21  .   .  n22 n22  . "
         "n31 n31  .  n32 n32  .  n33 n33"
         "n41  .  n42  .   .  n43  .  n44";
     margin: 1.5rem;
