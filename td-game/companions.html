@@ -132,57 +132,668 @@
 
         <div class="localContent">
             <h2 class="localHead">Companions</h2>
-            <p class="localHeadBody">Beep borp boop bop.</p>
+            <p class="localHeadBody">Companion NPCs are entities that accompany dreamers and act in concert with them. This includes an Animist's Avatar, an Operative's Turrets, and any constructs and spirits summoned via learned collegiate architectures.</p>
 
             <!-- Arcanomaton -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="arcanomaton">Arcanomaton</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>5 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ability Range</th>
+                            <td>15 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cognition</th>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Force</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Insight</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>Boost, Counter, Interaction, Movement, Recharge, Skills, Stabilize</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Skills -->
+                <div class="exampleText">
+                    <!-- Pressure -->
+                    <table class="skillTable">
+                        <caption id="arcanomaton_pressure">Pressure</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Arcanomaton Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Arcanomaton attacks a single entity within range in an attempt to overwhelm them with force.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability gains a +2 bonus to Potency, and may afflict the target with Status Effect: Off-Balance.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Lens Cannon -->
+                    <table class="skillTable">
+                        <caption id="arcanomaton_lens_cannon">Lens Cannon</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Arcanomaton Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Arcanomaton manifests an azonian lens and passes a concentrated burst of azai through it, magnifying the blast. The effect cascades outwards, 1 unit wide and 7 units long in any direction elected by the Arcanomaton from the lens' point of origin, which may be placed anywhere within range.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>Afflict target with Status Effect: Assailed.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Avatar -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="avatar">Avatar</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Like the Spiritist themself, their Avatar is highly customizable. Each Avatar has its own unique Style, chosen from the list of available Dreamers; however, since an Avatar does not wield a focus of their own, if they choose Farseer Style, the Projected Focus passive instead allows the Avatar to function as the point of origin of their Spiritist's actions and vice versa. Their stats are also selected similarly to the Spiritist's, with a variance in the amount of points and the stats available: they receive 3 points to allocate at level 1, and an additional 1 point every level thereafter. These points may be invested into any of the Primary stats as with normal dreamers, but since Avatars do not have the ability to create spell architecture like a dreamer, they do not have access to Secondary stats or Collegiate Training related to azaian magic.</p>
+
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>10 + (2 * Spiritist Level)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>6 + Spiritist Level</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>Equal to Spiritist maximum</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>Style Determinant</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ability Range</th>
+                            <td>Base equal to Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>Base 3, shared with Spiritist</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cognition</th>
+                            <td>Determined via Point-Buy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Force</th>
+                            <td>Determined via Point-Buy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Insight</th>
+                            <td>Determined via Point-Buy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>Boost, Counter, Interaction, Movement, Recharge, Skills</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Skills -->
+                <div class="exampleText">
+                    <!-- Exposure -->
+                    <table class="skillTable">
+                        <caption id="avatar_exposure">Exposure</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row"> Standard Action | Avatar Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" scope="row">Description</th>
+                                <td>The Avatar lashes out at a target, attempting to create an opening in its defenses.</td>
+                            </tr>
+                            <tr>
+                                <td>All Avatars have access to Exposure ability regardless of customization.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability gains a +2 bonus to Potency, and may afflict the target with Status Effect: Flaring.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Arcanist Loft Pad -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="loft_pad">Loft Pad</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>   
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>10 + (2 * Arcanist Level)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>Equal to Arcanist's Movement</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cognition</th>
+                            <td>5 + Arcanist Spell Tier</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Force</th>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Insight</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>3 + Arcanist Spell Tier</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Loft Pads can only be damaged or targeted directly if not being ridden and/or their rider is Unconscious.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Operative 3-2 Turret -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="operative_turret">Operative Turret</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>10 + (2 * Operative Level)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>3 units (Mobile) | 0 units (Stationary)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>4 (Mobile) | 6 (Stationary)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ability Range</th>
+                            <td>Base equal to Operative</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Recovery</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Attack</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Defense</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>Counter, Interaction, Movement, Recharge, Skills</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Skills -->
+                <div class="exampleText">
+                    <!-- Beam Cannon -->
+                    <table class="skillTable">
+                        <caption id="turret_beam_cannon">Beam Cannon</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Turret Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Turret fires a beam 1 unit wide and 3 units long, damaging everything in its path.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>Embed target with a number of Shards equal to Potency.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Concussive Burst -->
+                    <table class="skillTable">
+                        <caption id="turret_concussive_burst">Concussive Burst</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Turret Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Turret emits a burst of energy at a single target within range.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability gains a +2 bonus to Potency, and may move the target up to a number of units equal to damage dealt.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Shield Battery -->
+                    <table class="skillTable">
+                        <caption id="turret_shield_battery">Shield Battery</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Turret Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Recovery</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Turret executes a Recharge ability which may target itself or any other entity within 2 units.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Shield restored equal to half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Shield restored equal to full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability gains a +2 bonus to Potency.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Mobility -->
+                    <table class="skillTable">
+                        <caption id="turret_mobility">Mobility</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Turret Ability</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" scope="row">Description</th>
+                                <td>If the Turret is Mobile, it may execute this action to either move or install itself on an open surface. Installing itself upon an open surface instantiates azonian bonds which adhere it to the chosen location, rendering it Stationary.</td>
+                            </tr>
+                            <tr>
+                                <td>While Stationary, the Turret may continue operating outside of the Operative's Swarm, and its base Potency increases to 6.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Spirit -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="spirit">Spirit</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>5 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ability Range</th>
+                            <td>10 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cognition</th>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Force</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Insight</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>Boost, Counter, Free-Cast, Interaction, Movement, Recharge, Stabilize</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Skills -->
+                <div class="exampleText">
+                    <!-- Lash -->
+                    <table class="skillTable">
+                        <caption id="spirit_lash">Lash</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Spirit Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Spirit rends an entity's astral body, hampering their ability to conduct azai.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability gains a +2 bonus to Potency, and may afflict the target with Status Effect: Addled.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Veil -->
+                    <table class="skillTable">
+                        <caption id="spirit_veil">Veil</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Spirit Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Spirit weaves a veil of azai within 2 units of a chosen point in range, creating shadows which cling to nearby entities.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>Afflict target with Status Effect: Obscured.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Wisp Construct -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="wisp_construct">Wisp Construct</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <table class="skillTable">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vitality</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shield</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Movement</th>
+                            <td>7 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Potency</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ability Range</th>
+                            <td>10 units</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Action Economy</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Recovery</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Attack</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Defense</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Available Actions</th>
+                            <td>Boost, Counter, Interaction, Movement, Recharge, Skills</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Skills -->
+                <div class="exampleText">
+                    <!-- Arc -->
+                    <table class="skillTable">
+                        <caption id="wisp_arc">Arc</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Wisp Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The Wisp discharges energy at an entity within range.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>This ability receives a +2 bonus to Potency, and afflicts its target with stacks of Status Effect: Sundered equal to damage dealt.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Lightburst -->
+                    <table class="skillTable">
+                        <caption id="wisp_lightburst">Lightburst</caption>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" scope="row">Standard Action | Wisp Ability</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Modifiers</th>
+                                <td>+ Attack | - Defense</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>The wisp emits a burst of energy, bathing entities within 3 units of its location in light.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Partial Success</th>
+                                <td>Damage target at half Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Full Success</th>
+                                <td>Damage target at full Potency.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Plus</th>
+                                <td>Afflict target with Status Effect: Illuminated.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- Companion Enhancements -->
             <div class="gridbox">
                 <h4 class="sectionHead" id="companion_enhancements">Companion Enhancements</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <p class="sectionBody">Certain Skills will modify existing Companions, empowering them greatly. These actions do not create a new companion NPC, but rather alter the stats of an existing one.</p>
 
-                <h4 class="sectionHead" id="imbued_constructs">Imbued Constructs</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Imbued Constructs -->
+                <p class="sectionSubHead" id="imbued_constructs">Imbued Constructs</p>
+                <ul class="sectionList">
+                    <li>Gain access to Secondary stats and Collegiates relating to azaian magic.</li>
+                    <li>Gain access to Free-Cast action.</li>
+                    <li>Gain access to Status Effect: Rent.</li>
+                    <li>Increase Ability Range to 25.</li>
+                    <li>Increase Action Economy to 3.</li>
+                </ul>
 
-                <h4 class="sectionHead" id="invested_spirits">Invested Spirits</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Invested Spirits -->
+                <p class="sectionSubHead" id="invested_spirits">Invested Spirits</p>
+                <ul class="sectionList">
+                    <li>Gain access to Status Effect: Projected.</li>
+                    <li>Increase Action Economy to 3.</li>
+                    <li>Changes to other stats based on the form the Spirit was placed in, as determined by the GM and Players.</li>
+                </ul>
 
-                <h4 class="sectionHead" id="simulacra">Simulacra</h4>
-                <p class="sectionBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam quos quo ipsum eius cum ea. Numquam et consequatur qui mollitia aliquam laboriosam aut repudiandae, fugiat excepturi nobis sapiente minima.</p>
+                <!-- Simulacra -->
+                <p class="sectionSubHead" id="simulacra">Simulacra</p>
+                <ul class="sectionList">
+                    <li>Vitality and Shield are unaffected.</li>
+                    <li>Other stats increase to mirror the Operative's if they are lower.</li>
+                    <li>Available Skills mirror that of the Operative.</li>
+                </ul>
             </div>
         </div>    
     </div>
