@@ -3137,45 +3137,36 @@
                     <caption id="runic_magic">Runic Magic | 1-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <th scope="row">Prerequisite</th>
                             <td>Sentinel</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="2" scope="row">Description</th>
+                            <td>The Sentinel has begun learning how to manifest Runic Sigils, powerful repositories of azai within their own body. Every Rune has a unique appearance, determined by the Sentinel at the moment of its creation. Sentinels may maintain a number of Runes equal to their Spell Tier. Each Rune is considered charged by default; the Sentinel receives a passive +2 Defense bonus per charged Rune.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Runes are considered depleted while maintaining a separate magical effect, or while waiting to be recharged after having been expended on a spell or ability. While depleted, a Rune does not confer its Defense bonus.</td>
                         </tr>
                     </tbody>
                 </table>
+
+                    <!-- Runic Magic Passives -->
+                    <div class="exampleText">
+                        <!-- Runic Actions -->
+                        <p class="sectionSubHead">Runic Actions</p>
+                        <p class="sectionBody">The Sentinel is able to employ their Runes in combination with other Actions. In addition to their specialized Runic Actions, Sentinels may expend Runes while executing other actions for a +3 bonus to their check. Actions thus empowered also nullify the effect of a natural 1 result from the Sentinel's d20 pool: rather than resulting in an instantaneous Falter Degree, the Sentinel may factor in any applicable modifiers before determining the action's Degree of Success as normal.</p>
+
+                        <!-- Recharge Specialization -->
+                        <p class="sectionSubHead">Recharge Specialization</p>
+                        <p class="sectionBody">When the Sentinel uses Recharge actions, they also recharge a single depleted Rune in addition to any Shield restored.</p>
+                    </div>
 
                 <!-- Surge | 2-1 -->
                 <table class="skillTable">
                     <caption id="surge">Surge | 2-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Runic Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3183,19 +3174,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>While undertaking an action, the Sentinel may expend a Rune to grant themselves +2 Polarity to both dice pools for the check, rather than the +3 bonus and natural 1 nullification; if this bonus would push the Sentinel over the Polarity cap for either dice pool, a static bonus is applied to the check equal to the value of the Polarity bonus that would have been otherwise wasted. The Sentinel's Potency is also increased by an amount equal to double their maximum active Runes for the action. The Rune is expended regardless of the action's Degree of Success.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3205,11 +3184,11 @@
                     <caption id="tether">Tether | 2-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Channeled Runic Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack, Occlusion | - Defense, Occlusion</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3217,33 +3196,101 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sentinel executes an attack in an attempt to Tether their target to them. A Rune must be expended to power this ability, which grants a +2 d20 Polarity bonus. The Rune is expended regardless of the action's Degree of Success.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Rune empowering this ability establishes a tether between the target and the Sentinel.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <!-- <Aftershock | 3-1 -->
+                    <!-- Tether Passives -->
+                    <div class="exampleText">
+                        <!-- Tether Mechanics -->
+                        <p class="sectionSubHead">Tether Mechanics</p>
+                        <p class="sectionBody">When a Sentinel instantiates a tether, they determine its length, with its maximum distance equal to the Sentinel's ability range. The Sentinel may choose to terminate or alter the length of any active tether for free in combination with any other action so long as it remains active. Tethers behave as a Channeled ability, and count as though the Rune used to maintain them is the entity maintaining the Channel. Any Channel checks to maintain a tether still utilize a Sentinel's stats, but do not prevent them from instantiating additional tethers, or maintaining a Channeled ability of their own. </p>
+                        <p class="sectionBody">A Sentinel may sustain one active Tether per Rune.</p>
+                        <p class="sectionBody">If the Sentinel or their tethered target move such that they would exceed the tether's length, a Channel check is triggered against the Sentinel.</p>
+                        <table class="skillTable">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Falter</th>
+                                    <td>The tether snaps, and the freed entity benefits from a free Movement action.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fail</th>
+                                    <td>The tether snaps.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>The tether pulls taut and holds; if the Sentinel is moving, the target is dragged along harmlessly at maximum range.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>The tether pulls taut and holds; the target suffers impact damage equal to distance traveled.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>The Sentinel may execute a free Lash action against the target.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <!-- Lash -->
+                        <table class="skillTable">
+                            <caption id="aftershock">Lash</caption>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" colspan="2">Unique Tether Action | Sentinel Ability</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Modifiers</th>
+                                    <td>+ Attack, Occlusion | - Defense, Occlusion</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Prerequisite</th>
+                                    <td>Tether</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Description</th>
+                                    <td>The Sentinel manipulates an active tether to move the tethered target.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partial Success</th>
+                                    <td>The tethered target is moved a number of units equal to half Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Full Success</th>
+                                    <td>The tethered target is moved a number of units equal to full Potency.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Plus</th>
+                                    <td>The tethered target may be moved anywhere within the tether’s range, and suffers damage equal to the number of units moved.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <!-- Aftershock | 3-1 -->
                 <table class="skillTable">
                     <caption id="aftershock">Aftershock | 3-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Unique Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack | - Defense</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3251,19 +3298,19 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>This ability may be used as a follow-up to any targeted action the Sentinel executes. The Sentinel charges the triggering attack with a reverberating force, creating a concussive aftershock with a 2 unit radius. The Sentinel's dice pool result(s) from the triggering ability are applied to this ability, along with any modifiers, to determine its Degree of Success.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target with Status Effect: Off-Balance.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3273,45 +3320,46 @@
                     <caption id="shifting_currents">Shifting Currents | 3-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Unique Runic Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Adaptation, Occlusion | - Defense, Occlusion</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
                             <td>Surge, Tether</td>
                         </tr>
                         <tr>
-                            <th scope="row">Description</th>
-                            <td></td>
+                            <th rowspan="3" scope="row">Description</th>
+                            <td>The Sentinel invokes the power of their Runes (minimum 1, but they can use as many as they wish) to manifest a spherical event horizon with a base radius of 3 units around their body as the center point. The event horizon may be freely traversed by any entity, but is opaque to azai: entities outside the effect cannot target any entity or point within the effect caused by the Sentinel, and any area spells are not able to transmit their force through the barrier.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The area within the effect becomes caustic: movement speed is halved for all entities beside the Sentinel, and entities suffer 1 damage per Rune invoked by the Sentinel when the ability was cast for each unit of movement they travel while inside. The radius of the area of effect increases by 1 unit for each Rune used to power this ability beyond the first.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The effect moves with the Sentinel and lasts until they choose to end it, or their Shield has been depleted. If the Sentinel chooses to end the effect, they immediately recharge all Runes maintaining the ability; if it breaks from a depleted Shield, the Runes must be recharged manually. When the ability is cast, the Sentinel may execute one free Recharge action per Rune invoked; Recharge actions used in this way cannot recharge Runes used to activate this ability.</td>
                         </tr>
                     </tbody>
                 </table>
+
+                    <!-- Shifting Currents Passives -->
+                    <div class="exampleText">
+                        <!-- Runic Recovery - Passive Bonus -->
+                        <p class="sectionSubHead">Runic Recovery - Passive Bonus</p>
+                        <p class="sectionBody">When a Rune is depleted, it's +2 Defense bonus becomes a +2 Recovery bonus until it is recharged, rather than providing no benefit at all.</p>
+                    </div>
 
                 <!-- Dive | 3-3 -->
                 <table class="skillTable">
                     <caption id="dive">Dive | 3-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack, Occlusion | - Defense, Occlusion</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3319,19 +3367,19 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sentinel surges into the air and dives to any spot within 5 units of their initial position, impacting all enemies within 2 units of where they land.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Damage target at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Damage target at full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target with Status Effect: Rent.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3341,11 +3389,7 @@
                     <caption id="accelerant">Accelerant | 4-1</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td scope="row" colspan="2">Unique Runic Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3353,19 +3397,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Partial Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Full Success</th>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Plus</th>
-                            <td></td>
+                            <td>The Sentinel expends a Rune to consume its energy, granting themselves the ability to execute an additional Action this Round. This ability does not cost an Action to use, but the Rune invoked in its execution cannot be recharged until the following Round.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3375,11 +3407,11 @@
                     <caption id="surging_tides">Surging Tides | 4-2</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Reactive Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Adaptation, Occlusion | - Attack, Occlusion </td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3387,19 +3419,19 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sentinel attempts to siphon the energy of a hostile action within range into a depleted Rune.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>The application of a status effect by the targeted action is prevented, and a Rune recharges.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Reduce damage of targeted action at half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Reduce damage of targeted action at full Potency, and Recharge up to two Runes.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3409,7 +3441,7 @@
                     <caption id="runic_sigil">Runic Sigil | 4-3</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Channeled Runic Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
@@ -3421,19 +3453,19 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sentinel bestows the Defense benefit of an active Rune upon another entity, plus additional Defense based on the ability's Degree of Success.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Increase defense bonus by half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Increase defense bonus by full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>While the Sentinel maintains the Sigil, they may absorb any amount of incoming damage against the protected entity for free.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -3443,11 +3475,11 @@
                     <caption id="aerial_bonds">Aerial Bonds | 4-4</caption>
                     <tbody>
                         <tr>
-                            <td scope="row" colspan="2"> Action | Sentinel Ability</td>
+                            <td scope="row" colspan="2">Standard Action | Sentinel Ability</td>
                         </tr>
                         <tr>
                             <th scope="row">Modifiers</th>
-                            <td></td>
+                            <td>+ Attack / Adaptation, Occlusion | - Defense / Adaptation, Occlusion</td>
                         </tr>
                         <tr>
                             <th scope="row">Prerequisite</th>
@@ -3455,19 +3487,19 @@
                         </tr>
                         <tr>
                             <th scope="row">Description</th>
-                            <td></td>
+                            <td>The Sentinel freezes the currents of azai around a target in range, binding them into azonian shackles.</td>
                         </tr>
                         <tr>
                             <th scope="row">Partial Success</th>
-                            <td></td>
+                            <td>Afflict target with stacks of Status Effect: Entangled equal to half Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Full Success</th>
-                            <td></td>
+                            <td>Afflict target with stacks of Status Effect: Entangled equal to full Potency.</td>
                         </tr>
                         <tr>
                             <th scope="row">Plus</th>
-                            <td></td>
+                            <td>Afflict target with Status Effect: Immobilized 1 unit above the ground.</td>
                         </tr>
                     </tbody>
                 </table>
