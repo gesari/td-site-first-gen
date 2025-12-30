@@ -566,12 +566,12 @@ a:active {
 
 /* Style for the three links on home menu */
 .homelink {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 2rem 0rem;
 }
 
 /* Style for my current n.b. below home links */
 .homenote {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 2rem 2rem;
+    padding: 1rem;
 }
